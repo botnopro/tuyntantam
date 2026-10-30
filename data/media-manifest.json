@@ -1,0 +1,884 @@
+[
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/07/Hinh-chu-nhat.jpg",
+    "requestedSrc": "https://tuyntantam.com/wp-content/uploads/elementor/thumbs/Hinh-chu-nhat-scaled-r0f9goq6nxdzyd8z7046liutycjz66j7z10s19ygqk.jpg",
+    "src": "/images/site/logo-tuyn-tan-tam.jpg",
+    "localPath": "public/images/site/logo-tuyn-tan-tam.jpg",
+    "alt": "Hình chữ nhật",
+    "altSource": "auto: tiêu đề/tên file của media",
+    "width": 1920,
+    "height": 384,
+    "bytes": 36142,
+    "resizedFrom": [
+      5724,
+      1145
+    ],
+    "downloadError": null,
+    "usedIn": [
+      "site:header"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/Tuyn-Tan-Tam-1-2.png",
+    "requestedSrc": null,
+    "src": "/images/site/logo-tuyn-tan-tam-footer.png",
+    "localPath": "public/images/site/logo-tuyn-tan-tam-footer.png",
+    "alt": null,
+    "altSource": null,
+    "width": 350,
+    "height": 70,
+    "bytes": 8293,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "site:footer"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/cropped-Moi-Gioi-Tan-Tam.png",
+    "requestedSrc": null,
+    "src": "/images/site/favicon.png",
+    "localPath": "public/images/site/favicon.png",
+    "alt": null,
+    "altSource": null,
+    "width": 512,
+    "height": 512,
+    "bytes": 30343,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "site:favicon"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/Thiet-ke-chua-co-ten-1.png",
+    "requestedSrc": "https://tuyntantam.com/wp-content/uploads/elementor/thumbs/Thiet-ke-chua-co-ten-1-qtcmx3t0o6xfuqu0kofchrtss5w1g4bz5e815jpw3g.png",
+    "src": "/images/site/buy-me-a-coffee-button.png",
+    "localPath": "public/images/site/buy-me-a-coffee-button.png",
+    "alt": "Thiết kế chưa có tên",
+    "altSource": "auto: tiêu đề/tên file của media",
+    "width": 300,
+    "height": 70,
+    "bytes": 7066,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "site:footer",
+      "page:donate"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/z5780311082723_67058a0c801f93d0328a629b5d0fe9d3.jpg",
+    "requestedSrc": "https://tuyntantam.com/wp-content/uploads/elementor/thumbs/z5780311082723_67058a0c801f93d0328a629b5d0fe9d3-qtby3r137q1cr31ca1213ltkwes6cob8lgjrrgkx4c.jpg",
+    "src": "/images/pages/donate-momo-qr.jpg",
+    "localPath": "public/images/pages/donate-momo-qr.jpg",
+    "alt": "z5780311082723_67058a0c801f93d0328a629b5d0fe9d3",
+    "altSource": "auto: tiêu đề/tên file của media",
+    "width": 1920,
+    "height": 2045,
+    "bytes": 230992,
+    "resizedFrom": [
+      2404,
+      2560
+    ],
+    "downloadError": null,
+    "usedIn": [
+      "page:donate",
+      "seo:https://tuyntantam.com/donate"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/paypal-donate-01.png.webp",
+    "requestedSrc": null,
+    "src": "/images/pages/donate-paypal-button.webp",
+    "localPath": "public/images/pages/donate-paypal-button.webp",
+    "alt": "Donate",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 250,
+    "height": 77,
+    "bytes": 5170,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:donate"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/z5780351945844_08fded6a05242f85b6891b28c3b494d3.jpg",
+    "requestedSrc": "https://tuyntantam.com/wp-content/uploads/elementor/thumbs/z5780351945844_08fded6a05242f85b6891b28c3b494d3-qtbzywlzhlyjzutiz0q8z3u4kik4n8x9v3pp2nqv20.jpg",
+    "src": "/images/pages/donate-bank-qr.jpg",
+    "localPath": "public/images/pages/donate-bank-qr.jpg",
+    "alt": "z5780351945844_08fded6a05242f85b6891b28c3b494d3",
+    "altSource": "auto: tiêu đề/tên file của media",
+    "width": 1920,
+    "height": 1886,
+    "bytes": 164384,
+    "resizedFrom": [
+      2560,
+      2515
+    ],
+    "downloadError": null,
+    "usedIn": [
+      "page:donate"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2025/08/3.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/moi-gioi-cho-thue-bds-dat-100-trieu-thang-cover.jpg",
+    "localPath": "public/images/posts/moi-gioi-cho-thue-bds-dat-100-trieu-thang-cover.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1366,
+    "height": 768,
+    "bytes": 219382,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:moi-gioi-cho-thue-bds-dat-100-trieu-thang",
+      "seo:https://tuyntantam.com/blog/moi-gioi-cho-thue-bds-dat-100-trieu-thang/.html"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2025/08/6.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/moi-gioi-cho-thue-bds-dat-100-trieu-thang-1.jpg",
+    "localPath": "public/images/posts/moi-gioi-cho-thue-bds-dat-100-trieu-thang-1.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1366,
+    "height": 768,
+    "bytes": 211472,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:moi-gioi-cho-thue-bds-dat-100-trieu-thang"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2025/08/4.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/moi-gioi-cho-thue-bds-dat-100-trieu-thang-2.jpg",
+    "localPath": "public/images/posts/moi-gioi-cho-thue-bds-dat-100-trieu-thang-2.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1366,
+    "height": 768,
+    "bytes": 220208,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:moi-gioi-cho-thue-bds-dat-100-trieu-thang"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2025/08/5.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/moi-gioi-cho-thue-bds-dat-100-trieu-thang-3.jpg",
+    "localPath": "public/images/posts/moi-gioi-cho-thue-bds-dat-100-trieu-thang-3.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1366,
+    "height": 768,
+    "bytes": 195485,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:moi-gioi-cho-thue-bds-dat-100-trieu-thang"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2025/06/3-Tieu-chi-quan-trong-khi-chon-thue-nha-tai-Ha-Noi.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/3-tieu-chi-thue-nha-tai-ha-noi-cover.jpg",
+    "localPath": "public/images/posts/3-tieu-chi-thue-nha-tai-ha-noi-cover.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1366,
+    "height": 768,
+    "bytes": 87965,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:3-tieu-chi-thue-nha-tai-ha-noi",
+      "seo:https://tuyntantam.com/blog/3-tieu-chi-thue-nha-tai-ha-noi/.html"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/8.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/nghe-moi-gioi-cho-thue-bat-dong-san-cover.jpg",
+    "localPath": "public/images/posts/nghe-moi-gioi-cho-thue-bat-dong-san-cover.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 150466,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:nghe-moi-gioi-cho-thue-bat-dong-san",
+      "seo:https://tuyntantam.com/moi-gioi/nghe-moi-gioi-cho-thue-bat-dong-san/.html"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/9.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/nghe-moi-gioi-cho-thue-bat-dong-san-1.jpg",
+    "localPath": "public/images/posts/nghe-moi-gioi-cho-thue-bat-dong-san-1.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 101281,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:nghe-moi-gioi-cho-thue-bat-dong-san"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/10.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/nghe-moi-gioi-cho-thue-bat-dong-san-2.jpg",
+    "localPath": "public/images/posts/nghe-moi-gioi-cho-thue-bat-dong-san-2.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 154652,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:nghe-moi-gioi-cho-thue-bat-dong-san"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/11.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/nghe-moi-gioi-cho-thue-bat-dong-san-3.jpg",
+    "localPath": "public/images/posts/nghe-moi-gioi-cho-thue-bat-dong-san-3.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 139286,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:nghe-moi-gioi-cho-thue-bat-dong-san"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/danh-sach-khach-hang.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/nghe-moi-gioi-cho-thue-bat-dong-san-4.jpg",
+    "localPath": "public/images/posts/nghe-moi-gioi-cho-thue-bat-dong-san-4.jpg",
+    "alt": "Đây là sổ khách hàng của Tuyn bạn có thể tham khảo 9 nhưng nhìn hơi cũ chút :) )",
+    "altSource": "img alt trong HTML",
+    "width": 1640,
+    "height": 924,
+    "bytes": 250948,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:nghe-moi-gioi-cho-thue-bat-dong-san",
+      "post:giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/12.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/nghe-moi-gioi-cho-thue-bat-dong-san-5.jpg",
+    "localPath": "public/images/posts/nghe-moi-gioi-cho-thue-bat-dong-san-5.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 91722,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:nghe-moi-gioi-cho-thue-bat-dong-san"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/Cac-trang-bat-dong-san-uy-tin.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/6-trang-bat-dong-san-uy-tin-cover.jpg",
+    "localPath": "public/images/posts/6-trang-bat-dong-san-uy-tin-cover.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 134433,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:6-trang-bat-dong-san-uy-tin",
+      "seo:https://tuyntantam.com/blog/6-trang-bat-dong-san-uy-tin/.html"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/1.png",
+    "requestedSrc": null,
+    "src": "/images/posts/6-trang-bat-dong-san-uy-tin-1.png",
+    "localPath": "public/images/posts/6-trang-bat-dong-san-uy-tin-1.png",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 159201,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:6-trang-bat-dong-san-uy-tin"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/3.png",
+    "requestedSrc": null,
+    "src": "/images/posts/6-trang-bat-dong-san-uy-tin-2.png",
+    "localPath": "public/images/posts/6-trang-bat-dong-san-uy-tin-2.png",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 85326,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:6-trang-bat-dong-san-uy-tin"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/2.png",
+    "requestedSrc": null,
+    "src": "/images/posts/6-trang-bat-dong-san-uy-tin-3.png",
+    "localPath": "public/images/posts/6-trang-bat-dong-san-uy-tin-3.png",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 61927,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:6-trang-bat-dong-san-uy-tin"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/5.png",
+    "requestedSrc": null,
+    "src": "/images/posts/6-trang-bat-dong-san-uy-tin-4.png",
+    "localPath": "public/images/posts/6-trang-bat-dong-san-uy-tin-4.png",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 77339,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:6-trang-bat-dong-san-uy-tin"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/4.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/6-trang-bat-dong-san-uy-tin-5.jpg",
+    "localPath": "public/images/posts/6-trang-bat-dong-san-uy-tin-5.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 53023,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:6-trang-bat-dong-san-uy-tin"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/6.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/6-trang-bat-dong-san-uy-tin-6.jpg",
+    "localPath": "public/images/posts/6-trang-bat-dong-san-uy-tin-6.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 55824,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:6-trang-bat-dong-san-uy-tin"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/Voi-nghe-moi-gioi-bat-dong-san-cho-thue.-Tai-sao-khong.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/hay-bat-dau-nghe-moi-gioi-cho-thue-bang-viec-lam-ban-thoi-gian-cover.jpg",
+    "localPath": "public/images/posts/hay-bat-dau-nghe-moi-gioi-cho-thue-bang-viec-lam-ban-thoi-gian-cover.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 162005,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:hay-bat-dau-nghe-moi-gioi-cho-thue-bang-viec-lam-ban-thoi-gian",
+      "seo:https://tuyntantam.com/blog/hay-bat-dau-nghe-moi-gioi-cho-thue-bang-viec-lam-ban-thoi-gian/.html"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/Voi-nghe-moi-gioi-bat-dong-san-cho-thue.-Tai-sao-khong-1.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/hay-bat-dau-nghe-moi-gioi-cho-thue-bang-viec-lam-ban-thoi-gian-1.jpg",
+    "localPath": "public/images/posts/hay-bat-dau-nghe-moi-gioi-cho-thue-bang-viec-lam-ban-thoi-gian-1.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 176738,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:hay-bat-dau-nghe-moi-gioi-cho-thue-bang-viec-lam-ban-thoi-gian"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/z4859235133528_3676c677d70665643bb6b2eb534e2ca1.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/hay-bat-dau-nghe-moi-gioi-cho-thue-bang-viec-lam-ban-thoi-gian-2.jpg",
+    "localPath": "public/images/posts/hay-bat-dau-nghe-moi-gioi-cho-thue-bang-viec-lam-ban-thoi-gian-2.jpg",
+    "alt": "Mỗi một vụ chốt thành công Tuyn đều ghi rõ ràng chi tiết vào cuốn sổ này",
+    "altSource": "img alt trong HTML",
+    "width": 1920,
+    "height": 1440,
+    "bytes": 365834,
+    "resizedFrom": [
+      2560,
+      1920
+    ],
+    "downloadError": null,
+    "usedIn": [
+      "post:hay-bat-dau-nghe-moi-gioi-cho-thue-bang-viec-lam-ban-thoi-gian"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/Voi-nghe-moi-gioi-bat-dong-san-cho-thue.-Tai-sao-khong-3.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue-cover.jpg",
+    "localPath": "public/images/posts/giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue-cover.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 97589,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue",
+      "seo:https://tuyntantam.com/moi-gioi/giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue/.html"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/1.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue-1.jpg",
+    "localPath": "public/images/posts/giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue-1.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 134682,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/2.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue-2.jpg",
+    "localPath": "public/images/posts/giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue-2.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 203653,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/3.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue-3.jpg",
+    "localPath": "public/images/posts/giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue-3.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 122152,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/mqh-giua-chu-va-khach-1.jpg",
+    "requestedSrc": null,
+    "src": "/images/posts/giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue-5.jpg",
+    "localPath": "public/images/posts/giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue-5.jpg",
+    "alt": null,
+    "altSource": null,
+    "width": 1640,
+    "height": 924,
+    "bytes": 104155,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "post:giai-quyet-su-tu-choi-trong-nghe-moi-gioi-bat-dong-san-cho-thue"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/02.png",
+    "requestedSrc": null,
+    "src": "/images/pages/home-hero-portrait.png",
+    "localPath": "public/images/pages/home-hero-portrait.png",
+    "alt": "Trang chủ 02",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 400,
+    "height": 650,
+    "bytes": 211938,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:trang-chu-02",
+      "page:trang-chu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/01.png",
+    "requestedSrc": null,
+    "src": "/images/pages/portrait-standing.png",
+    "localPath": "public/images/pages/portrait-standing.png",
+    "alt": "Dẫn Khách Xem Nhà",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 400,
+    "height": 650,
+    "bytes": 173614,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:dan-khach-xem-nha",
+      "seo:https://tuyntantam.com/dan-khach-xem-nha",
+      "page:gioi-thieu",
+      "seo:https://tuyntantam.com/gioi-thieu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/07/AV_7794.jpg",
+    "requestedSrc": "https://tuyntantam.com/wp-content/uploads/2024/07/AV_7794-scaled.jpg",
+    "src": "/images/pages/home-legacy-hero-photo.jpg",
+    "localPath": "public/images/pages/home-legacy-hero-photo.jpg",
+    "alt": "Trang chủ 01",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 1920,
+    "height": 1280,
+    "bytes": 195799,
+    "resizedFrom": [
+      6720,
+      4480
+    ],
+    "downloadError": null,
+    "usedIn": [
+      "page:trang-chu",
+      "seo:https://tuyntantam.com/trang-chu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/Anh-bia-trang-Donate.png",
+    "requestedSrc": null,
+    "src": "/images/pages/home-legacy-banner-cuong-phat-land-tuyen-dung.png",
+    "localPath": "public/images/pages/home-legacy-banner-cuong-phat-land-tuyen-dung.png",
+    "alt": "Trang chủ 01",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 1600,
+    "height": 400,
+    "bytes": 151411,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:trang-chu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/1-1.png",
+    "requestedSrc": null,
+    "src": "/images/pages/partner-famous-land.png",
+    "localPath": "public/images/pages/partner-famous-land.png",
+    "alt": "Trang chủ 01",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 500,
+    "height": 500,
+    "bytes": 35439,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:trang-chu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/2-1.png",
+    "requestedSrc": null,
+    "src": "/images/pages/partner-seahouse.png",
+    "localPath": "public/images/pages/partner-seahouse.png",
+    "alt": "Trang chủ 01",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 500,
+    "height": 500,
+    "bytes": 6891,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:trang-chu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/Cuong-Phat-Land.png",
+    "requestedSrc": null,
+    "src": "/images/pages/partner-cuong-phat-land.png",
+    "localPath": "public/images/pages/partner-cuong-phat-land.png",
+    "alt": "Cường Phát Land",
+    "altSource": "auto: tiêu đề/tên file của media",
+    "width": 500,
+    "height": 500,
+    "bytes": 17732,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:trang-chu",
+      "page:cuong-phat-land-tuyen-dung"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/07/QR-nguon-dong-tien.jpg",
+    "requestedSrc": null,
+    "src": "/images/pages/home-legacy-qr-zalo-nguon-dong-tien.jpg",
+    "localPath": "public/images/pages/home-legacy-qr-zalo-nguon-dong-tien.jpg",
+    "alt": "Trang chủ 01",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 385,
+    "height": 393,
+    "bytes": 99007,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:trang-chu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/Thiet-ke-chua-co-ten.png",
+    "requestedSrc": null,
+    "src": "/images/pages/gioi-thieu-portrait-seated.png",
+    "localPath": "public/images/pages/gioi-thieu-portrait-seated.png",
+    "alt": "Giới Thiệu",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 500,
+    "height": 600,
+    "bytes": 140725,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:gioi-thieu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/Ban-sua.jpg",
+    "requestedSrc": "https://tuyntantam.com/wp-content/uploads/elementor/thumbs/Ban-sua-qsewphgk2km5qz9i7b93m57gflbauz86u2v7k4tew0.jpg",
+    "src": "/images/pages/gioi-thieu-ban-sua.jpg",
+    "localPath": "public/images/pages/gioi-thieu-ban-sua.jpg",
+    "alt": "Bán sữa",
+    "altSource": "auto: tiêu đề/tên file của media",
+    "width": 500,
+    "height": 400,
+    "bytes": 39002,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:gioi-thieu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/Chup-cung-Tung.jpg",
+    "requestedSrc": "https://tuyntantam.com/wp-content/uploads/elementor/thumbs/Chup-cung-Tung-qsewu6ni8r1rssfqrcdy2yifcy5dchvvhcalxxujs0.jpg",
+    "src": "/images/pages/gioi-thieu-chup-cung-tung.jpg",
+    "localPath": "public/images/pages/gioi-thieu-chup-cung-tung.jpg",
+    "alt": "Chụp cùng Tùng",
+    "altSource": "auto: tiêu đề/tên file của media",
+    "width": 500,
+    "height": 400,
+    "bytes": 41349,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:gioi-thieu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/Thiet-ke-chua-co-ten-2.jpg",
+    "requestedSrc": null,
+    "src": "/images/pages/gioi-thieu-phuong-dong-tong-ket-cuoi-nam.jpg",
+    "localPath": "public/images/pages/gioi-thieu-phuong-dong-tong-ket-cuoi-nam.jpg",
+    "alt": "Giới Thiệu",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 500,
+    "height": 400,
+    "bytes": 41065,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:gioi-thieu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/chot-can-Tran-Binh-chuan.jpg",
+    "requestedSrc": null,
+    "src": "/images/pages/gioi-thieu-chot-can-tran-binh.jpg",
+    "localPath": "public/images/pages/gioi-thieu-chot-can-tran-binh.jpg",
+    "alt": "Giới Thiệu",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 500,
+    "height": 400,
+    "bytes": 35373,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:gioi-thieu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/can-532-duong-Lang.png",
+    "requestedSrc": null,
+    "src": "/images/pages/gioi-thieu-can-532-duong-lang.png",
+    "localPath": "public/images/pages/gioi-thieu-can-532-duong-lang.png",
+    "alt": "Giới Thiệu",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 350,
+    "height": 500,
+    "bytes": 111242,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:gioi-thieu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2026/06/dau-tu-can-ho-dich-vu-ha-noi-1.jpg",
+    "requestedSrc": null,
+    "src": "/images/pages/dau-tu-can-ho-dich-vu-ha-noi.jpg",
+    "localPath": "public/images/pages/dau-tu-can-ho-dich-vu-ha-noi.jpg",
+    "alt": "Đầu Tư",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 249975,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:dau-tu",
+      "seo:https://tuyntantam.com/dau-tu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/Cuong-Phat-Land-1-1.jpg",
+    "requestedSrc": null,
+    "src": "/images/pages/cuong-phat-land-tuyen-dung-banner.jpg",
+    "localPath": "public/images/pages/cuong-phat-land-tuyen-dung-banner.jpg",
+    "alt": "Cường Phát Land Tuyển Dụng",
+    "altSource": "auto: tiêu đề trang/bài (Rank Math tự điền vì media không có alt)",
+    "width": 1366,
+    "height": 768,
+    "bytes": 77459,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:cuong-phat-land-tuyen-dung"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/07/a-Thu.jpg",
+    "requestedSrc": null,
+    "src": "/images/pages/home-testimonial-anh-thu.jpg",
+    "localPath": "public/images/pages/home-testimonial-anh-thu.jpg",
+    "alt": "Anh Thu",
+    "altSource": "img alt trong HTML",
+    "width": 324,
+    "height": 400,
+    "bytes": 48666,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:trang-chu-02",
+      "page:trang-chu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/a-Hai.jpg",
+    "requestedSrc": null,
+    "src": "/images/pages/home-testimonial-anh-hai.jpg",
+    "localPath": "public/images/pages/home-testimonial-anh-hai.jpg",
+    "alt": "Anh Hải",
+    "altSource": "img alt trong HTML",
+    "width": 1316,
+    "height": 640,
+    "bytes": 96676,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:trang-chu-02",
+      "page:trang-chu"
+    ]
+  },
+  {
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2025/05/z6653365802124_9d3ef41af9f28930fc4bcc7dd7a6b6e8.jpg",
+    "requestedSrc": null,
+    "src": "/images/pages/home-testimonial-anh-cong.jpg",
+    "localPath": "public/images/pages/home-testimonial-anh-cong.jpg",
+    "alt": "Anh Công",
+    "altSource": "img alt trong HTML",
+    "width": 1080,
+    "height": 1080,
+    "bytes": 363408,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "page:trang-chu-02",
+      "page:trang-chu"
+    ]
+  },
+  {
+    "originalSrc": "https://secure.gravatar.com/avatar/7297f4c7569c82809cd933642b30c1d08abf6f7bcba1335b4d50527ecb674f02?s=300&r=g",
+    "requestedSrc": "https://secure.gravatar.com/avatar/7297f4c7569c82809cd933642b30c1d08abf6f7bcba1335b4d50527ecb674f02?s=96&r=g",
+    "src": "/images/site/author-avatar-gravatar.png",
+    "localPath": "public/images/site/author-avatar-gravatar.png",
+    "alt": "Picture of Tuyn Tận Tâm",
+    "altSource": "auto: Elementor author avatar",
+    "width": 300,
+    "height": 300,
+    "bytes": 73519,
+    "resizedFrom": null,
+    "downloadError": null,
+    "usedIn": [
+      "site:author-box"
+    ]
+  }
+]

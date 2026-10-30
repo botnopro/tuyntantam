@@ -1,0 +1,401 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Font nạp bằng next/font (layout.tsx): --font-be-vietnam — một họ chữ cho cả tiêu đề và nội dung */
+@theme inline {
+  --font-display: var(--font-be-vietnam), "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-be-vietnam), "Be Vietnam Pro", ui-sans-serif, system-ui, sans-serif;
+}
+
+/*
+ * Màu: tông xanh Zalo. Giá trị sáng ở @theme, giá trị tối ghi đè trong `.dark` (bên dưới).
+ * Component chỉ dùng class token; không đặt hex trực tiếp.
+ */
+@theme {
+  /* Brand */
+  --color-primary: #0050c8; /* chữ nhấn, link, giá (7:1 trên nền trắng) */
+  --color-on-primary: #ffffff;
+  --color-brand-strong: #0068ff; /* xanh Zalo — nền nút/badge chữ trắng (4.75:1) */
+  --color-brand-hover: #0050c8; /* hover nút nền xanh */
+  --color-primary-container: #0068ff; /* mảng trang trí, pill active */
+  --color-on-primary-container: #ffffff;
+  --color-primary-fixed: #d6e6ff;
+  --color-primary-fixed-dim: #9cc3ff; /* chữ nhấn trên dải tối (ink) */
+  --color-brand-subtle: #e8f1ff; /* tint nền: chip, ô icon, khối nhấn */
+
+  --color-secondary: #1e3a5f;
+  --color-secondary-deep: #0f2744;
+  --color-secondary-fixed: #c7e7ff;
+  --color-gold-accent: #d97706;
+
+  --color-call: #15803d; /* nút Gọi (nền xanh lá, icon trắng) */
+  --color-call-hover: #166534;
+
+  /* Màu thương hiệu mạng xã hội (theo bộ nhận diện của từng nền tảng) */
+  --color-zalo: #0068ff;
+  --color-zalo-hover: #0050c8;
+  --color-facebook: #0866ff;
+  --color-youtube: #ff0000;
+  --color-telegram: #26a5e4;
+  --color-x: #000000;
+
+  /* Nền tối cố định cho ảnh phủ / dải tối (không đổi theo chế độ) */
+  --color-ink: #0f172a;
+
+  /* Text / neutral */
+  --color-slate-dark: #0f172a; /* tiêu đề */
+  --color-on-surface: #111c2d;
+  --color-on-surface-variant: #475569;
+  --color-outline: #8a94a6;
+  --color-outline-variant: #cbd5e1;
+
+  /* Surfaces */
+  --color-surface: #f5f7fa;
+  --color-surface-card: #ffffff; /* card, panel, input nổi */
+  --color-surface-warm: #fafbfd;
+  --color-surface-neutral: #f8fafc;
+  --color-surface-muted: #f1f5f9;
+  --color-surface-container-low: #eef3fa;
+  --color-surface-container: #e3ecf8;
+  --color-surface-container-high: #d6e3f5;
+  --color-surface-dim: #c6d5ea;
+  --color-border-subtle: #e2e8f0;
+
+  /* Status */
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-success: #1d6b3a;
+  --color-success-container: #dcf3e3;
+
+  /* Type scale */
+  --text-headline-xl: 48px;
+  --text-headline-xl--line-height: 56px;
+  --text-headline-xl--letter-spacing: -0.02em;
+  --text-headline-xl--font-weight: 700;
+  --text-headline-xl-mobile: 34px;
+  --text-headline-xl-mobile--line-height: 42px;
+  --text-headline-xl-mobile--letter-spacing: -0.01em;
+  --text-headline-xl-mobile--font-weight: 700;
+  --text-headline-lg: 36px;
+  --text-headline-lg--line-height: 44px;
+  --text-headline-lg--letter-spacing: -0.015em;
+  --text-headline-lg--font-weight: 700;
+  --text-headline-lg-mobile: 28px;
+  --text-headline-lg-mobile--line-height: 36px;
+  --text-headline-lg-mobile--letter-spacing: -0.01em;
+  --text-headline-lg-mobile--font-weight: 700;
+  --text-headline-md: 26px;
+  --text-headline-md--line-height: 34px;
+  --text-headline-md--font-weight: 600;
+  --text-headline-sm: 20px;
+  --text-headline-sm--line-height: 28px;
+  --text-headline-sm--font-weight: 600;
+  --text-subheading: 13px;
+  --text-subheading--line-height: 20px;
+  --text-subheading--letter-spacing: 0.08em;
+  --text-subheading--font-weight: 700;
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 28px;
+  --text-body-md: 15px;
+  --text-body-md--line-height: 24px;
+  --text-body-sm: 13px;
+  --text-body-sm--line-height: 20px;
+  --text-spec-num: 14px;
+  --text-spec-num--line-height: 18px;
+  --text-spec-num--font-weight: 700;
+  --text-label-caps: 11px;
+  --text-label-caps--line-height: 16px;
+  --text-label-caps--letter-spacing: 0.06em;
+  --text-label-caps--font-weight: 700;
+  --text-price-display: 22px;
+  --text-price-display--line-height: 28px;
+  --text-price-display--letter-spacing: -0.01em;
+  --text-price-display--font-weight: 800;
+
+  /* Named spacing */
+  --spacing-space-xs: 0.375rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-space-md: 1.25rem;
+  --spacing-space-lg: 2rem;
+  --spacing-space-xl: 3.5rem;
+  --spacing-gutter: 1.5rem;
+
+  /* Radius (chuẩn hoá — khác class trong HTML Stitch) */
+  --radius-xs: 0.125rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+
+  /* Shadows */
+  --shadow-header: 0 1px 8px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+  --shadow-card-hover: 0 12px 28px -4px rgba(15, 23, 42, 0.1);
+  --shadow-float: 0 16px 36px -6px rgba(15, 23, 42, 0.08);
+  --shadow-form: 0 8px 30px rgba(0, 0, 0, 0.06);
+
+  --ease-out-soft: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Chuyển động */
+  --animate-rise: rise 0.8s var(--ease-out-expo) both;
+  --animate-hero-zoom: hero-zoom 14s ease-out both;
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+  }
+  @keyframes hero-zoom {
+    from {
+      transform: scale(1.08);
+    }
+  }
+}
+
+/* Chế độ tối: class `dark` trên <html> (script trong layout.tsx, mặc định theo hệ điều hành) */
+.dark {
+  color-scheme: dark;
+  --color-primary: #6aa8ff;
+  --color-primary-fixed: #17325c;
+  --color-brand-subtle: #12233d;
+  --color-secondary: #2d5a8c;
+  --color-secondary-deep: #8fb6e8;
+  --color-x: #ffffff;
+
+  --color-slate-dark: #f1f5f9;
+  --color-on-surface: #e2e8f0;
+  --color-on-surface-variant: #a7b2c3;
+  --color-outline: #6b778a;
+  --color-outline-variant: #334155;
+
+  --color-surface: #0d1219;
+  --color-surface-card: #161e2a;
+  --color-surface-warm: #121925;
+  --color-surface-neutral: #111823;
+  --color-surface-muted: #1a2230;
+  --color-surface-container-low: #182131;
+  --color-surface-container: #1f2a3c;
+  --color-surface-container-high: #273449;
+  --color-surface-dim: #2f3d54;
+  --color-border-subtle: #263142;
+
+  --color-error: #ffb4ab;
+  --color-error-container: #5c1a17;
+  --color-on-error-container: #ffdad6;
+  --color-success: #7dd3a0;
+  --color-success-container: #12331f;
+
+  --shadow-header: 0 1px 0 rgba(255, 255, 255, 0.06);
+  --shadow-card: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+  --shadow-card-hover: 0 12px 28px -4px rgba(0, 0, 0, 0.55);
+  --shadow-float: 0 16px 36px -6px rgba(0, 0, 0, 0.5);
+  --shadow-form: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 6rem;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-surface font-sans text-body-md text-on-surface antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-slate-dark;
+    text-wrap: balance;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+  /* Danh sách thả xuống: select nền trong suốt → option cần nền/chữ theo token (dark mode) */
+  option,
+  optgroup {
+    @apply bg-surface-card text-on-surface;
+  }
+  ::selection {
+    @apply bg-primary-fixed text-slate-dark;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Trang có thanh liên hệ dính đáy (mobile) → đẩy nút nổi lên trên */
+@media (width < 64rem) {
+  body:has([data-mobile-contact]) [data-floating-contact] {
+    bottom: 5.5rem;
+  }
+}
+
+@utility container-page {
+  @apply mx-auto w-full max-w-7xl px-5 md:px-8 lg:px-6;
+}
+@utility section-y {
+  @apply py-12 md:py-14 lg:py-20;
+}
+@utility eyebrow {
+  @apply font-sans text-label-caps tracking-widest text-primary uppercase;
+}
+@utility eyebrow-line {
+  @apply inline-flex items-center gap-2 font-sans text-label-caps tracking-widest text-primary uppercase before:h-0.5 before:w-6 before:bg-primary before:content-[''];
+}
+@utility eyebrow-dot {
+  @apply inline-flex items-center gap-2 font-sans text-label-caps tracking-widest text-primary uppercase before:size-2 before:rounded-full before:bg-primary-container before:content-[''];
+}
+@utility card {
+  @apply rounded-lg bg-surface-card shadow-card;
+}
+@utility card-lift {
+  @apply transition-[transform,box-shadow] duration-300 hover:shadow-card-hover motion-safe:hover:-translate-y-1;
+}
+@utility btn {
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 font-sans text-subheading tracking-wider uppercase transition-colors select-none disabled:cursor-not-allowed disabled:opacity-60;
+}
+@utility btn-primary {
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-sm bg-brand-strong px-5 py-3 font-sans text-subheading tracking-wider text-white uppercase shadow-md transition-colors select-none hover:bg-brand-hover disabled:cursor-not-allowed disabled:opacity-60;
+}
+@utility btn-secondary {
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-sm border border-secondary-deep px-5 py-3 font-sans text-subheading tracking-wider text-secondary-deep uppercase transition-colors select-none hover:bg-secondary-deep hover:text-surface-card;
+}
+@utility btn-ghost {
+  @apply inline-flex cursor-pointer items-center justify-center gap-2 rounded-sm bg-surface-card px-5 py-3 font-sans text-subheading tracking-wider text-slate-dark uppercase shadow-xs transition-colors select-none hover:bg-surface-container-low;
+}
+@utility btn-icon {
+  @apply grid size-10 cursor-pointer place-items-center rounded-xl bg-surface-card text-primary shadow-xs transition-colors hover:bg-brand-strong hover:text-white;
+}
+@utility badge {
+  @apply inline-flex items-center rounded-xs px-2.5 py-1 font-sans text-label-caps tracking-wider uppercase;
+}
+@utility field {
+  @apply w-full rounded-sm border border-transparent bg-surface-container-low px-3 py-2.5 text-[15px] text-on-surface placeholder:text-on-surface-variant/60 focus:border-primary focus:bg-surface-card focus:outline-none aria-[invalid=true]:border-error;
+}
+@utility label-field {
+  @apply mb-1 block font-sans text-label-caps tracking-wider text-on-surface-variant uppercase;
+}
+@utility link-arrow {
+  @apply inline-flex items-center gap-1.5 font-sans text-subheading tracking-wider text-primary uppercase transition-colors hover:text-brand-hover dark:hover:text-primary-fixed-dim;
+}
+@utility link-underline {
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+  transition: background-size 0.3s var(--ease-out-soft);
+  &:hover {
+    background-size: 100% 1px;
+  }
+}
+@utility overlay-bottom {
+  background-image: linear-gradient(to top, rgb(15 23 42 / 0.85), rgb(15 23 42 / 0.25) 50%, transparent);
+}
+
+/* Nội dung HTML import / soạn thảo (bài viết, trang) */
+@utility prose-content {
+  @apply max-w-[70ch] text-[17px] leading-[1.75] text-on-surface;
+  & :is(p, ul, ol, blockquote, figure, table, video) {
+    margin-block: 0 1.1em;
+  }
+  & > :first-child h2:first-child,
+  & > :first-child h3:first-child {
+    margin-top: 0;
+  }
+  & h2 {
+    @apply mt-12 mb-4 text-[26px] leading-[34px] font-semibold;
+  }
+  & h3 {
+    @apply mt-9 mb-3 text-[21px] leading-[30px] font-semibold;
+  }
+  & h4 {
+    @apply mt-7 mb-2 font-sans text-[17px] font-bold text-slate-dark;
+  }
+  & a {
+    @apply font-medium text-primary underline decoration-primary-container/60 underline-offset-[3px] hover:decoration-primary;
+  }
+  & strong,
+  & b {
+    @apply font-semibold text-slate-dark;
+  }
+  & ul {
+    @apply list-disc pl-6;
+  }
+  & ol {
+    @apply list-decimal pl-6;
+  }
+  & li + li {
+    margin-top: 0.4em;
+  }
+  & li::marker {
+    @apply text-primary-container;
+  }
+  & blockquote {
+    @apply rounded-r-sm border-l-4 border-primary-container bg-surface-warm px-5 py-4 text-on-surface-variant italic;
+  }
+  & img,
+  & video {
+    @apply h-auto max-w-full rounded-lg;
+  }
+  & figure {
+    @apply my-8;
+  }
+  & figcaption {
+    @apply mt-2 text-center text-body-sm text-on-surface-variant;
+  }
+  & table {
+    @apply w-full border-collapse text-body-md;
+  }
+  & th,
+  & td {
+    @apply border border-border-subtle px-3 py-2 text-left align-top;
+  }
+  & th {
+    @apply bg-surface-container-low font-semibold;
+  }
+}
+
+/* ===== Hiện dần khi cuộn tới (CSS scroll-driven, trình duyệt cũ: hiện ngay) ===== */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 55%;
+    }
+  }
+}
+@keyframes reveal {
+  from {
+    transform: translateY(32px);
+  }
+}
+
+/* ===== Chuyển trang / đổi tab: animation CSS thuần (không dùng View Transitions — API này
+   bắt điều hướng chờ ảnh trang mới tải xong, làm chuyển trang khựng ~1 giây) ===== */
+@media (prefers-reduced-motion: no-preference) {
+  .page-in {
+    animation: page-rise 360ms var(--ease-out-expo) both;
+  }
+  .fade-in {
+    animation: fade-in 260ms var(--ease-out-expo) both;
+  }
+}
+/* Chỉ dịch chuyển, không làm mờ: nội dung hiện ngay, không ảnh hưởng LCP */
+@keyframes page-rise {
+  from {
+    transform: translateY(12px);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}

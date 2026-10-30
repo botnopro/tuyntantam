@@ -1,0 +1,497 @@
+{
+  "source": {
+    "wpId": 1546,
+    "slug": "trang-chu-02",
+    "title": "Trang chủ 02",
+    "url": "https://tuyntantam.com/",
+    "isLive": true,
+    "modifiedAt": "2026-06-17T21:49:46"
+  },
+  "seo": {
+    "title": "Trang chủ 02 - Tuyn Tận Tâm",
+    "description": "Chào mừng bạn đã đến với trang blog của Tuyn Tận Tâm! Đây là nơi mà Tuyn muốn chia sẻ lại những câu chuyện, kiến thức, kinh nghiệm mà Tuyn đã học hỏi, đúc kết trong hơn 5 năm làm nghề môi giới cho thuê bất động sản tại Hà Nội. Search Tìm kiếm Kết […]",
+    "descriptionSource": "og:description (Rank Math auto-generated from content)",
+    "ogImage": null,
+    "ogImageOriginal": null,
+    "canonical": "https://tuyntantam.com",
+    "canonicalPath": "/",
+    "locale": "en_US",
+    "robots": "index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+  },
+  "sections": [
+    {
+      "type": "hero",
+      "containerId": "3429df6",
+      "heading": "Chào mừng bạn đã đến với trang blog của Tuyn Tận Tâm!",
+      "text": "Đây là nơi mà Tuyn muốn chia sẻ lại những câu chuyện, kiến thức, kinh nghiệm mà Tuyn đã học hỏi, đúc kết trong hơn 5 năm làm nghề môi giới cho thuê bất động sản tại Hà Nội.",
+      "html": "<p>Đây là nơi mà Tuyn muốn chia sẻ lại những câu chuyện, kiến thức, kinh nghiệm mà Tuyn đã học hỏi, đúc kết trong hơn 5 năm làm nghề môi giới cho thuê bất động sản tại Hà Nội.</p>",
+      "images": [
+        {
+          "src": "/images/pages/home-hero-portrait.png",
+          "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/02.png",
+          "alt": "Trang chủ 02",
+          "caption": null,
+          "href": null
+        }
+      ],
+      "socials": [
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/tuyntantam",
+          "platform": "facebook"
+        },
+        {
+          "label": "X-twitter",
+          "url": "https://x.com/AdamTran93",
+          "platform": "x"
+        },
+        {
+          "label": "Youtube",
+          "url": "https://www.youtube.com/@TuynTanTam",
+          "platform": "youtube"
+        }
+      ],
+      "search": {
+        "placeholder": "Tìm kiếm điều bạn muốn...",
+        "action": "/?s="
+      },
+      "socialsLabel": "Kết nối với Tuyn qua"
+    },
+    {
+      "type": "about",
+      "containerId": "4bb54fb",
+      "heading": "Về tôi",
+      "text": "Chào bạn! Mình tên là Tuyn bí danh là Tuyn Tận Tâm. Mình chính là chủ nhân của blog này. Mình là một môi giới chuyên cho thuê bất động sản tại Hà Nội. Mình lập blog này với mục đích giao lưu, chia sẻ những kiến thức, kinh nghiệm, bài học mà mình đã đúc kết được trong quá trình làm nghề. Để giúp bạn kiếm được tiền từ nghề môi giới bất động sản cho thuê. Ngoài ra, mình còn hướng dẫn bạn đầu tư bất động sản dòng tiền để ít rủi ro nhất và sinh lời cao. Cảm ơn bạn đã ghé thăm blog này của mình. Bạn có thể kết nối với mình qua Facebook , Twitter (X.com) , Telegram , Youtube hay có thể tìm hiểu thêm về mình tại đây .",
+      "html": "<p>Chào bạn! Mình tên là Tuyn bí danh là Tuyn Tận Tâm. Mình chính là chủ nhân của blog này.</p>\n<p>Mình là một môi giới chuyên cho thuê bất động sản tại Hà Nội. Mình lập blog này với mục đích giao lưu, chia sẻ những kiến thức, kinh nghiệm, bài học mà mình đã đúc kết được trong quá trình làm nghề. Để giúp bạn kiếm được tiền từ nghề môi giới bất động sản cho thuê.</p>\n<p>Ngoài ra, mình còn hướng dẫn bạn đầu tư bất động sản dòng tiền để ít rủi ro nhất và sinh lời cao.</p>\n<p>Cảm ơn bạn đã ghé thăm blog này của mình. Bạn có thể kết nối với mình qua <a href=\"https://www.facebook.com/tuyntantam\">Facebook</a>, <a href=\"https://x.com/AdamTran93\">Twitter (X.com)</a>, <a href=\"https://web.telegram.org/a/\">Telegram</a>, <a href=\"https://www.youtube.com/@TuynTanTam\">Youtube</a> hay có thể tìm hiểu thêm về mình <a href=\"/gioi-thieu\">tại đây</a>.</p>",
+      "items": [
+        {
+          "kind": "stat",
+          "label": "Năm kinh nghiệm",
+          "value": 5,
+          "fromValue": "0",
+          "prefix": null,
+          "suffix": "+",
+          "rawHtmlText": "0 +",
+          "display": "5+"
+        },
+        {
+          "kind": "stat",
+          "label": "BĐS đã cho thuê",
+          "value": 200,
+          "fromValue": "0",
+          "prefix": null,
+          "suffix": "+",
+          "rawHtmlText": "0 +",
+          "display": "200+"
+        },
+        {
+          "kind": "stat",
+          "label": "Các đối tác",
+          "value": 20,
+          "fromValue": "0",
+          "prefix": null,
+          "suffix": "+",
+          "rawHtmlText": "0 +",
+          "display": "20+"
+        }
+      ]
+    },
+    {
+      "type": "contact-form",
+      "containerId": "39ea9f1",
+      "heading": "Liên hệ với Tuyn",
+      "formId": "home-contact"
+    },
+    {
+      "type": "services",
+      "items": [
+        {
+          "kind": "service",
+          "title": "Tư vấn chọn thuê nhà",
+          "text": "Với kinh nghiệm hơn 5 năm làm nghề và đã giúp rất nhiều khách thuê chọn thuê được bất động sản ưng ý. Tuyn luôn sẵn lòng giúp bạn tìm thuê được bất động sản phù hợp với tiêu chí của mình.",
+          "icon": "fas-user-tie",
+          "href": null
+        },
+        {
+          "kind": "service",
+          "title": "Dẫn khách xem BĐS thuê",
+          "text": "Để giúp bạn có cái nhìn thực tế và tổng quan hơn về BĐS bạn cần thuê. Từ đó ra quyết định có chốt hay không. Tuyn luôn sẵn sàng dẫn bạn đi xem BĐS đó. Nhưng nhớ hẹn lịch cho Tuyn nhé.",
+          "icon": "fas-user-friends",
+          "href": null
+        },
+        {
+          "kind": "service",
+          "title": "Đào tạo môi giới cho thuê BĐS",
+          "text": "Môi giới cho thuê BĐS là một nghề giúp bạn kiếm tiền. Bằng kinh nghiệm thực chiến của mình Tuyn sẵn sàng chia sẻ, giúp đỡ, đồng hành để bạn thành thạo với nghề môi giới cho thuê BĐS.",
+          "icon": "fas-users",
+          "href": null
+        },
+        {
+          "kind": "service",
+          "title": "Tư vấn sửa chữa, setup BĐS thuê",
+          "text": "Bằng kinh nghiệm và mối quan hệ của mình Tuyn sẽ tư vấn cho bạn sửa chữa, lựa chọn thợ và các mối vật tư hợp lý nhất, để vừa thẩm mỹ, vừa tiết kiệm.",
+          "icon": "fas-users-cog",
+          "href": null
+        }
+      ],
+      "containerIds": [
+        "aa5f04c",
+        "9bb1d5f"
+      ],
+      "heading": "Dịch vụ của Tuyn"
+    },
+    {
+      "type": "testimonials",
+      "containerId": "88f1f79",
+      "heading": "Cảm nhận khách hàng về Tuyn",
+      "items": [
+        {
+          "kind": "testimonial",
+          "quote": "Tận tâm thật sự. Quen chú, xem bao nhiêu căn nhà rồi nhưng chưa chốt được căn nào mà vẫn nhiệt tình tiếp, không bị đuổi :))",
+          "name": "Anh Thu",
+          "role": "Khách thuê nhà",
+          "avatar": {
+            "src": "/images/pages/home-testimonial-anh-thu.jpg",
+            "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/07/a-Thu.jpg",
+            "alt": "Anh Thu"
+          }
+        },
+        {
+          "kind": "testimonial",
+          "quote": "Giao dịch với em một số căn nhà. Anh thấy chú là một môi giới tận tâm, chuyên nghiệp. Cảm giác rất thoải mái khi được làm việc cùng em.",
+          "name": "Anh Hải",
+          "role": "Khách thuê nhà",
+          "avatar": {
+            "src": "/images/pages/home-testimonial-anh-hai.jpg",
+            "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/a-Hai.jpg",
+            "alt": "Anh Hải"
+          }
+        },
+        {
+          "kind": "testimonial",
+          "quote": "Anh muốn đi xem nhà với em, vì bên em lấy hoa hồng hợp lý hơn so với bên khác. Với em dẫn khách cũng nhiệt tình nữa.",
+          "name": "Anh Công",
+          "role": "Khách thuê nhà",
+          "avatar": {
+            "src": "/images/pages/home-testimonial-anh-cong.jpg",
+            "originalSrc": "https://tuyntantam.com/wp-content/uploads/2025/05/z6653365802124_9d3ef41af9f28930fc4bcc7dd7a6b6e8.jpg",
+            "alt": "Anh Công"
+          }
+        }
+      ],
+      "rating": {
+        "value": 5.0,
+        "best": 5.0,
+        "ariaLabel": "Rated 5 out of 5"
+      }
+    },
+    {
+      "type": "latest-posts",
+      "containerId": "4eced56",
+      "heading": "Blog của Tuyn",
+      "items": [
+        {
+          "kind": "post",
+          "slug": "moi-gioi-cho-thue-bds-dat-100-trieu-thang",
+          "path": "/moi-gioi-cho-thue-bds-dat-100-trieu-thang",
+          "displayedDate": "02/08/2025"
+        },
+        {
+          "kind": "post",
+          "slug": "3-tieu-chi-thue-nha-tai-ha-noi",
+          "path": "/3-tieu-chi-thue-nha-tai-ha-noi",
+          "displayedDate": "11/06/2025"
+        },
+        {
+          "kind": "post",
+          "slug": "6-trang-bat-dong-san-uy-tin",
+          "path": "/6-trang-bat-dong-san-uy-tin",
+          "displayedDate": "16/03/2024"
+        },
+        {
+          "kind": "post",
+          "slug": "hay-bat-dau-nghe-moi-gioi-cho-thue-bang-viec-lam-ban-thoi-gian",
+          "path": "/hay-bat-dau-nghe-moi-gioi-cho-thue-bang-viec-lam-ban-thoi-gian",
+          "displayedDate": "14/03/2024"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "Xem thêm",
+          "href": "#",
+          "originalHref": "#"
+        }
+      ],
+      "postsSource": "Elementor loop widget (tự động lấy bài mới nhất); data-settings: {\"template_id\":1774,\"_skin\":\"post\",\"slides_to_show\":\"3\",\"slides_to_show_tablet\":\"2\",\"slides_to_show_mobile\":\"1\",\"slides_to_scroll\":\"1\",\"edit_handle_selector\":\".elementor-loop-container\",\"autoplay\":\"ye",
+      "ctaNote": "Nút \"Xem thêm\" trên site gốc có href=\"#\" (chưa trỏ tới đâu)"
+    },
+    {
+      "type": "community-cta",
+      "containerId": "9f3195c",
+      "heading": "Tham gia cộng đồng 1000+ môi giới cho thuê bất động sản tại Hà Nội",
+      "ctas": [
+        {
+          "label": "Tham gia ngay!",
+          "href": "https://www.facebook.com/groups/congdongmoigioichothuebdstaihanoi",
+          "originalHref": "https://www.facebook.com/groups/congdongmoigioichothuebdstaihanoi"
+        }
+      ]
+    }
+  ],
+  "legacy": {
+    "wpId": 235,
+    "slug": "trang-chu",
+    "title": "Trang chủ 01",
+    "url": "https://tuyntantam.com/trang-chu",
+    "isLive": false,
+    "note": "Trang chủ cũ, vẫn publish tại /trang-chu nhưng không phải trang chủ hiện tại. Có nội dung riêng: khối \"Để Tuyn đoán lý do...\", slides lợi ích, đối tác, nhóm Zalo nguồn dòng tiền, banner Google Form.",
+    "modifiedAt": "2025-10-14T15:10:19",
+    "sections": [
+      {
+        "type": "welcome",
+        "containerId": "0d14637",
+        "heading": "Chào mừng bạn đã có mặt ở đây!",
+        "subheading": "Để Tuyn đoán lý do gì đã khiến bạn có mặt ở Blog/Website này nha?",
+        "text": "Bạn là khách hàng đã từng được Tuyn dẫn đi xem nhà, Bạn là chủ nhà đã từng nhờ Tuyn cho thuê nhà giúp, Bạn là một môi giới đang muốn tìm hiểu thêm kiến thức về môi giới bất động sản, Bạn đang làm một công việc gì đó mà trong thời gian rảnh muốn tìm kiếm thêm một công việc nào đó bán thời gian làm thêm để cải thiện thu nhập, Hay vì một bất cứ lý do nào đó mà bạn thấy sự xuất hiện của Tuyn trên môi trường internet và dẫn đến Blog này của Tuyn,…",
+        "html": "<p>Bạn là khách hàng đã từng được Tuyn dẫn đi xem nhà,</p>\n<p>Bạn là chủ nhà đã từng nhờ Tuyn cho thuê nhà giúp,</p>\n<p>Bạn là một môi giới đang muốn tìm hiểu thêm kiến thức về môi giới bất động sản,</p>\n<p>Bạn đang làm một công việc gì đó mà trong thời gian rảnh muốn tìm kiếm thêm một công việc nào đó bán thời gian làm thêm để cải thiện thu nhập,</p>\n<p>Hay vì một bất cứ lý do nào đó mà bạn thấy sự xuất hiện của Tuyn trên môi trường internet và dẫn đến Blog này của Tuyn,…</p>",
+        "extraHeadings": [
+          "Vì bất cứ lý do đi nữa thì sự xuất hiện của bạn ở Blog này của Tuyn đó là điều tuyệt vời nhất rồi!"
+        ],
+        "containerIds": [
+          "0d14637"
+        ]
+      },
+      {
+        "type": "hero-image-cta",
+        "containerId": "beb0bc0",
+        "heading": "Hãy Khám Phá Bất Cứ Điều Gì Bạn Muốn",
+        "images": [
+          {
+            "src": "/images/pages/home-legacy-hero-photo.jpg",
+            "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/07/AV_7794.jpg",
+            "alt": "Trang chủ 01",
+            "caption": null,
+            "href": null
+          }
+        ],
+        "ctas": [
+          {
+            "label": "Ok! Khám Phá Nào",
+            "href": "/dich-vu",
+            "originalHref": "https://tuyntantam.com/dich-vu"
+          }
+        ],
+        "containerIds": [
+          "beb0bc0"
+        ]
+      },
+      {
+        "type": "banner",
+        "containerId": "a3a44d8",
+        "images": [
+          {
+            "src": "/images/pages/home-legacy-banner-cuong-phat-land-tuyen-dung.png",
+            "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/Anh-bia-trang-Donate.png",
+            "alt": "Trang chủ 01",
+            "caption": null,
+            "href": "https://docs.google.com/forms/d/1zwv5-Lmgh_XiOYEUgGjc90UTCz_aQFKaKrfmzsiBfYg/edit"
+          }
+        ],
+        "containerIds": [
+          "a3a44d8"
+        ],
+        "note": "Ảnh banner có chữ: \"50 SALES BẤT ĐỘNG SẢN CHO THUÊ TẠI THỊ TRƯỜNG HÀ NỘI\" – Cường Phát Land tuyển dụng gấp; ảnh link tới Google Form"
+      },
+      {
+        "type": "benefits",
+        "containerId": "d98879d",
+        "heading": "Tại Blog/Website này bạn sẽ nhận được những gì?",
+        "items": [
+          {
+            "kind": "slide",
+            "title": "Tư Vấn Chọn Thuê Bất Động Sản Miễn Phí",
+            "text": "Với kinh nghiệm làm môi giới cho thuê bất động sản lâu năm. Tuyn sẽ giúp bạn lựa chọn thuê được những bất động sản phù hợp nhất với nhu cầu của bạn.",
+            "buttonLabel": "Tìm Hiểu Ngay",
+            "href": null,
+            "originalHref": null
+          },
+          {
+            "kind": "slide",
+            "title": "Kiến Thức Về Môi Giới Cho Thuê Bất Động Sản",
+            "text": "Bạn sẽ học được những bài học thực tế nhất về nghề môi giới bất động sản cho thuê. Từ đó giúp bạn kiếm được tiền từ nghề này.",
+            "buttonLabel": "Tìm Hiểu Ngay",
+            "href": "/moi-gioi",
+            "originalHref": "https://tuyntantam.com/moi-gioi"
+          },
+          {
+            "kind": "slide",
+            "title": "Kiến Thức Về Đầu Tư Bất Động Sản Dòng Tiền",
+            "text": "Bạn sẽ có cơ hội được học hỏi những kiến thức, kinh nghiệm từ những nhà đầu tư bất động sản dòng tiền lâu năm. Từ đó bạn sẽ gặp ít rủi ro hơn và kiếm được nhiều tiền hơn.",
+            "buttonLabel": "Tìm Hiểu Ngay",
+            "href": "/dau-tu",
+            "originalHref": "https://tuyntantam.com/dau-tu"
+          },
+          {
+            "kind": "slide",
+            "title": "Dịch Vụ & Sản Phẩm Liên Quan Đến Bất Động Sản",
+            "text": "Bạn sẽ có cơ hội được tiếp xúc, trải nghiệm, sử dụng những sản phẩm & dịch vụ uy tín từ những đối tác tin cậy của Tuyn Tận Tâm chấm Com.",
+            "buttonLabel": "Tìm hiểu ngay",
+            "href": null,
+            "originalHref": null
+          }
+        ],
+        "containerIds": [
+          "d98879d",
+          "42243b2"
+        ]
+      },
+      {
+        "type": "partners",
+        "containerId": "4850b50",
+        "heading": "Các Đối Tác",
+        "images": [
+          {
+            "src": "/images/pages/partner-famous-land.png",
+            "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/1-1.png",
+            "alt": "Trang chủ 01",
+            "nameFromImage": "FAMOUS LAND – Công ty Cổ phần"
+          },
+          {
+            "src": "/images/pages/partner-seahouse.png",
+            "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/2-1.png",
+            "alt": "Trang chủ 01",
+            "nameFromImage": "SEAHOUSE – Căn Hộ Dịch Vụ Cho Thuê"
+          },
+          {
+            "src": "/images/pages/partner-cuong-phat-land.png",
+            "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/Cuong-Phat-Land.png",
+            "alt": "Cường Phát Land",
+            "nameFromImage": "Cường Phát Land"
+          }
+        ],
+        "containerIds": [
+          "4850b50",
+          "653b470"
+        ],
+        "note": "Tên đối tác (nameFromImage) được đọc từ chữ in trên ảnh logo, không có text riêng trên site"
+      },
+      {
+        "type": "testimonials",
+        "containerId": "d2bc837",
+        "heading": "Cảm Nhận Của Khách Hàng Và Đối Tác Về Tuyn Tận Tâm",
+        "items": [
+          {
+            "kind": "testimonial",
+            "quote": "Tận tâm thật sự. Quen chú, xem bao nhiêu căn nhà rồi nhưng chưa chốt được căn nào mà vẫn nhiệt tình tiếp, không bị đuổi :))",
+            "name": "Anh Thu",
+            "role": "Nhà đầu tư",
+            "avatar": {
+              "src": "/images/pages/home-testimonial-anh-thu.jpg",
+              "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/07/a-Thu.jpg",
+              "alt": "Anh Thu"
+            }
+          },
+          {
+            "kind": "testimonial",
+            "quote": "Giao dịch với em một số căn nhà. Anh thấy chú là một môi giới tận tâm, chuyên nghiệp. Cảm giác rất thoải mái khi được làm việc cùng em.",
+            "name": "Anh Hải",
+            "role": "Nhà đầu tư",
+            "avatar": {
+              "src": "/images/pages/home-testimonial-anh-hai.jpg",
+              "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/a-Hai.jpg",
+              "alt": "Anh Hải"
+            }
+          },
+          {
+            "kind": "testimonial",
+            "quote": "Anh muốn đi xem nhà với em vì bên em lấy hoa hồng hợp lý hơn so với bên khác. Với em dẫn khách cũng nhiệt tình nữa.",
+            "name": "Anh Công",
+            "role": "Nhà đầu tư",
+            "avatar": {
+              "src": "/images/pages/home-testimonial-anh-cong.jpg",
+              "originalSrc": "https://tuyntantam.com/wp-content/uploads/2025/05/z6653365802124_9d3ef41af9f28930fc4bcc7dd7a6b6e8.jpg",
+              "alt": "Anh Công"
+            }
+          }
+        ],
+        "containerIds": [
+          "d2bc837",
+          "a81edae"
+        ]
+      },
+      {
+        "type": "cashflow-community-cta",
+        "containerId": "249bb2e",
+        "heading": "Tham gia kho nguồn hàng dòng tiền tại Hà Nội",
+        "images": [
+          {
+            "src": "/images/pages/home-legacy-qr-zalo-nguon-dong-tien.jpg",
+            "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/07/QR-nguon-dong-tien.jpg",
+            "alt": "Trang chủ 01",
+            "caption": null,
+            "href": "https://zalo.me/g/oxfecm575"
+          }
+        ],
+        "ctas": [
+          {
+            "label": "Tham Gia Ngay",
+            "href": "https://zalo.me/g/oxfecm575",
+            "originalHref": "https://zalo.me/g/oxfecm575"
+          }
+        ],
+        "containerIds": [
+          "249bb2e"
+        ]
+      },
+      {
+        "type": "about",
+        "containerId": "eb99750",
+        "heading": "Tự Bạch Về Bản Thân!",
+        "text": "Chào bạn! Mình tên là Tuyn bí danh là Tuyn Tận Tâm. Mình chính là chủ nhân của Blog/Website này. Mình là một môi giới chuyên cho thuê bất động sản tại Hà Nội. Mình lập Blog/Website này với mục đích giao lưu, chia sẻ những kiến thức, kinh nghiệm, bài học mà mình đã đúc kết được trong quá trình làm nghề. Để giúp bạn kiếm được tiền từ nghề môi giới bất động sản cho thuê. Ngoài ra, mình còn hướng dẫn bạn đầu tư bất động sản dòng tiền để ít rủi ro nhất và sinh lời cao. Cảm ơn bạn đã ghé thăm Blog/Website này của mình. Bạn có thể kết nối với mình qua Facebook , Twitter (X.com) , Telegram , Youtube hay có thể tìm hiểu thêm về mình tại đây .",
+        "html": "<p>Chào bạn! Mình tên là Tuyn bí danh là Tuyn Tận Tâm. Mình chính là chủ nhân của Blog/Website này.</p>\n<p>Mình là một môi giới chuyên cho thuê bất động sản tại Hà Nội. Mình lập Blog/Website này với mục đích giao lưu, chia sẻ những kiến thức, kinh nghiệm, bài học mà mình đã đúc kết được trong quá trình làm nghề. Để giúp bạn kiếm được tiền từ nghề môi giới bất động sản cho thuê.</p>\n<p>Ngoài ra, mình còn hướng dẫn bạn đầu tư bất động sản dòng tiền để ít rủi ro nhất và sinh lời cao.</p>\n<p>Cảm ơn bạn đã ghé thăm Blog/Website này của mình. Bạn có thể kết nối với mình qua <a href=\"https://www.facebook.com/tuyntantam\">Facebook</a>, <a href=\"https://x.com/AdamTran93\">Twitter (X.com)</a>, <a href=\"https://web.telegram.org/a/\">Telegram</a>, <a href=\"https://www.youtube.com/@TuynTanTam\">Youtube</a> hay có thể tìm hiểu thêm về mình <a href=\"/gioi-thieu\">tại đây</a>.</p>",
+        "images": [
+          {
+            "src": "/images/pages/home-hero-portrait.png",
+            "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/02.png",
+            "alt": "Trang chủ 01",
+            "caption": null,
+            "href": null
+          }
+        ],
+        "containerIds": [
+          "eb99750"
+        ]
+      },
+      {
+        "type": "latest-posts",
+        "containerId": "57c605e",
+        "heading": "Các Bài Viết Bạn Có Thể Quan Tâm",
+        "items": [
+          {
+            "kind": "post",
+            "slug": "moi-gioi-cho-thue-bds-dat-100-trieu-thang",
+            "path": "/moi-gioi-cho-thue-bds-dat-100-trieu-thang",
+            "displayedDate": "02/08/2025"
+          },
+          {
+            "kind": "post",
+            "slug": "3-tieu-chi-thue-nha-tai-ha-noi",
+            "path": "/3-tieu-chi-thue-nha-tai-ha-noi",
+            "displayedDate": "11/06/2025"
+          },
+          {
+            "kind": "post",
+            "slug": "nghe-moi-gioi-cho-thue-bat-dong-san",
+            "path": "/nghe-moi-gioi-cho-thue-bat-dong-san",
+            "displayedDate": "18/03/2024"
+          }
+        ],
+        "postsSource": "Elementor loop widget (tự động lấy bài mới nhất); data-settings: {\"cards_masonry\":\"yes\",\"cards_columns\":\"3\",\"cards_columns_tablet\":\"2\",\"cards_columns_mobile\":\"1\",\"cards_row_gap\":{\"unit\":\"px\",\"size\":35,\"sizes\":[]},\"cards_row_gap_tablet\":{\"unit\":\"px\",\"size\":\"\",\"sizes",
+        "containerIds": [
+          "57c605e",
+          "8be175a"
+        ]
+      }
+    ]
+  }
+}

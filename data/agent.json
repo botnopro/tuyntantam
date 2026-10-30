@@ -1,0 +1,142 @@
+{
+  "name": "Tuyn",
+  "alias": "Tuyn Tận Tâm",
+  "fullName": "Trần Văn Tuyn",
+  "fullNameSource": "Tên tài khoản ngân hàng trên trang /donate (không được nêu trực tiếp ở trang Giới Thiệu)",
+  "title": "Môi giới chuyên cho thuê bất động sản tại Hà Nội",
+  "titleSource": "Câu \"Mình là một môi giới chuyên cho thuê bất động sản tại Hà Nội\" (trang chủ – Về tôi; author bio)",
+  "shortBio": "Chào bạn! Mình tên là Tuyn là kẻ đứng sau Blog này. Mình là một môi giới chuyên cho thuê bất động sản tại Hà Nội. Mình lập Blog này với mục đích chia sẻ, hướng dẫn mọi người kiếm được tiền từ nghề môi giới cho thuê bất động sản và đầu tư bất động cho thuê hiệu quả, rủi do thấp, sinh lời cao.",
+  "shortBioSource": "WordPress author bio (users API / author box)",
+  "aboutTeaser": {
+    "heading": "Về tôi",
+    "html": "<p>Chào bạn! Mình tên là Tuyn bí danh là Tuyn Tận Tâm. Mình chính là chủ nhân của blog này.</p>\n<p>Mình là một môi giới chuyên cho thuê bất động sản tại Hà Nội. Mình lập blog này với mục đích giao lưu, chia sẻ những kiến thức, kinh nghiệm, bài học mà mình đã đúc kết được trong quá trình làm nghề. Để giúp bạn kiếm được tiền từ nghề môi giới bất động sản cho thuê.</p>\n<p>Ngoài ra, mình còn hướng dẫn bạn đầu tư bất động sản dòng tiền để ít rủi ro nhất và sinh lời cao.</p>\n<p>Cảm ơn bạn đã ghé thăm blog này của mình. Bạn có thể kết nối với mình qua <a href=\"https://www.facebook.com/tuyntantam\">Facebook</a>, <a href=\"https://x.com/AdamTran93\">Twitter (X.com)</a>, <a href=\"https://web.telegram.org/a/\">Telegram</a>, <a href=\"https://www.youtube.com/@TuynTanTam\">Youtube</a> hay có thể tìm hiểu thêm về mình <a href=\"/gioi-thieu\">tại đây</a>.</p>",
+    "text": "Chào bạn! Mình tên là Tuyn bí danh là Tuyn Tận Tâm. Mình chính là chủ nhân của blog này. Mình là một môi giới chuyên cho thuê bất động sản tại Hà Nội. Mình lập blog này với mục đích giao lưu, chia sẻ những kiến thức, kinh nghiệm, bài học mà mình đã đúc kết được trong quá trình làm nghề. Để giúp bạn kiếm được tiền từ nghề môi giới bất động sản cho thuê. Ngoài ra, mình còn hướng dẫn bạn đầu tư bất động sản dòng tiền để ít rủi ro nhất và sinh lời cao. Cảm ơn bạn đã ghé thăm blog này của mình. Bạn có thể kết nối với mình qua Facebook , Twitter (X.com) , Telegram , Youtube hay có thể tìm hiểu thêm về mình tại đây ."
+  },
+  "avatar": {
+    "src": "/images/pages/home-hero-portrait.png",
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/02.png",
+    "alt": "Trang chủ 02",
+    "note": "Ảnh chân dung ở hero trang chủ (02.png, nền trong suốt). Alt gốc do Rank Math tự sinh theo tiêu đề trang."
+  },
+  "gravatar": {
+    "src": "/images/site/author-avatar-gravatar.png",
+    "originalSrc": "https://secure.gravatar.com/avatar/7297f4c7569c82809cd933642b30c1d08abf6f7bcba1335b4d50527ecb674f02?s=96&r=g",
+    "alt": "Picture of Tuyn Tận Tâm"
+  },
+  "pageIntro": {
+    "heading": "Giới Thiệu & Hành Trình Trở Thành Môi Giới Cho Thuê Bất Động Sản Chuyên Nghiệp Của Tuyn",
+    "text": "Bạn có thể hiểu hơn về con người và công việc của Tuyn qua những câu chuyện thực tế mà Tuyn muốn chia sẻ với bạn!"
+  },
+  "story": [
+    {
+      "heading": "Lời Chào",
+      "html": "<figure><img alt=\"Giới Thiệu\" src=\"/images/pages/portrait-standing.png\"/></figure>\n<p>Chào bạn! Rất vui về sự có mặt của bạn trên Blog này. Mình tên là Tuyn là chủ nhân của Blog/Website này.</p>\n<p>Tuyn Tận Tâm chấm Com chính là nơi chứa đựng Tâm Huyết &amp; Đam Mê của Tuyn với lĩnh vực bất động sản cho thuê.</p>\n<p>Tuyn lập ra Blog/Website này với mục đích để chia sẻ, hướng dẫn bạn và mọi người kiếm được tiền từ việc môi giới cho thuê và đầu tư bất động sản cho thuê.</p>\n<p>Ngoài ra, Blog/Website này cũng chính là nơi để Tuyn trải lòng về nghề môi giới bất động sản cho thuê. Nơi sẽ đưa ra những góc nhìn, đánh giá về lĩnh vực bất động sản cho thuê nói riêng và lĩnh vực bất động sản nói chung.</p>"
+    },
+    {
+      "heading": "Tầm Nhìn Của Tuyn Tận Tâm chấm Com",
+      "html": "<p>Hiện tại Tuyn đang là một môi giới thuần về cho thuê bất động sản. Tuyn thấy được, hiện nay có rất nhiều môi giới đang hoạt động trên lĩnh vực cho thuê bất động sản nhưng chưa thực sự chuyên nghiệp. Còn thiếu và yếu rất nhiều những kĩ năng.</p>\n<p>Nhưng lại chưa tìm được một địa chỉ uy tín, có chuyên môn để học hỏi và phát triển ( Có thể có nhưng cũng không nhiều ). Tuyn mong muốn rằng hiện tại và xa hơn nữa Tuyn Tận Tâm chấm Com sẽ là Blog/Website được đông đảo các môi giới cho thuê và bán bất động sản tìm tới.</p>\n<p>Ngoài những bài viết chia sẻ về những kiến thức, kinh nghiệm đúc kết từ bản thân làm nghề của Tuyn. Tuyn Tận Tâm chấm Com sẽ là cầu nối để bạn và các đọc giả khác có cơ hội được tiếp xúc, học hỏi kinh nghiệm từ những best seller, chủ doanh nghiệp, chuyên gia, nhà đầu tư lão luyện về lĩnh vực bất động sản cho thuê.</p>\n<p>Tương lai 5-10 năm nữa Tuyn khao khát trở thành một nhà đầu tư bất động sản cho thuê chuyên nghiệp. Và Tuyn cũng rất mong những dự án đầu tư đó có sự hợp tác của bạn. Chúng ta cùng phát triển một sự nghiệp bền vững, một tương lai tốt đẹp từ bất động sản cho thuê nhé.</p>\n<figure><img alt=\"Giới Thiệu\" src=\"/images/pages/gioi-thieu-portrait-seated.png\"/></figure>"
+    },
+    {
+      "heading": "Hành Trình Trở Thành Môi Giới Cho Thuê Bất Động Sản Chuyên Nghiệp Của Tuyn",
+      "html": "<p>Tính từ lúc ngồi viết những dòng chữ này thì Tuyn đã có 4 năm làm môi giới cho thuê bất động sản rồi.</p>\n<p>Trước đây, Tuyn vốn là một người yêu thích kĩ thuật và sau này mong muốn trở thành một kĩ sư. Tuyn đã quyết định theo học khoa Hệ Thống Điện ( Hệ Cao Đẳng ) của trường Đại Học Điện Lực. Với hơn 2 năm theo học đến lúc tốt nghiệp Tuyn lại không theo cái nghề mà Tuyn yêu thích đó mà lại rẽ ngang sang làm sales ( bán hàng ).</p>\n<p>Trước khi làm môi giới bất động sản cho thuê Tuyn đã có 2,5 năm làm sales về hàng mỹ phẩm nhập ngoại. Và 2 năm làm sales cho một hãng sữa của Đức.</p>\n<figure><img alt=\"Bán sữa\" src=\"/images/pages/gioi-thieu-ban-sua.jpg\"/><figcaption>Đây là hình ảnh của Tuyn lúc đi bán sữa</figcaption></figure>\n<figure><img alt=\"Chụp cùng Tùng\" src=\"/images/pages/gioi-thieu-chup-cung-tung.jpg\"/><figcaption>Đây là ảnh chụp chung với Tùng khi mình với bạn ấy đang dẫn khách ở Hoàng Mai</figcaption></figure>\n<p>Qua những tháng ngày làm việc ở những môi trường bán hàng khác nhau đó đã khiến cho con người của Tuyn thay đổi hoàn toàn.</p>\n<p>Tuyn là một người vốn sống khép mình, ngại giao tiếp. Nhưng suốt thời gian làm sales Tuyn đã gần như trở thành một con người khác Tuyn sống cởi mở hơn, tự tin hơn. Đặc biệt nhất là những tháng ngày làm sales đã mang lại cho Tuyn những kĩ năng về tự tin giao tiếp, chăm sóc khách hàng, kiến thức về thị trường,…</p>\n<p>Tuyn bén duyên với môi giới bất động sản cho thuê là từ một lời đề nghị của một người bạn thân chơi với Tuyn từ hồi hai anh, em còn học với nhau ở trường Điện Lực. Tính ra cũng hơn 10 năm nay rồi bạn ấy quê ở Lạng Sơn còn Tuyn quê ở Thái Bình.</p>\n<p>Trước đây, thì cũng chính người bạn này cũng đã giới thiệu Tuyn làm sales mỹ phẩm. Và cách đây 4 năm cũng người bạn ấy nhưng với lời đề nghị là làm môi giới bất động sản cho thuê. Tuyn gặp gỡ bạn ấy để hỏi thêm về công việc mới này.</p>\n<p>Sau một hồi chia sẻ thì Tuyn thấy được công việc mới mà bạn ấy đề nghị so với công việc hiện tại Tuyn đang làm nó khá tương đồng nhau. Bản chất đều là sales, nhưng điều khiến Tuyn hấp dẫn đó là khi bạn ấy chia sẻ về mức thu nhập mà bạn ấy có được từ công việc này.</p>\n<p>Làm sales sữa của Đức ngoài lương cứng ra thì Tuyn không có thêm thu nhập nào khác. Bởi vì, công ty sữa mà Tuyn đang làm đó là công ty mới sữa rất khó bán để mở đại lý và bán để lấy doanh số là 1 điều rất khó. Chủ yếu bán qua hình thức kí gửi là chính.</p>\n<p>Với mức lương đó cộng với việc đang sinh sống ở Hà Nội nên mức chi tiêu khá tốn kém. Nên thời điểm đó Tuyn rất muốn tìm kiếm thêm một công việc nào đó để làm thêm.</p>\n<p>Ngược lại, với bên sales sữa thì mức thu nhập của một môi giới bất động sản cho thuê không thông qua việc trả lương. Mà nó dựa trên hoa hồng nhận được của mỗi vụ chốt. Nghĩa là càng chốt được nhiều thì hoa hồng càng cao.</p>\n<p>Bạn ấy chia sẻ có thời điểm mức thu nhập lên đến hàng trăm triệu một tháng. Lúc đầu mình không tin, nhưng đến khi bạn ấy dở quyển sổ ghi lại hoa hồng những vụ chốt khi đó mình mới tin hoàn toàn.</p>\n<figure><img alt=\"Giới Thiệu\" src=\"/images/pages/gioi-thieu-phuong-dong-tong-ket-cuoi-nam.jpg\"/><figcaption>Đây là lúc anh, chị, em công ty Phương Đông họp tổng kết cuối năm</figcaption></figure>\n<p>Sau đó, mình đã quyết định làm môi giới bất động sản cho thuê song hành với công việc sales sữa qua sự hướng dẫn của bạn mình.</p>\n<p>Và mình cũng đã chính thức trở thành thành viên của Công Ty Cổ Phần &amp; Đầu Tư Phương Đông Group. Ở trong công ty mình cũng được các anh, chị, em đi trước trong công ty chỉ bảo rất nhiều.</p>\n<p>Đây là một lĩnh vực mới hoàn toàn nên Tuyn cũng phải mất một thời gian: Đăng bài, dẫn khách. Tuyn lúc đó đi thị trường sữa xong thì lại kiếm 1 quán trà đá nào để ngồi đăng bài.</p>\n<p>Ngày nào Tuyn cũng rải tin trên các hội nhóm Facebook và trên các trang thương mại điện tử chuyên về bất động sản khác.</p>\n<p>Khi lượng tin rải nhiều như vậy thì cũng có khá nhiều khách hàng gọi điện cho Tuyn để hỏi thông tin thuê nhà.</p>\n<p>Tuyn đã tư vấn và khớp nhà cho những khách cần gấp trước. Cuối cùng cũng có khách với nhu cầu thuê chung cư để bán laptop.</p>\n<p>Vị khách đó đi xem với Tuyn buổi sáng. Thì ngay buổi tối hôm đó khách cùng 1 người bạn nữa qua xem lại và khách đã quyết định cọc thuê căn chung cư đó luôn.</p>\n<p>Thật sự là cảm xúc của Tuyn đó rất vui sướng. Vì lần đầu Tuyn được chốt nhà. Và sau 1 tháng hơn nỗ lực Tuyn cũng nhận được trái ngọt đầu tiên.</p>\n<p>Căn chung cư đó khách chốt thuê với giá thuê 7,5 triệu/tháng. Hoa hồng Tuyn nhận được từ chủ nhà đó là 50%/giá chốt thuê tương đương với 3,5 triệu.</p>\n<figure><img alt=\"Giới Thiệu\" src=\"/images/pages/gioi-thieu-chot-can-tran-binh.jpg\"/><figcaption>Đây là hình ảnh lúc Tuyn chuẩn bị viết cọc và thương vụ thành công</figcaption></figure>\n<figure><img alt=\"Giới Thiệu\" src=\"/images/pages/gioi-thieu-can-532-duong-lang.png\"/><figcaption>Đây là hình ảnh khi Tuyn chốt thành công căn nhà ở 532 đường Láng</figcaption></figure>\n<p>Qua vụ chốt đó Tuyn như được tiếp thêm động lực để chốt những căn tiếp theo. Căn có hoa hồng mà Tuyn chốt được cao nhất trong một tháng đó là 40 triệu hoa hồng tổng thu cả chủ nhà và khách. Đó là căn nhà dòng tiền khách thuê để làm chung cư mini.</p>\n<p>Mỗi một căn nhà chốt được ngoài tiền hoa hồng Tuyn nhận được thì Tuyn còn nhận được rất nhiều những kinh nghiệm quý báu từ vụ chốt đó.</p>\n<p>Dần dần, khi mức thu nhập của môi giới bất động sản cho thuê tăng lên. Và Tuyn cũng xác định đây là công việc Tuyn sẽ gắn bó lâu dài.</p>\n<p>Vậy sau một năm Tuyn đã quyết định chuyển hẳn sang làm môi giới cho thuê bất động sản cho thuê chuyên nghiệp đến tận bây giờ.</p>\n<p>Vậy là kể từ ngày 23/02/2021 ngày mà Tuyn chốt được căn nhà đầu tiên ở Phương Đông Group đến ngày 23/08/2024 Tuyn đã có 4 năm 6 tháng hành nghề môi giới bất động sản cho thuê. Suốt thời gian hành nghề tại Phương Đông Group Tuyn đã học hỏi, tích lũy được rất nhiều các bài học từ những anh, chị, em đi trước trong nghề. Cùng với những kinh nghiệm thực chiến khi dẫn khách đem lại.</p>\n<p>Cảm ơn Phương Đông Group đã cho Tuyn những năm tháng đồng hành vô cùng tuyệt vời để tạo nên con người Tuyn ngày hôm nay. Và cũng chính ngày 23/8/2024 vừa rồi Tuyn đã chính thức dừng làm việc tại Phương Đông Group. Bởi vì, Tuyn muốn tìm hướng đi mới cho bản thân không chỉ dừng lại việc chạy sales cho thuê nhà mà Tuyn đã làm trước đó mà Tuyn muốn xây dựng lên một đội ngũ sales nhà cho thuê chuyên nghiệp.</p>\n<p>Tuyn đoán rằng khi bạn đang đọc bài biết này của Tuyn thì bạn có thể đang có mong muốn làm môi giới bất động sản cho thuê? Hoặc đang mong muốn tìm thuê nhà, văn phòng? Hay đang tìm kiếm một cơ hội đầu tư bất động sản cho thuê nào đó?</p>\n<p>Nhưng dù bạn có mục đích gì khi tìm đến và xuất hiện tại Blog của Tuyn thì Tuyn rất hân hạnh được chào đón bạn.</p>\n<p>Bạn có thể kết nối với Tuyn qua <a href=\"https://www.facebook.com/tuyntantam\">Facebook</a>, <a href=\"https://x.com/AdamTran93\">Twitter (X.com)</a>, <a href=\"https://web.telegram.org/a/\">Telegram</a>, <a href=\"https://www.youtube.com/@TuynTanTam\">Youtube</a> hoặc bạn có những câu hỏi hay lời đề nghị nào dành cho Tuyn thì bạn có thể liên hệ với Tuyn <a href=\"/lien-he-hop-tac\">tại đây</a>.</p>"
+    }
+  ],
+  "highlights": [
+    {
+      "label": "Năm kinh nghiệm",
+      "value": "5+",
+      "source": "Counter trang chủ (data-to-value)"
+    },
+    {
+      "label": "BĐS đã cho thuê",
+      "value": "200+",
+      "source": "Counter trang chủ (data-to-value)"
+    },
+    {
+      "label": "Các đối tác",
+      "value": "20+",
+      "source": "Counter trang chủ (data-to-value)"
+    },
+    {
+      "label": "Kinh nghiệm (trang chủ)",
+      "value": "Đây là nơi mà Tuyn muốn chia sẻ lại những câu chuyện, kiến thức, kinh nghiệm mà Tuyn đã học hỏi, đúc kết trong hơn 5 năm làm nghề môi giới cho thuê bất động sản tại Hà Nội.",
+      "source": "trang-chu-02"
+    },
+    {
+      "label": "Kinh nghiệm (Giới Thiệu, viết năm 2024)",
+      "value": "Tính từ lúc ngồi viết những dòng chữ này thì Tuyn đã có 4 năm làm môi giới cho thuê bất động sản rồi.",
+      "source": "gioi-thieu"
+    },
+    {
+      "label": "Mốc chốt căn đầu tiên",
+      "value": "Vậy là kể từ ngày 23/02/2021 ngày mà Tuyn chốt được căn nhà đầu tiên ở Phương Đông Group đến ngày 23/08/2024 Tuyn đã có 4 năm 6 tháng hành nghề môi giới bất động sản cho thuê.",
+      "source": "gioi-thieu"
+    },
+    {
+      "label": "Học vấn",
+      "value": "Tuyn đã quyết định theo học khoa Hệ Thống Điện ( Hệ Cao Đẳng ) của trường Đại Học Điện Lực.",
+      "source": "gioi-thieu"
+    },
+    {
+      "label": "Kinh nghiệm sales trước đây",
+      "value": "Trước khi làm môi giới bất động sản cho thuê Tuyn đã có 2,5 năm làm sales về hàng mỹ phẩm nhập ngoại.",
+      "source": "gioi-thieu"
+    },
+    {
+      "label": "Hoa hồng cao nhất/tháng (Giới Thiệu)",
+      "value": "Căn có hoa hồng mà Tuyn chốt được cao nhất trong một tháng đó là 40 triệu hoa hồng tổng thu cả chủ nhà và khách.",
+      "source": "gioi-thieu"
+    },
+    {
+      "label": "Rời Phương Đông Group",
+      "value": "Và cũng chính ngày 23/8/2024 vừa rồi Tuyn đã chính thức dừng làm việc tại Phương Đông Group.",
+      "source": "gioi-thieu"
+    },
+    {
+      "label": "Kinh nghiệm (trang Dẫn Khách Xem Nhà)",
+      "value": "Với kinh nghiệm hơn 4 năm làm nghề bất động sản cho thuê.",
+      "source": "dan-khach-xem-nha"
+    },
+    {
+      "label": "Thu nhập tháng 7/2025 (bài blog)",
+      "value": "Thật vui và cảm xúc như vỡ òa khi tổng hợp lại hoa hồng của những vụ chốt của tháng 7/2025 Tuyn đã thu về tổng thu nhập là 111.000.000 VNĐ ( Một trăm mười một Việt Nam đồng ).",
+      "source": "post:moi-gioi-cho-thue-bds-dat-100-trieu-thang"
+    },
+    {
+      "label": "Cộng đồng",
+      "value": "Tham gia cộng đồng 1000+ môi giới cho thuê bất động sản tại Hà Nội",
+      "source": "trang-chu-02"
+    }
+  ],
+  "socials": [
+    {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/tuyntantam",
+      "label": "Facebook",
+      "note": null
+    },
+    {
+      "platform": "x",
+      "url": "https://x.com/AdamTran93",
+      "label": "X (Twitter)",
+      "note": null
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/@TuynTanTam",
+      "label": "Youtube",
+      "note": null
+    },
+    {
+      "platform": "telegram",
+      "url": "https://web.telegram.org/a/",
+      "label": "Telegram",
+      "note": "Link trỏ tới trang web.telegram.org chung, KHÔNG phải tài khoản Telegram cụ thể"
+    }
+  ],
+  "sourceUrls": [
+    "https://tuyntantam.com/gioi-thieu",
+    "https://tuyntantam.com/",
+    "https://tuyntantam.com/author/tuyn-tan-tam"
+  ]
+}

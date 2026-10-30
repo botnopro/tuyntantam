@@ -1,0 +1,342 @@
+{
+  "name": "Tuyn Tận Tâm",
+  "tagline": "Chuyên chia sẻ kiến thức về môi giới và đầu tư bất động sản cho thuê",
+  "description": "Chuyên chia sẻ kiến thức về môi giới và đầu tư bất động sản cho thuê",
+  "ogSiteName": "TuynTanTam.Com",
+  "logo": {
+    "src": "/images/site/logo-tuyn-tan-tam.png",
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/07/Hinh-chu-nhat.jpg",
+    "displayedSrc": "https://tuyntantam.com/wp-content/uploads/elementor/thumbs/Hinh-chu-nhat-scaled-r0f9goq6nxdzyd8z7046liutycjz66j7z10s19ygqk.jpg",
+    "alt": "Hình chữ nhật",
+    "width": 1920,
+    "height": 384,
+    "note": "Logo hiển thị ở header (nền sáng); file gốc 5724x1145 đã resize; bản .png là .jpg đã tách nền trắng thành trong suốt"
+  },
+  "logoFooter": {
+    "src": "/images/site/logo-tuyn-tan-tam-footer.png",
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/Tuyn-Tan-Tam-1-2.png",
+    "alt": null,
+    "width": 350,
+    "height": 70,
+    "note": "WordPress site_logo (id 1805), dùng ở footer, chữ trắng cho nền tối"
+  },
+  "favicon": {
+    "src": "/images/site/favicon.png",
+    "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/cropped-Moi-Gioi-Tan-Tam.png"
+  },
+  "contacts": {
+    "phone": "0975373942",
+    "phoneDisplay": "0975.37.39.42",
+    "phoneE164": "+84975373942",
+    "emails": [
+      "tuynland@gmail.com",
+      "contact@tuyntantam.com"
+    ],
+    "emailNotes": {
+      "tuynland@gmail.com": "Hiển thị ở top bar header (không có link mailto)",
+      "contact@tuyntantam.com": "Dùng trong nút nổi \"Gửi email cho tôi\""
+    },
+    "whatsapp": "https://wa.me/+84975373942",
+    "zalo": "https://zalo.me/tuynland",
+    "zaloNote": "Do chủ site cung cấp (30/10/2026) — thay WhatsApp ở nút liên hệ nổi",
+    "telegram": "https://web.telegram.org/a/",
+    "telegramNote": "Link chung tới web.telegram.org, không phải username cụ thể",
+    "address": null,
+    "mapLocation": "Cầu Giấy, Hà Nội",
+    "mapNote": "Chỉ có Google Maps embed ở footer với truy vấn khu vực, không có địa chỉ cụ thể"
+  },
+  "topBar": [
+    {
+      "text": "0975.37.39.42",
+      "href": null,
+      "icon": "fas-phone"
+    },
+    {
+      "text": "tuynland@gmail.com",
+      "href": null,
+      "icon": "fas-envelope"
+    }
+  ],
+  "headerSocials": [
+    {
+      "href": "https://www.facebook.com/tuyntantam",
+      "icon": "fab-facebook-f",
+      "text": null
+    },
+    {
+      "href": "https://x.com/AdamTran93",
+      "icon": "fab-x-twitter",
+      "text": null
+    },
+    {
+      "href": "https://www.youtube.com/@TuynTanTam",
+      "icon": "fab-youtube",
+      "text": null
+    }
+  ],
+  "socials": [
+    {
+      "platform": "facebook",
+      "url": "https://www.facebook.com/tuyntantam",
+      "label": "Facebook",
+      "note": null
+    },
+    {
+      "platform": "x",
+      "url": "https://x.com/AdamTran93",
+      "label": "X (Twitter)",
+      "note": null
+    },
+    {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/@TuynTanTam",
+      "label": "Youtube",
+      "note": null
+    },
+    {
+      "platform": "telegram",
+      "url": "https://web.telegram.org/a/",
+      "label": "Telegram",
+      "note": "Link trỏ tới trang web.telegram.org chung, KHÔNG phải tài khoản Telegram cụ thể"
+    }
+  ],
+  "community": {
+    "text": "Tham gia cộng đồng 1000+ môi giới cho thuê bất động sản tại Hà Nội",
+    "url": "https://www.facebook.com/groups/congdongmoigioichothuebdstaihanoi",
+    "buttonLabel": "Tham gia ngay!"
+  },
+  "donate": {
+    "pageUrl": "/donate",
+    "intro": "Nếu bạn thấy những kiến thức, kinh nghiệm mà Tuyn chia sẻ hữu ích. Bạn có thể ủng hộ Tuyn qua những cách bên dưới nhé!",
+    "footerText": "Nếu bạn thấy những kiến thức, kinh nghiệm mà Tuyn chia sẻ mang lại giá trị cho bạn. Bạn có thể khích lệ Tuyn bằng việc mời Tuyn một ly cà phê nha!",
+    "buyMeACoffee": {
+      "url": "https://buymeacoffee.com/tuyntantam",
+      "image": {
+        "src": "/images/site/buy-me-a-coffee-button.png",
+        "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/Thiet-ke-chua-co-ten-1.png",
+        "alt": "Donate",
+        "href": "https://buymeacoffee.com/tuyntantam"
+      }
+    },
+    "momo": {
+      "qrImage": {
+        "src": "/images/pages/donate-momo-qr.jpg",
+        "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/z5780311082723_67058a0c801f93d0328a629b5d0fe9d3.jpg",
+        "alt": "z5780311082723_67058a0c801f93d0328a629b5d0fe9d3",
+        "href": null
+      },
+      "phone": null,
+      "note": "Chỉ có ảnh QR Momo, không có số điện thoại/tên ví dạng text"
+    },
+    "paypal": {
+      "url": "https://www.paypal.com/paypalme/tuyntantam/3usd",
+      "image": {
+        "src": "/images/pages/donate-paypal-button.webp",
+        "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/paypal-donate-01.png.webp",
+        "alt": "Donate",
+        "href": "https://www.paypal.com/paypalme/tuyntantam/3usd"
+      }
+    },
+    "bank": {
+      "accountNumber": "0211000480166",
+      "bankName": "Ngân hàng TMCP Ngoại thương Việt Nam ( Vietcombank )",
+      "accountName": "Trần Văn Tuyn",
+      "qrImage": {
+        "src": "/images/pages/donate-bank-qr.jpg",
+        "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/z5780351945844_08fded6a05242f85b6891b28c3b494d3.jpg",
+        "alt": "z5780351945844_08fded6a05242f85b6891b28c3b494d3",
+        "href": null
+      }
+    }
+  },
+  "menu": [
+    {
+      "label": "Giới Thiệu",
+      "href": "/gioi-thieu",
+      "originalHref": "https://tuyntantam.com/gioi-thieu",
+      "children": []
+    },
+    {
+      "label": "Môi Giới",
+      "href": "/moi-gioi",
+      "originalHref": "https://tuyntantam.com/moi-gioi",
+      "children": []
+    },
+    {
+      "label": "Đầu Tư",
+      "href": "/dau-tu",
+      "originalHref": "https://tuyntantam.com/dau-tu",
+      "children": []
+    },
+    {
+      "label": "Dịch Vụ",
+      "href": "/dich-vu",
+      "originalHref": "https://tuyntantam.com/dich-vu",
+      "children": []
+    },
+    {
+      "label": "Blog",
+      "href": "/blog",
+      "originalHref": "https://tuyntantam.com/blog",
+      "children": []
+    },
+    {
+      "label": "Liên Hệ & Hợp Tác",
+      "href": "/lien-he-hop-tac",
+      "originalHref": "https://tuyntantam.com/lien-he-hop-tac",
+      "children": []
+    },
+    {
+      "label": "Kho Nguồn",
+      "href": "/kho-nguon",
+      "originalHref": "https://tuyntantam.com/kho-nguon",
+      "children": [
+        {
+          "label": "Nguồn BĐS Thuê",
+          "href": "/nguon-bds-thue",
+          "originalHref": "https://tuyntantam.com/nguon-bds-thue",
+          "children": []
+        },
+        {
+          "label": "Nguồn BĐS Bán",
+          "href": "/nguon-bds-ban",
+          "originalHref": "https://tuyntantam.com/nguon-bds-ban",
+          "children": []
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "columns": [
+      {
+        "heading": null,
+        "text": null,
+        "links": [],
+        "images": [
+          {
+            "src": "/images/site/logo-tuyn-tan-tam-footer.png",
+            "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/03/Tuyn-Tan-Tam-1-2.png",
+            "alt": null,
+            "href": "/",
+            "role": "logo"
+          }
+        ],
+        "map": null,
+        "socials": []
+      },
+      {
+        "heading": "Dịch Vụ",
+        "text": null,
+        "links": [
+          {
+            "label": "Tư Vấn Thuê Nhà",
+            "href": "/tu-van-thue-nha"
+          },
+          {
+            "label": "Dẫn Khách Xem Nhà",
+            "href": "/dan-khach-xem-nha"
+          },
+          {
+            "label": "Tư Vấn Đầu Tư",
+            "href": "/tu-van-dau-tu"
+          },
+          {
+            "label": "Tư Vấn Setup Nội Thất",
+            "href": "/tu-van-setup-noi-that"
+          }
+        ],
+        "images": [],
+        "map": null,
+        "socials": []
+      },
+      {
+        "heading": "Donate",
+        "text": "Nếu bạn thấy những kiến thức, kinh nghiệm mà Tuyn chia sẻ mang lại giá trị cho bạn. Bạn có thể khích lệ Tuyn bằng việc mời Tuyn một ly cà phê nha!",
+        "links": [
+          {
+            "label": "mời Tuyn một ly cà phê nha!",
+            "href": "/donate"
+          }
+        ],
+        "images": [
+          {
+            "src": "/images/site/buy-me-a-coffee-button.png",
+            "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/08/Thiet-ke-chua-co-ten-1.png",
+            "alt": "Thiết kế chưa có tên",
+            "href": "https://buymeacoffee.com/tuyntantam",
+            "role": null
+          }
+        ],
+        "map": null,
+        "socials": []
+      },
+      {
+        "heading": null,
+        "text": null,
+        "links": [],
+        "images": [],
+        "map": {
+          "embedSrc": "https://maps.google.com/maps?q=C%E1%BA%A7u%20Gi%E1%BA%A5y%2C%20H%C3%A0%20N%E1%BB%99i&t=m&z=10&output=embed&iwloc=near",
+          "query": "Cầu Giấy, Hà Nội",
+          "title": "Cầu Giấy, Hà Nội"
+        },
+        "socials": [
+          {
+            "label": "Facebook",
+            "href": "https://www.facebook.com/tuyntantam"
+          },
+          {
+            "label": "Telegram",
+            "href": "https://web.telegram.org/a/"
+          },
+          {
+            "label": "X-twitter",
+            "href": "https://x.com/AdamTran93"
+          },
+          {
+            "label": "Youtube",
+            "href": "https://www.youtube.com/@TuynTanTam"
+          }
+        ]
+      }
+    ],
+    "copyright": "Copyright © tuyntantam.com"
+  },
+  "floatingButtons": [
+    {
+      "label": "Gọi cho tôi",
+      "type": "Telephone",
+      "href": "tel:0975373942",
+      "icon": "fas-phone-alt"
+    },
+    {
+      "label": "Nhắn tin cho tôi",
+      "type": "WhatsApp",
+      "href": "https://wa.me/+84975373942",
+      "icon": "fab-whatsapp"
+    },
+    {
+      "label": "Gửi email cho tôi",
+      "type": "Email",
+      "href": "mailto:contact@tuyntantam.com",
+      "icon": "fas-envelope"
+    }
+  ],
+  "seo": {
+    "title": "Trang chủ 02 - Tuyn Tận Tâm",
+    "description": "Chào mừng bạn đã đến với trang blog của Tuyn Tận Tâm! Đây là nơi mà Tuyn muốn chia sẻ lại những câu chuyện, kiến thức, kinh nghiệm mà Tuyn đã học hỏi, đúc kết trong hơn 5 năm làm nghề môi giới cho thuê bất động sản tại Hà Nội. Search Tìm kiếm Kết […]",
+    "descriptionSource": "og:description (Rank Math auto-generated from content)",
+    "ogImage": null,
+    "locale": "en_US",
+    "canonical": "https://tuyntantam.com",
+    "twitterCreator": "@AdamTran93"
+  },
+  "searchPlaceholder": "Nhập để bắt đầu tìm kiếm...",
+  "notFoundPage": {
+    "text": "404 Trang bạn đang tìm không tồn tại. Vui Lòng Trở Về Trang Chủ",
+    "links": [
+      "/"
+    ]
+  },
+  "sourceUrl": "https://tuyntantam.com/"
+}

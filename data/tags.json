@@ -1,0 +1,402 @@
+[
+  {
+    "wpId": 38,
+    "slug": "alo-nha-dat",
+    "name": "alo nhà đất",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/alo-nha-dat",
+    "sourceUrl": "https://tuyntantam.com/the/alo-nha-dat"
+  },
+  {
+    "wpId": 21,
+    "slug": "bat-dong-san",
+    "name": "bất động sản",
+    "description": null,
+    "parent": null,
+    "count": 3,
+    "path": "/the/bat-dong-san",
+    "sourceUrl": "https://tuyntantam.com/the/bat-dong-san"
+  },
+  {
+    "wpId": 22,
+    "slug": "bds",
+    "name": "bds",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/bds",
+    "sourceUrl": "https://tuyntantam.com/the/bds"
+  },
+  {
+    "wpId": 45,
+    "slug": "cho-thue-bat-dong-san",
+    "name": "cho thuê bất động sản",
+    "description": null,
+    "parent": null,
+    "count": 3,
+    "path": "/the/cho-thue-bat-dong-san",
+    "sourceUrl": "https://tuyntantam.com/the/cho-thue-bat-dong-san"
+  },
+  {
+    "wpId": 24,
+    "slug": "cho-thue-nha",
+    "name": "cho thuê nhà",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/cho-thue-nha",
+    "sourceUrl": "https://tuyntantam.com/the/cho-thue-nha"
+  },
+  {
+    "wpId": 43,
+    "slug": "kiem-tien-tu-nghe-moi-gioi",
+    "name": "kiếm tiền từ nghề môi giới",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/kiem-tien-tu-nghe-moi-gioi",
+    "sourceUrl": "https://tuyntantam.com/the/kiem-tien-tu-nghe-moi-gioi"
+  },
+  {
+    "wpId": 30,
+    "slug": "lam-them",
+    "name": "làm thêm",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/lam-them",
+    "sourceUrl": "https://tuyntantam.com/the/lam-them"
+  },
+  {
+    "wpId": 48,
+    "slug": "lua-coc-thue-nha",
+    "name": "lừa cọc thuê nhà",
+    "description": null,
+    "parent": null,
+    "count": 0,
+    "path": "/the/lua-coc-thue-nha",
+    "sourceUrl": "https://tuyntantam.com/the/lua-coc-thue-nha"
+  },
+  {
+    "wpId": 50,
+    "slug": "lua-thue-chung-cu-mi-ni",
+    "name": "lừa thuê chung cư mi ni",
+    "description": null,
+    "parent": null,
+    "count": 0,
+    "path": "/the/lua-thue-chung-cu-mi-ni",
+    "sourceUrl": "https://tuyntantam.com/the/lua-thue-chung-cu-mi-ni"
+  },
+  {
+    "wpId": 46,
+    "slug": "lua-dao",
+    "name": "lừa đảo",
+    "description": null,
+    "parent": null,
+    "count": 0,
+    "path": "/the/lua-dao",
+    "sourceUrl": "https://tuyntantam.com/the/lua-dao"
+  },
+  {
+    "wpId": 39,
+    "slug": "mogi",
+    "name": "mogi",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/mogi",
+    "sourceUrl": "https://tuyntantam.com/the/mogi"
+  },
+  {
+    "wpId": 19,
+    "slug": "moi-gioi",
+    "name": "môi giới",
+    "description": null,
+    "parent": null,
+    "count": 4,
+    "path": "/the/moi-gioi",
+    "sourceUrl": "https://tuyntantam.com/the/moi-gioi"
+  },
+  {
+    "wpId": 25,
+    "slug": "moi-gioi-bat-dong-san",
+    "name": "moi gioi bat dong san",
+    "description": null,
+    "parent": null,
+    "count": 3,
+    "path": "/the/moi-gioi-bat-dong-san",
+    "sourceUrl": "https://tuyntantam.com/the/moi-gioi-bat-dong-san"
+  },
+  {
+    "wpId": 44,
+    "slug": "moi-gioi-cho-thue",
+    "name": "moi gioi cho thue",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/moi-gioi-cho-thue",
+    "sourceUrl": "https://tuyntantam.com/the/moi-gioi-cho-thue"
+  },
+  {
+    "wpId": 42,
+    "slug": "moi-gioi-cho-thue-bat-dong-san",
+    "name": "môi giới cho thuê bất động sản",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/moi-gioi-cho-thue-bat-dong-san",
+    "sourceUrl": "https://tuyntantam.com/the/moi-gioi-cho-thue-bat-dong-san"
+  },
+  {
+    "wpId": 20,
+    "slug": "moi-gioi-nha-thue",
+    "name": "môi giới nhà thuê",
+    "description": null,
+    "parent": null,
+    "count": 4,
+    "path": "/the/moi-gioi-nha-thue",
+    "sourceUrl": "https://tuyntantam.com/the/moi-gioi-nha-thue"
+  },
+  {
+    "wpId": 26,
+    "slug": "moi-gioi-thue",
+    "name": "môi giới thuê",
+    "description": null,
+    "parent": null,
+    "count": 2,
+    "path": "/the/moi-gioi-thue",
+    "sourceUrl": "https://tuyntantam.com/the/moi-gioi-thue"
+  },
+  {
+    "wpId": 66,
+    "slug": "moigioi",
+    "name": "moigioi",
+    "description": null,
+    "parent": null,
+    "count": 0,
+    "path": "/the/moigioi",
+    "sourceUrl": "https://tuyntantam.com/the/moigioi"
+  },
+  {
+    "wpId": 68,
+    "slug": "moigioichothuebds",
+    "name": "moigioichothuebds",
+    "description": null,
+    "parent": null,
+    "count": 0,
+    "path": "/the/moigioichothuebds",
+    "sourceUrl": "https://tuyntantam.com/the/moigioichothuebds"
+  },
+  {
+    "wpId": 67,
+    "slug": "moigioinhathue",
+    "name": "moigioinhathue",
+    "description": null,
+    "parent": null,
+    "count": 0,
+    "path": "/the/moigioinhathue",
+    "sourceUrl": "https://tuyntantam.com/the/moigioinhathue"
+  },
+  {
+    "wpId": 69,
+    "slug": "moigoinhathue",
+    "name": "moigoinhathue",
+    "description": null,
+    "parent": null,
+    "count": 0,
+    "path": "/the/moigoinhathue",
+    "sourceUrl": "https://tuyntantam.com/the/moigoinhathue"
+  },
+  {
+    "wpId": 37,
+    "slug": "mua-ban",
+    "name": "mua bán",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/mua-ban",
+    "sourceUrl": "https://tuyntantam.com/the/mua-ban"
+  },
+  {
+    "wpId": 47,
+    "slug": "nguyen-thi-vinh",
+    "name": "nguyễn thị vinh",
+    "description": null,
+    "parent": null,
+    "count": 0,
+    "path": "/the/nguyen-thi-vinh",
+    "sourceUrl": "https://tuyntantam.com/the/nguyen-thi-vinh"
+  },
+  {
+    "wpId": 36,
+    "slug": "nha-tot",
+    "name": "nhà tốt",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/nha-tot",
+    "sourceUrl": "https://tuyntantam.com/the/nha-tot"
+  },
+  {
+    "wpId": 65,
+    "slug": "salesbds",
+    "name": "salesbds",
+    "description": null,
+    "parent": null,
+    "count": 0,
+    "path": "/the/salesbds",
+    "sourceUrl": "https://tuyntantam.com/the/salesbds"
+  },
+  {
+    "wpId": 49,
+    "slug": "so-46-ngo-125-nguyen-ngoc-vu",
+    "name": "số 46 ngõ 125 Nguyễn Ngọc Vũ",
+    "description": null,
+    "parent": null,
+    "count": 0,
+    "path": "/the/so-46-ngo-125-nguyen-ngoc-vu",
+    "sourceUrl": "https://tuyntantam.com/the/so-46-ngo-125-nguyen-ngoc-vu"
+  },
+  {
+    "wpId": 40,
+    "slug": "so-sanh-nha",
+    "name": "so sánh nhà",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/so-sanh-nha",
+    "sourceUrl": "https://tuyntantam.com/the/so-sanh-nha"
+  },
+  {
+    "wpId": 27,
+    "slug": "su-tu-choi",
+    "name": "sự từ chối",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/su-tu-choi",
+    "sourceUrl": "https://tuyntantam.com/the/su-tu-choi"
+  },
+  {
+    "wpId": 72,
+    "slug": "thue-bat-ddoognj-san-ha-noi",
+    "name": "thuê bất ddoognj sản Hà Nội",
+    "description": null,
+    "parent": null,
+    "count": 0,
+    "path": "/the/thue-bat-ddoognj-san-ha-noi",
+    "sourceUrl": "https://tuyntantam.com/the/thue-bat-ddoognj-san-ha-noi"
+  },
+  {
+    "wpId": 73,
+    "slug": "thue-bat-dong-san-ha-noi",
+    "name": "thuê bất động sản Hà Nội",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/thue-bat-dong-san-ha-noi",
+    "sourceUrl": "https://tuyntantam.com/the/thue-bat-dong-san-ha-noi"
+  },
+  {
+    "wpId": 80,
+    "slug": "thue-can-ho-dich-vu",
+    "name": "thuê căn hô dịch vụ",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/thue-can-ho-dich-vu",
+    "sourceUrl": "https://tuyntantam.com/the/thue-can-ho-dich-vu"
+  },
+  {
+    "wpId": 79,
+    "slug": "thue-chdv",
+    "name": "thuê chdv",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/thue-chdv",
+    "sourceUrl": "https://tuyntantam.com/the/thue-chdv"
+  },
+  {
+    "wpId": 81,
+    "slug": "thue-chung-cu-mini",
+    "name": "thuê chung cư mini",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/thue-chung-cu-mini",
+    "sourceUrl": "https://tuyntantam.com/the/thue-chung-cu-mini"
+  },
+  {
+    "wpId": 78,
+    "slug": "thue-khach-san",
+    "name": "thuê khách sạn",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/thue-khach-san",
+    "sourceUrl": "https://tuyntantam.com/the/thue-khach-san"
+  },
+  {
+    "wpId": 23,
+    "slug": "thue-nha",
+    "name": "thuê nhà",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/thue-nha",
+    "sourceUrl": "https://tuyntantam.com/the/thue-nha"
+  },
+  {
+    "wpId": 71,
+    "slug": "thue-nha-ha-noi",
+    "name": "thuê nhà Hà Nội",
+    "description": null,
+    "parent": null,
+    "count": 2,
+    "path": "/the/thue-nha-ha-noi",
+    "sourceUrl": "https://tuyntantam.com/the/thue-nha-ha-noi"
+  },
+  {
+    "wpId": 70,
+    "slug": "thue-nha-tai-ha-noi",
+    "name": "thuê nhà tại Hà Nội",
+    "description": null,
+    "parent": null,
+    "count": 2,
+    "path": "/the/thue-nha-tai-ha-noi",
+    "sourceUrl": "https://tuyntantam.com/the/thue-nha-tai-ha-noi"
+  },
+  {
+    "wpId": 35,
+    "slug": "tim-thue-bat-dong-san",
+    "name": "tìm thuê bất động sản",
+    "description": null,
+    "parent": null,
+    "count": 2,
+    "path": "/the/tim-thue-bat-dong-san",
+    "sourceUrl": "https://tuyntantam.com/the/tim-thue-bat-dong-san"
+  },
+  {
+    "wpId": 34,
+    "slug": "trang-bat-san",
+    "name": "trang bất sản",
+    "description": null,
+    "parent": null,
+    "count": 0,
+    "path": "/the/trang-bat-san",
+    "sourceUrl": "https://tuyntantam.com/the/trang-bat-san"
+  },
+  {
+    "wpId": 41,
+    "slug": "trang-bat-dong-san",
+    "name": "trang bất động sản",
+    "description": null,
+    "parent": null,
+    "count": 1,
+    "path": "/the/trang-bat-dong-san",
+    "sourceUrl": "https://tuyntantam.com/the/trang-bat-dong-san"
+  }
+]

@@ -1,0 +1,13 @@
+.git
+.next
+node_modules
+.env*
+!.env.example
+storage
+design-reference
+docs
+tests
+test-results
+playwright-report
+.claude
+*.md

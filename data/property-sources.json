@@ -1,0 +1,134 @@
+{
+  "note": "Website KHÔNG có danh sách bất động sản (listing). Các trang \"Kho Nguồn\", \"Nguồn BĐS Thuê\", \"Nguồn BĐS Bán\" chỉ dẫn link sang Facebook Group và Google Forms.",
+  "pages": [
+    {
+      "slug": "kho-nguon",
+      "title": "Kho Nguồn",
+      "html": "<h2>Kho Nguồn</h2>\n<p>Tổng kho nguồn nhà thuê &amp; bán Tuyn đang cung cấp</p>\n<p>Là một môi giới chuyên về cho thuê bất động sản tại thị trường Hà Nội. Tuyn liên tục tìm và giúp các khách hàng thuê tìm được cho mình những bất động sản thuê ưng ý. Đó như một thói quen và động lực mỗi ngày để giúp Tuyn tin yêu hơn công việc môi giới cho thuê này.</p>\n<p>Để thuận tiện cho việc tìm kiếm các nguồn bất động sản thuê. Tuyn đã hệ thống lại các nguồn bất động sản đó <a href=\"https://www.facebook.com/groups/nguonthuetuyntantam\">tại đây</a>.</p>\n<p>Ngoài nhu cầu tìm bất động sản thuê ra, Tuyn còn được các khách hàng nhờ tìm mua các bất động sản bán nữa. Nếu bạn muốn mua nhà thì hãy tìm hiểu thông tin nguồn <a href=\"https://www.facebook.com/groups/nguonbantuyntantam\">tại đây</a>.</p>\n<p>Còn nếu bạn đang có tài sản cần cho thuê hoặc bán chưa tìm được đơn vị môi giới nào. Bạn có thể gửi thông tin bất động sản đó qua form sau nhé:</p>\n<p><a href=\"https://docs.google.com/forms/d/16cKEAku2kVUfSS24zt-pdgEEmro_ZaAV-dZqzhVwVXg/edit\">Nguồn cần cho thuê!</a></p>\n<p><a href=\"https://docs.google.com/forms/d/1f-eq8hlyThN_scMP4_tbMbrP0IiNYcrCM0lYZMwONnY/edit\">Nguồn cần gửi bán!</a></p>",
+      "text": "Kho Nguồn Tổng kho nguồn nhà thuê & bán Tuyn đang cung cấp Là một môi giới chuyên về cho thuê bất động sản tại thị trường Hà Nội. Tuyn liên tục tìm và giúp các khách hàng thuê tìm được cho mình những bất động sản thuê ưng ý. Đó như một thói quen và động lực mỗi ngày để giúp Tuyn tin yêu hơn công việc môi giới cho thuê này. Để thuận tiện cho việc tìm kiếm các nguồn bất động sản thuê. Tuyn đã hệ thống lại các nguồn bất động sản đó tại đây . Ngoài nhu cầu tìm bất động sản thuê ra, Tuyn còn được các khách hàng nhờ tìm mua các bất động sản bán nữa. Nếu bạn muốn mua nhà thì hãy tìm hiểu thông tin nguồn tại đây . Còn nếu bạn đang có tài sản cần cho thuê hoặc bán chưa tìm được đơn vị môi giới nào. Bạn có thể gửi thông tin bất động sản đó qua form sau nhé: Nguồn cần cho thuê! Nguồn cần gửi bán!",
+      "links": [
+        {
+          "label": "tại đây",
+          "href": "https://www.facebook.com/groups/nguonthuetuyntantam"
+        },
+        {
+          "label": "tại đây",
+          "href": "https://www.facebook.com/groups/nguonbantuyntantam"
+        },
+        {
+          "label": "Nguồn cần cho thuê!",
+          "href": "https://docs.google.com/forms/d/16cKEAku2kVUfSS24zt-pdgEEmro_ZaAV-dZqzhVwVXg/edit"
+        },
+        {
+          "label": "Nguồn cần gửi bán!",
+          "href": "https://docs.google.com/forms/d/1f-eq8hlyThN_scMP4_tbMbrP0IiNYcrCM0lYZMwONnY/edit"
+        }
+      ],
+      "sourceUrl": "https://tuyntantam.com/kho-nguon"
+    },
+    {
+      "slug": "nguon-bds-thue",
+      "title": "Nguồn BĐS Thuê",
+      "text": "Nguồn Bất Động Sản Thuê Nơi bạn có thể chọn thuê những căn nhà phù hợp với nhu cầu và tài chính của bạn Chọn thuê tại đây!",
+      "links": [
+        {
+          "label": "Chọn thuê tại đây!",
+          "href": "https://www.facebook.com/groups/nguonthuetuyntantam"
+        }
+      ],
+      "sourceUrl": "https://tuyntantam.com/nguon-bds-thue"
+    },
+    {
+      "slug": "nguon-bds-ban",
+      "title": "Nguồn BĐS Bán",
+      "text": "Nguồn Bất Động Sản Bán Nơi bạn có thể chọn mua những căn nhà phù hợp với nhu cầu và tài chính của bạn Chọn mua tại đây!",
+      "links": [
+        {
+          "label": "Chọn mua tại đây!",
+          "href": "https://www.facebook.com/groups/nguonbantuyntantam"
+        }
+      ],
+      "sourceUrl": "https://tuyntantam.com/nguon-bds-ban"
+    }
+  ],
+  "groups": [
+    {
+      "platform": "facebook-group",
+      "purpose": "Nguồn BĐS thuê",
+      "url": "https://www.facebook.com/groups/nguonthuetuyntantam",
+      "foundOn": [
+        "/kho-nguon",
+        "/nguon-bds-thue"
+      ]
+    },
+    {
+      "platform": "facebook-group",
+      "purpose": "Nguồn BĐS bán",
+      "url": "https://www.facebook.com/groups/nguonbantuyntantam",
+      "foundOn": [
+        "/kho-nguon",
+        "/nguon-bds-ban"
+      ]
+    },
+    {
+      "platform": "facebook-group",
+      "purpose": "Cộng đồng môi giới cho thuê BĐS tại Hà Nội",
+      "url": "https://www.facebook.com/groups/congdongmoigioichothuebdstaihanoi",
+      "foundOn": [
+        "/ (trang chủ)"
+      ]
+    },
+    {
+      "platform": "zalo-group",
+      "purpose": "Kho nguồn hàng dòng tiền tại Hà Nội",
+      "url": "https://zalo.me/g/oxfecm575",
+      "foundOn": [
+        "/trang-chu (trang chủ cũ)"
+      ],
+      "qrImage": {
+        "src": "/images/pages/home-legacy-qr-zalo-nguon-dong-tien.jpg",
+        "originalSrc": "https://tuyntantam.com/wp-content/uploads/2024/07/QR-nguon-dong-tien.jpg",
+        "alt": "Trang chủ 01",
+        "caption": null,
+        "href": "https://zalo.me/g/oxfecm575"
+      }
+    }
+  ],
+  "forms": [
+    {
+      "purpose": "Gửi nguồn cần cho thuê",
+      "label": "Nguồn cần cho thuê!",
+      "url": "https://docs.google.com/forms/d/16cKEAku2kVUfSS24zt-pdgEEmro_ZaAV-dZqzhVwVXg/edit",
+      "foundOn": [
+        "/kho-nguon"
+      ],
+      "note": "URL kết thúc bằng /edit (link chỉnh sửa form, có thể cần đổi thành /viewform)"
+    },
+    {
+      "purpose": "Gửi nguồn cần bán",
+      "label": "Nguồn cần gửi bán!",
+      "url": "https://docs.google.com/forms/d/1f-eq8hlyThN_scMP4_tbMbrP0IiNYcrCM0lYZMwONnY/edit",
+      "foundOn": [
+        "/kho-nguon"
+      ],
+      "note": "URL kết thúc bằng /edit"
+    },
+    {
+      "purpose": "Đặt lịch xem nhà",
+      "label": "Đặt Lịch",
+      "url": "https://docs.google.com/forms/d/1rxRIGXet_g8eU26LT5mMFey9ac8dLXgnG6xmDJFxY9E",
+      "foundOn": [
+        "/dan-khach-xem-nha"
+      ]
+    },
+    {
+      "purpose": "Không ghi rõ bằng text; form gắn vào ảnh banner tuyển dụng Cường Phát Land (\"50 SALES BẤT ĐỘNG SẢN CHO THUÊ TẠI THỊ TRƯỜNG HÀ NỘI\") trên trang chủ cũ",
+      "label": null,
+      "url": "https://docs.google.com/forms/d/1zwv5-Lmgh_XiOYEUgGjc90UTCz_aQFKaKrfmzsiBfYg/edit",
+      "foundOn": [
+        "/trang-chu (trang chủ cũ)"
+      ],
+      "note": "Link gắn vào ảnh \"Anh-bia-trang-Donate.png\"; mục đích form không ghi rõ"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+.next
+node_modules
+drizzle
+data
+design-reference
+public
+storage
+package-lock.json
+*.md

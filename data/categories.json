@@ -1,0 +1,52 @@
+[
+  {
+    "wpId": 3,
+    "slug": "blog",
+    "name": "Blog",
+    "description": "Nơi chứa đựng những thông tin xoay quanh chủ đề môi giới và đầu tư bất động sản.",
+    "parent": null,
+    "count": 4,
+    "path": "/danh-muc/blog",
+    "sourceUrl": "https://tuyntantam.com/danh-muc/blog"
+  },
+  {
+    "wpId": 74,
+    "slug": "chuyen-nghe-moi-gioi",
+    "name": "Chuyện Nghề Môi Giới",
+    "description": "Nơi có những câu chuyện xoay quanh về việc làm môi giới cho thuê bất động sản của Tuyn",
+    "parent": "moi-gioi",
+    "count": 1,
+    "path": "/danh-muc/moi-gioi/chuyen-nghe-moi-gioi",
+    "sourceUrl": "https://tuyntantam.com/danh-muc/moi-gioi/chuyen-nghe-moi-gioi"
+  },
+  {
+    "wpId": 15,
+    "slug": "moi-gioi",
+    "name": "Môi Giới",
+    "description": "Giúp bạn trở thành nhà môi giới, cho thuê nhà, bán nhà chuyên nghiệp.",
+    "parent": null,
+    "count": 3,
+    "path": "/danh-muc/moi-gioi",
+    "sourceUrl": "https://tuyntantam.com/danh-muc/moi-gioi"
+  },
+  {
+    "wpId": 75,
+    "slug": "moi-gioi-cho-thue-bat-dong-san-tai-ha-noi",
+    "name": "Môi Giới Cho Thuê Bất Động Sản Tại Hà Nội",
+    "description": "Lộ trình giúp bạn trở thành Môi Giới Cho Thuê Bất Động Sản Chuyên Nghiệp tại thị trường Hà Nội.",
+    "parent": "moi-gioi",
+    "count": 1,
+    "path": "/danh-muc/moi-gioi/moi-gioi-cho-thue-bat-dong-san-tai-ha-noi",
+    "sourceUrl": "https://tuyntantam.com/danh-muc/moi-gioi/moi-gioi-cho-thue-bat-dong-san-tai-ha-noi"
+  },
+  {
+    "wpId": 16,
+    "slug": "dau-tu",
+    "name": "Đầu Tư",
+    "description": "Giúp bạn trở thành nhà đầu tư thông thái về các dự án bất động sản dòng tiền.",
+    "parent": null,
+    "count": 0,
+    "path": "/danh-muc/dau-tu",
+    "sourceUrl": "https://tuyntantam.com/danh-muc/dau-tu"
+  }
+]

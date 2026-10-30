@@ -1,0 +1,253 @@
+[
+  {
+    "id": "home-contact",
+    "location": "trang-chu-02",
+    "pageUrl": "https://tuyntantam.com/",
+    "formName": "New Form",
+    "elementorFormId": "8e715f7",
+    "elementorPostId": "1546",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Tên của bạn",
+        "labelVisible": true,
+        "type": "text",
+        "placeholder": "Tên của bạn...",
+        "required": false
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "labelVisible": true,
+        "type": "email",
+        "placeholder": "Email",
+        "required": true
+      },
+      {
+        "name": "field_b97c955",
+        "label": "Số điện thoại của bạn",
+        "labelVisible": true,
+        "type": "tel",
+        "placeholder": "Số điện thoại của bạn...",
+        "required": true
+      },
+      {
+        "name": "message",
+        "label": "Lời nhắn của bạn",
+        "labelVisible": true,
+        "type": "textarea",
+        "placeholder": "Lời nhắn của bạn",
+        "required": false
+      }
+    ],
+    "submitText": "Gửi cho Tuyn!",
+    "action": "Elementor Pro form (admin-ajax.php); recipient/actions not visible in HTML",
+    "type": "elementor-form",
+    "heading": "Liên hệ với Tuyn"
+  },
+  {
+    "id": "donate-message",
+    "location": "donate",
+    "pageUrl": "https://tuyntantam.com/donate",
+    "formName": "Biểu mẫu mới",
+    "elementorFormId": "0ba0b7b",
+    "elementorPostId": "1312",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Tên của bạn",
+        "labelVisible": true,
+        "type": "text",
+        "placeholder": "Tên của bạn",
+        "required": false
+      },
+      {
+        "name": "email",
+        "label": "Email của bạn",
+        "labelVisible": true,
+        "type": "email",
+        "placeholder": "Email của bạn",
+        "required": true
+      },
+      {
+        "name": "message",
+        "label": "Thông điệp bạn muốn gửi",
+        "labelVisible": true,
+        "type": "textarea",
+        "placeholder": "Thông điệp bạn muốn gửi",
+        "required": false
+      }
+    ],
+    "submitText": "Gửi cho Tuyn",
+    "action": "Elementor Pro form (admin-ajax.php); recipient/actions not visible in HTML",
+    "type": "elementor-form",
+    "heading": null
+  },
+  {
+    "id": "lien-he-hop-tac-contact",
+    "location": "lien-he-hop-tac",
+    "pageUrl": "https://tuyntantam.com/lien-he-hop-tac",
+    "formName": "New Form",
+    "elementorFormId": "b305f5c",
+    "elementorPostId": "38",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Họ Và Tên",
+        "labelVisible": true,
+        "type": "text",
+        "placeholder": "Họ Và Tên",
+        "required": false
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "labelVisible": true,
+        "type": "email",
+        "placeholder": "Email",
+        "required": true
+      },
+      {
+        "name": "message",
+        "label": "Nội Dung",
+        "labelVisible": true,
+        "type": "textarea",
+        "placeholder": "Nội Dung",
+        "required": false
+      }
+    ],
+    "submitText": "Gửi Cho Tôi!",
+    "action": "Elementor Pro form (admin-ajax.php); recipient/actions not visible in HTML",
+    "type": "elementor-form",
+    "heading": "Hãy Điền Thông Tin Của Bạn Theo Form Sau:"
+  },
+  {
+    "id": "moi-gioi-dang-ki",
+    "location": "moi-gioi",
+    "pageUrl": "https://tuyntantam.com/moi-gioi",
+    "formName": "New Form",
+    "elementorFormId": "e0ccdfb",
+    "elementorPostId": "32",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Họ Và Tên",
+        "labelVisible": true,
+        "type": "text",
+        "placeholder": "Họ Và Tên",
+        "required": false
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "labelVisible": true,
+        "type": "email",
+        "placeholder": "Email",
+        "required": true
+      },
+      {
+        "name": "field_17c7d0e",
+        "label": "Số Điện Thoại",
+        "labelVisible": true,
+        "type": "tel",
+        "placeholder": "Số Điện Thoại",
+        "required": false
+      },
+      {
+        "name": "message",
+        "label": "Nội Dung",
+        "labelVisible": true,
+        "type": "textarea",
+        "placeholder": "Nội Dung",
+        "required": false
+      }
+    ],
+    "submitText": "Gửi Cho Tôi",
+    "action": "Elementor Pro form (admin-ajax.php); recipient/actions not visible in HTML",
+    "type": "elementor-form",
+    "heading": "Đăng Kí Làm Môi Giới Ngay Tại Đây"
+  },
+  {
+    "id": "header-search",
+    "type": "search",
+    "location": "site header (mega-menu \"Tìm kiếm\")",
+    "pageUrl": "all pages",
+    "fields": [
+      {
+        "name": "s",
+        "label": null,
+        "type": "search",
+        "placeholder": "Nhập để bắt đầu tìm kiếm...",
+        "required": false
+      }
+    ],
+    "submitText": null,
+    "submitAriaLabel": "Search",
+    "action": "GET /?s= (WordPress search, Elementor search widget)"
+  },
+  {
+    "id": "home-hero-search",
+    "type": "search",
+    "location": "trang-chu-02 (hero)",
+    "pageUrl": "https://tuyntantam.com/",
+    "fields": [
+      {
+        "name": "s",
+        "label": null,
+        "type": "search",
+        "placeholder": "Tìm kiếm điều bạn muốn...",
+        "required": false
+      }
+    ],
+    "submitText": null,
+    "action": "GET /?s="
+  },
+  {
+    "id": "google-form-gui-nguon-can-cho-thue",
+    "type": "external-google-form",
+    "location": "/kho-nguon",
+    "label": "Nguồn cần cho thuê!",
+    "purpose": "Gửi nguồn cần cho thuê",
+    "url": "https://docs.google.com/forms/d/16cKEAku2kVUfSS24zt-pdgEEmro_ZaAV-dZqzhVwVXg/edit",
+    "fields": null,
+    "note": "Form ngoài (Google Forms); các trường không crawl được từ site"
+  },
+  {
+    "id": "google-form-gui-nguon-can-ban",
+    "type": "external-google-form",
+    "location": "/kho-nguon",
+    "label": "Nguồn cần gửi bán!",
+    "purpose": "Gửi nguồn cần bán",
+    "url": "https://docs.google.com/forms/d/1f-eq8hlyThN_scMP4_tbMbrP0IiNYcrCM0lYZMwONnY/edit",
+    "fields": null,
+    "note": "Form ngoài (Google Forms); các trường không crawl được từ site"
+  },
+  {
+    "id": "google-form-dat-lich-xem-nha",
+    "type": "external-google-form",
+    "location": "/dan-khach-xem-nha",
+    "label": "Đặt Lịch",
+    "purpose": "Đặt lịch xem nhà",
+    "url": "https://docs.google.com/forms/d/1rxRIGXet_g8eU26LT5mMFey9ac8dLXgnG6xmDJFxY9E",
+    "fields": null,
+    "note": "Form ngoài (Google Forms); các trường không crawl được từ site"
+  },
+  {
+    "id": "google-form-khong-ghi-ro-bang-text-form-gan-vao-anh",
+    "type": "external-google-form",
+    "location": "/trang-chu (trang chủ cũ)",
+    "label": null,
+    "purpose": "Không ghi rõ bằng text; form gắn vào ảnh banner tuyển dụng Cường Phát Land (\"50 SALES BẤT ĐỘNG SẢN CHO THUÊ TẠI THỊ TRƯỜNG HÀ NỘI\") trên trang chủ cũ",
+    "url": "https://docs.google.com/forms/d/1zwv5-Lmgh_XiOYEUgGjc90UTCz_aQFKaKrfmzsiBfYg/edit",
+    "fields": null,
+    "note": "Form ngoài (Google Forms); các trường không crawl được từ site"
+  },
+  {
+    "id": "post-comment",
+    "type": "wordpress-comment",
+    "location": "single post template",
+    "pageUrl": null,
+    "fields": null,
+    "note": "Chỉ thấy liên kết \"#respond\"/\"No Comments\" trong template bài viết; 2 bình luận công khai có qua API (bài hay-bat-dau...)"
+  }
+]
