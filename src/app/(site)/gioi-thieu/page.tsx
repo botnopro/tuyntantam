@@ -144,7 +144,7 @@ export default async function AboutPage() {
           aria-hidden
           viewBox="0 0 1440 60"
           preserveAspectRatio="none"
-          className="absolute inset-x-0 bottom-0 h-8 w-full fill-surface-card lg:h-14"
+          className="absolute inset-x-0 -bottom-px h-8 w-full fill-surface-card lg:h-14"
         >
           <path d="M0 60V28C240 4 480 -4 720 14s480 36 720 10v36z" />
         </svg>

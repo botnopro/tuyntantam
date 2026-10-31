@@ -1,4 +1,4 @@
-import { ArrowRight, BadgeCheck, BriefcaseBusiness, GraduationCap, MapPin, Phone, Search, Star, Users, Wrench } from "lucide-react";
+import { ArrowRight, BriefcaseBusiness, GraduationCap, MapPin, Phone, Search, Users, Wrench } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "@/components/ui/link";
@@ -38,8 +38,6 @@ const SERVICE_ICONS: Record<string, typeof Users> = {
   "fas-users-cog": Wrench,
 };
 
-const HERO_IMAGE = "/images/demo/hero-hanoi.jpg";
-
 export default async function HomePage() {
   const [site, home, agent, posts, listingCount] = await Promise.all([
     getSettings("site"),
@@ -52,7 +50,6 @@ export default async function HomePage() {
   const [featured, latestRent, areas, filterOptions] = hasListings
     ? await Promise.all([featuredProperties(8), latestProperties("RENT", 8), districtsWithCounts(5), propertyFilterOptions()])
     : [[], [], [], null];
-  const experience = home.about.stats[0];
 
   // Tab theo khu vực có nhiều tin nhất (giống tab thành phố của Houzez)
   const topDistricts = areas.slice(0, 4).map((a) => a.district);
@@ -65,64 +62,116 @@ export default async function HomePage() {
 
   return (
     <>
-      {/* 1. Hero toàn màn hình + tìm kiếm (Houzez) */}
-      <section className="relative isolate flex min-h-[560px] items-center overflow-hidden bg-ink lg:min-h-[640px]">
-        <Image
-          src={HERO_IMAGE}
-          alt=""
-          fill
-          priority
-          fetchPriority="high"
-          sizes="100vw"
-          quality={75}
-          className="-z-10 object-cover motion-safe:animate-hero-zoom"
-        />
-        <div aria-hidden className="absolute inset-0 -z-10 bg-gradient-to-b from-ink/70 via-ink/35 to-ink/80" />
-        <div className="container-page py-16 text-center text-white lg:py-24">
-          <p className="mx-auto inline-flex animate-rise items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 text-[13px] font-semibold backdrop-blur-md">
-            <BadgeCheck className="size-4" aria-hidden />
-            {site.name}
-          </p>
-          <h1 className="mx-auto mt-5 max-w-4xl animate-rise text-[36px] leading-[44px] font-semibold text-balance text-white [animation-delay:80ms] sm:text-[48px] sm:leading-[58px] lg:text-[60px] lg:leading-[70px]">
-            {agent.title}
-          </h1>
-          {hasListings && filterOptions?.districts.length ? (
-            <p className="mt-4 animate-rise font-sans text-subheading tracking-[0.2em] text-white/85 uppercase [animation-delay:160ms]">
-              {filterOptions.districts.slice(0, 5).join(" • ")}
-            </p>
-          ) : (
-            <p className="mx-auto mt-4 max-w-2xl animate-rise text-body-lg text-white/85 [animation-delay:160ms]">{home.hero.text}</p>
-          )}
-          <div className="mx-auto mt-10 max-w-5xl animate-rise text-left text-on-surface [animation-delay:240ms]">
-            {hasListings && filterOptions ? (
-              <HeroSearch districts={filterOptions.districts} types={filterOptions.types} />
-            ) : (
-              <form
-                action="/blog"
-                role="search"
-                className="flex flex-col gap-3 rounded-lg bg-surface-card p-3 shadow-float sm:flex-row lg:p-4"
-              >
-                <label htmlFor="home-search" className="sr-only">
-                  Tìm kiếm bài viết
-                </label>
-                <div className="flex flex-1 items-center gap-3 rounded-sm bg-surface-container-low px-4">
-                  <Search className="size-5 shrink-0 text-primary" aria-hidden />
-                  <input
-                    id="home-search"
-                    name="q"
-                    type="search"
-                    placeholder="Tìm kiếm điều bạn muốn..."
-                    className="h-12 w-full bg-transparent text-body-md placeholder:text-on-surface-variant/70 focus:outline-none"
-                  />
-                </div>
-                <button type="submit" className="btn-primary min-h-12 px-8">
-                  <Search className="size-4" aria-hidden />
-                  Tìm kiếm
-                </button>
-              </form>
-            )}
+      {/* 1. Hero kiểu trang cá nhân môi giới (Houzez): chữ + tìm kiếm bên trái, chân dung tách nền bên phải, đáy cong */}
+      <section className="relative isolate overflow-hidden bg-surface-container-low">
+        <div className="relative container-page lg:flex lg:min-h-[600px] lg:items-center">
+          <div className="relative z-10 pt-12 pb-4 lg:w-[58%] lg:py-20 lg:pb-24">
+            <h1>
+              <span className="block font-display text-[44px] leading-[1.05] font-bold tracking-tight text-slate-dark sm:text-[60px] lg:text-[72px]">
+                {agent.alias}
+              </span>
+              <span className="mt-4 block font-sans text-subheading tracking-[0.2em] text-primary uppercase">{agent.title}</span>
+            </h1>
+            <p className="mt-5 max-w-xl text-body-lg text-pretty text-on-surface-variant">{home.hero.text}</p>
+
+            <div className="mt-9">
+              {hasListings && filterOptions ? (
+                <HeroSearch districts={filterOptions.districts} types={filterOptions.types} />
+              ) : (
+                <form action="/blog" role="search" className="flex gap-2 rounded-sm bg-surface-card p-2 shadow-float">
+                  <label htmlFor="home-search" className="sr-only">
+                    Tìm kiếm bài viết
+                  </label>
+                  <div className="flex flex-1 items-center gap-3 px-3">
+                    <Search className="size-5 shrink-0 text-primary" aria-hidden />
+                    <input
+                      id="home-search"
+                      name="q"
+                      type="search"
+                      placeholder="Tìm kiếm điều bạn muốn..."
+                      className="h-12 w-full bg-transparent text-body-md placeholder:text-on-surface-variant/70 focus:outline-none"
+                    />
+                  </div>
+                  <button type="submit" className="btn-primary min-h-12 px-6">
+                    <span className="hidden sm:inline">Tìm kiếm</span>
+                    <Search className="size-4 sm:hidden" aria-label="Tìm kiếm" />
+                  </button>
+                </form>
+              )}
+            </div>
+
+            <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-5">
+              <ul className="flex flex-wrap gap-x-6 gap-y-2 text-body-md text-on-surface">
+                {site.contacts.area ? (
+                  <li className="flex items-center gap-2">
+                    <MapPin className="size-[18px] shrink-0 text-primary" aria-hidden />
+                    {site.contacts.area}
+                  </li>
+                ) : null}
+                <li>
+                  <a href={telHref(site.contacts.phone)} className="inline-flex items-center gap-2 font-semibold hover:text-primary">
+                    <Phone className="size-[18px] shrink-0 text-primary" aria-hidden />
+                    {site.contacts.phoneDisplay}
+                  </a>
+                </li>
+              </ul>
+              {site.socials.length ? (
+                <ul className="flex gap-2" aria-label={home.hero.socialsLabel}>
+                  {site.socials.map((s) => (
+                    <li key={s.url}>
+                      <a
+                        href={s.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={s.label}
+                        className={cn(
+                          "grid size-10 place-items-center rounded-full border border-border-subtle bg-surface-card transition-colors",
+                          SOCIAL_BUTTON[s.platform] ?? "text-on-surface-variant hover:text-primary",
+                        )}
+                      >
+                        <SocialIcon platform={s.platform} className="size-4" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+            </div>
           </div>
+
+          {/* Chân dung toàn thân chạm đáy, đặt trên vòng tròn xanh đậm + vòng viền ngoài để nổi khối.
+              Một ảnh duy nhất: mobile nằm dưới chữ, desktop neo bên phải */}
+          {home.hero.image ? (
+            <div className="pointer-events-none relative mx-auto h-[400px] max-w-sm sm:h-[460px] lg:absolute lg:inset-y-0 lg:right-0 lg:mx-0 lg:h-auto lg:w-[42%] lg:max-w-none">
+              <div
+                aria-hidden
+                className="absolute top-[16%] left-1/2 aspect-square w-[min(112%,560px)] -translate-x-1/2 rounded-full border border-primary-container/25"
+              />
+              <div
+                aria-hidden
+                className="absolute top-[22%] left-1/2 aspect-square w-[min(92%,460px)] -translate-x-1/2 rounded-full bg-gradient-to-b from-primary-container to-brand-hover"
+              />
+              <Image
+                src={home.hero.image.src}
+                alt={`${agent.alias} — ${agent.title}`}
+                width={400}
+                height={650}
+                priority
+                fetchPriority="high"
+                sizes="(min-width: 1024px) 380px, 260px"
+                className="absolute bottom-2 left-1/2 h-[96%] w-auto max-w-none -translate-x-1/2 drop-shadow-2xl"
+              />
+            </div>
+          ) : null}
         </div>
+        {/* Đường cong đáy, cùng màu nền section kế tiếp */}
+        <svg
+          aria-hidden
+          viewBox="0 0 1440 60"
+          preserveAspectRatio="none"
+          className={cn("absolute inset-x-0 -bottom-px h-8 w-full lg:h-14", featuredSlides.length ? "fill-surface" : "fill-surface-warm")}
+        >
+          <path d="M0 60V28C240 4 480 -4 720 14s480 36 720 10v36z" />
+        </svg>
       </section>
 
       {/* 2. BĐS nổi bật — carousel có tab khu vực */}
@@ -154,32 +203,7 @@ export default async function HomePage() {
 
       {/* 3. Về Tuyn (Houzez "We help people buy, rent and sell") */}
       <section className={cn("bg-surface-warm section-y", !hasListings && "pt-16 lg:pt-24")}>
-        <div className="container-page grid items-center gap-12 lg:grid-cols-12 lg:gap-16">
-          {home.hero.image ? (
-            <div className="reveal relative mx-auto w-full max-w-sm lg:col-span-5 lg:max-w-none">
-              <div aria-hidden className="absolute inset-x-0 top-[12%] bottom-0 rotate-2 rounded-lg bg-brand-subtle" />
-              <div aria-hidden className="absolute inset-x-4 top-[16%] bottom-4 rounded-lg bg-primary-container/25" />
-              <Image
-                src={home.hero.image.src}
-                alt={`${agent.alias} — ${agent.title}`}
-                width={400}
-                height={650}
-                sizes="(min-width: 1024px) 420px, 80vw"
-                className="relative mx-auto h-auto w-[78%]"
-              />
-              {experience ? (
-                <div className="absolute bottom-6 -left-2 flex items-center gap-3 rounded-sm bg-surface-card/95 p-4 shadow-xl backdrop-blur sm:-left-4">
-                  <span className="grid size-12 place-items-center rounded-sm bg-brand-subtle text-primary">
-                    <Star className="size-6 fill-current" aria-hidden />
-                  </span>
-                  <span>
-                    <span className="block font-sans text-[26px] leading-none font-extrabold text-slate-dark">{experience.display}</span>
-                    <span className="mt-1 block text-body-sm text-on-surface-variant">{experience.label}</span>
-                  </span>
-                </div>
-              ) : null}
-            </div>
-          ) : null}
+        <div className="container-page grid items-center gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="reveal lg:col-span-7">
             <p className="mb-3 eyebrow-line">{home.about.heading}</p>
             <h2 className="text-headline-lg-mobile lg:text-headline-lg">{home.hero.heading}</h2>
@@ -187,8 +211,10 @@ export default async function HomePage() {
               className="mt-5 space-y-4 text-body-md leading-relaxed text-on-surface-variant [&_a]:font-semibold [&_a]:text-primary [&_a]:underline-offset-2 [&_a:hover]:underline"
               dangerouslySetInnerHTML={{ __html: sanitizeRichText(home.about.html) }}
             />
+          </div>
+          <div className="reveal lg:col-span-5">
             {home.about.stats.length ? (
-              <dl className="mt-8 grid grid-cols-3 gap-3">
+              <dl className="grid grid-cols-3 gap-3">
                 {home.about.stats.map((s) => (
                   <div key={s.label} className="flex flex-col-reverse rounded-lg bg-surface-card p-4 text-center shadow-xs sm:p-5">
                     <dt className="mt-1 text-[12px] leading-tight font-semibold text-on-surface-variant sm:text-label-caps sm:tracking-wider sm:uppercase">
@@ -199,37 +225,10 @@ export default async function HomePage() {
                 ))}
               </dl>
             ) : null}
-            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+            <div className="mt-8">
               <Link href="/gioi-thieu" className="btn-primary">
                 Đọc hành trình của Tuyn
               </Link>
-              <a
-                href={telHref(site.contacts.phone)}
-                className="inline-flex items-center gap-2 font-semibold text-slate-dark hover:text-primary"
-              >
-                <Phone className="size-[18px] text-primary" aria-hidden />
-                {site.contacts.phoneDisplay}
-              </a>
-              {site.socials.length ? (
-                <ul className="flex gap-2" aria-label={home.hero.socialsLabel}>
-                  {site.socials.map((s) => (
-                    <li key={s.url}>
-                      <a
-                        href={s.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={s.label}
-                        className={cn(
-                          "grid size-10 place-items-center rounded-xl bg-surface-card shadow-xs transition-colors",
-                          SOCIAL_BUTTON[s.platform] ?? "text-on-surface-variant hover:text-primary",
-                        )}
-                      >
-                        <SocialIcon platform={s.platform} className="size-[18px]" />
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              ) : null}
             </div>
           </div>
         </div>
