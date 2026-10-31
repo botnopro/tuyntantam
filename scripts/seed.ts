@@ -193,6 +193,8 @@ const PAGE_SLUGS: Record<string, string> = {
   "moi-gioi": "moi-gioi",
   "dau-tu": "dau-tu",
   "dich-vu": "dich-vu",
+  // chỉ làm nguồn mô tả SEO cho /kho-nguon (route riêng), không phục vụ qua template chung
+  "kho-nguon": "kho-nguon",
   "lien-he-hop-tac": "lien-he",
   donate: "ung-ho",
   "cuong-phat-land-tuyen-dung": "cuong-phat-land-tuyen-dung",
