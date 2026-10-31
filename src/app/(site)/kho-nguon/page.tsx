@@ -15,10 +15,13 @@ import { formatPrice } from "@/lib/utils/format";
 import { flattenParams } from "@/lib/validation/common";
 import { propertyFilterSchema, type PropertyFilters } from "@/lib/validation/property";
 import { propertyFilterOptions, publishedPropertyCount, searchProperties } from "@/server/properties";
+import { getPage } from "@/server/pages";
 import { getSettings } from "@/server/settings";
 
 export async function generateMetadata(): Promise<Metadata> {
-  return buildMetadata({ title: "Kho nguồn", path: "/kho-nguon" });
+  // Mô tả SEO lấy từ trang "Kho Nguồn" cũ của site gốc (admin sửa được)
+  const page = await getPage("kho-nguon");
+  return buildMetadata({ title: "Kho nguồn", description: page?.seoDescription, path: "/kho-nguon" });
 }
 
 type SP = Record<string, string | string[] | undefined>;

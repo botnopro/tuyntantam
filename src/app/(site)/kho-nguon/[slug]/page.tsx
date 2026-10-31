@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: p.seoDescription || p.summary || plainText(p.descriptionHtml ?? "", 160),
     path: propertyPath(p.slug),
     image: p.images[0]?.src,
+    noindex: isDemoListing(p.slug),
   });
 }
 

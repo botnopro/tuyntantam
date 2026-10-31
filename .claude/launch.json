@@ -8,6 +8,18 @@
       "port": 3000
     },
     {
+      "name": "web-prod-localdb",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start"],
+      "env": {
+        "DATABASE_URL": "postgres://tuyn:tuyn_local_dev@localhost:5432/tuyntantam",
+        "DATABASE_URL_UNPOOLED": "postgres://tuyn:tuyn_local_dev@localhost:5432/tuyntantam",
+        "BLOB_READ_WRITE_TOKEN": "",
+        "RESEND_API_KEY": ""
+      },
+      "port": 3000
+    },
+    {
       "name": "web-prod",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "start"],

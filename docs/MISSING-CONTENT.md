@@ -17,7 +17,7 @@ Website chỉ dùng nội dung có thật trên tuyntantam.com. Các mục dư�
 |---|---|---|
 | 5 | Địa chỉ văn phòng cụ thể | Site gốc chỉ ghi khu vực "Cầu Giấy, Hà Nội" → web hiển thị khu vực, không có bản đồ văn phòng. Thêm ở `/admin/cau-hinh` nếu muốn công khai. |
 | 6 | Tài khoản Telegram thật | Site gốc trỏ tới `web.telegram.org` chung (không phải tài khoản) → đã bỏ khỏi danh sách mạng xã hội. Thêm ở `/admin/cau-hinh` → Mạng xã hội. |
-| 7 | Ảnh chia sẻ mạng xã hội (og:image) cho trang chủ & các trang | Site gốc không có → khi chia sẻ link trang chủ sẽ không có ảnh xem trước. Gợi ý: ảnh 1200×630. |
+| 7 | Ảnh chia sẻ mạng xã hội (og:image) cho trang chủ & các trang | Site gốc không có → tạm dùng `public/images/site/og-default.png` (logo + chức danh trong `data/agent.json`, sinh bằng `node scripts/og-image.mjs`). Nên thay bằng ảnh thật 1200×630. |
 | 8 | Ảnh riêng cho từng dịch vụ | Không có → thẻ dịch vụ dùng icon. |
 | 9 | Mô tả ảnh (alt) | Toàn bộ thư viện ảnh gốc để trống alt; một số alt tự sinh vô nghĩa ("Hình chữ nhật", "z5780311…"). Bài/ảnh mới nên điền alt trong trình upload. |
 | 10 | Video trong bài "6 Trang bất động sản uy tín" | File mp4 32,8 MB vẫn trỏ tới `tuyntantam.com/wp-content/...`. **Nếu tắt site WordPress cũ video sẽ mất** → nên đưa lên YouTube và chèn link. |

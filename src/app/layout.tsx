@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
 import { THEME_INIT_SCRIPT } from "@/lib/utils/theme";
+import { DEFAULT_OG_IMAGE } from "@/lib/seo/metadata";
 import { siteUrl } from "@/lib/seo/url";
 import "./globals.css";
 
@@ -19,8 +20,8 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
   title: { default: "Tuyn Tận Tâm", template: "%s | Tuyn Tận Tâm" },
   applicationName: "Tuyn Tận Tâm",
-  openGraph: { type: "website", locale: "vi_VN", siteName: "Tuyn Tận Tâm" },
-  twitter: { card: "summary_large_image" },
+  openGraph: { type: "website", locale: "vi_VN", siteName: "Tuyn Tận Tâm", images: [DEFAULT_OG_IMAGE] },
+  twitter: { card: "summary_large_image", images: [DEFAULT_OG_IMAGE.url] },
   icons: { icon: "/images/site/favicon.png", apple: "/images/site/favicon.png" },
   formatDetection: { telephone: false },
 };

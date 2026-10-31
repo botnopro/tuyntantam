@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { isDemoListing } from "@/lib/content/demo";
 import { categoryPath, postPath, propertyPath, servicePath } from "@/lib/content/routes";
 import { absoluteUrl } from "@/lib/seo/url";
 import { allPageSlugs, listServices } from "@/server/pages";
@@ -39,11 +40,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...categories
       .filter((c) => c.count > 0)
       .map((c) => ({ url: absoluteUrl(categoryPath(c.slug)), changeFrequency: "weekly" as const, priority: 0.5 })),
-    ...properties.map((p) => ({
-      url: absoluteUrl(propertyPath(p.slug)),
-      lastModified: p.updatedAt,
-      changeFrequency: "weekly" as const,
-      priority: 0.8,
-    })),
+    ...properties
+      .filter((p) => !isDemoListing(p.slug))
+      .map((p) => ({
+        url: absoluteUrl(propertyPath(p.slug)),
+        lastModified: p.updatedAt,
+        changeFrequency: "weekly" as const,
+        priority: 0.8,
+      })),
   ];
 }
