@@ -15,6 +15,7 @@ import { RichContent } from "@/components/site/rich-content";
 import { ShareButtons } from "@/components/site/share-buttons";
 import { withHeadingIds } from "@/lib/content/html";
 import { categoryPath, postPath, tagPath } from "@/lib/content/routes";
+import { slugParams } from "@/lib/content/static-params";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { absoluteUrl } from "@/lib/seo/url";
 import { sanitizeRichText } from "@/lib/security/sanitize";
@@ -25,7 +26,7 @@ import { getSettings } from "@/server/settings";
 type Props = PageProps<"/blog/[slug]">;
 
 export async function generateStaticParams() {
-  return (await allPublishedPostSlugs()).map((p) => ({ slug: p.slug }));
+  return slugParams((await allPublishedPostSlugs()).map((p) => p.slug));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

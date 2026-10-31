@@ -7,6 +7,7 @@ import { ContactCard } from "@/components/site/contact-card";
 import { PageHero } from "@/components/site/page-hero";
 import { RichContent } from "@/components/site/rich-content";
 import { extractLead, withHeadingIds } from "@/lib/content/html";
+import { slugParams } from "@/lib/content/static-params";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { sanitizeRichText } from "@/lib/security/sanitize";
 import { plainText } from "@/lib/utils/format";
@@ -18,7 +19,7 @@ type Props = PageProps<"/[slug]">;
 const RESERVED = new Set(["gioi-thieu", "dich-vu", "kho-nguon", "nguon-bds-thue", "nguon-bds-ban"]);
 
 export async function generateStaticParams() {
-  return (await allPageSlugs()).filter((p) => !RESERVED.has(p.slug)).map((p) => ({ slug: p.slug }));
+  return slugParams((await allPageSlugs()).map((p) => p.slug).filter((s) => !RESERVED.has(s)));
 }
 
 async function load(slug: string) {

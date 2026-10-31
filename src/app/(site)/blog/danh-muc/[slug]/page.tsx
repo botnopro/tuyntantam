@@ -5,6 +5,7 @@ import { PageSkeleton } from "@/components/site/page-skeleton";
 import { BlogIndex, BlogIndexSkeleton } from "@/components/blog/blog-index";
 import { PageHero } from "@/components/site/page-hero";
 import { categoryPath } from "@/lib/content/routes";
+import { slugParams } from "@/lib/content/static-params";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { flattenParams } from "@/lib/validation/common";
 import { postFilterSchema } from "@/lib/validation/post";
@@ -13,7 +14,7 @@ import { listCategories } from "@/server/posts";
 type Props = PageProps<"/blog/danh-muc/[slug]">;
 
 export async function generateStaticParams() {
-  return (await listCategories()).map((c) => ({ slug: c.slug }));
+  return slugParams((await listCategories()).map((c) => c.slug));
 }
 
 async function findCategory(slug: string) {

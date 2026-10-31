@@ -16,6 +16,7 @@ import { RichContent } from "@/components/site/rich-content";
 import { ShareButtons } from "@/components/site/share-buttons";
 import { FURNISHING, propertyTypeLabel } from "@/lib/content/property-options";
 import { propertyPath } from "@/lib/content/routes";
+import { PLACEHOLDER_SLUG, slugParams } from "@/lib/content/static-params";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { absoluteUrl } from "@/lib/seo/url";
 import { safeVirtualTourUrl } from "@/lib/security/sanitize";
@@ -25,12 +26,8 @@ import { getSettings } from "@/server/settings";
 
 type Props = PageProps<"/kho-nguon/[slug]">;
 
-// Cache Components yêu cầu ít nhất 1 param; khi chưa có tin dùng param giữ chỗ → notFound()
-const PLACEHOLDER = "__chua-co-tin__";
-
 export async function generateStaticParams() {
-  const slugs = await allPublishedPropertySlugs();
-  return slugs.length ? slugs.map((p) => ({ slug: p.slug })) : [{ slug: PLACEHOLDER }];
+  return slugParams((await allPublishedPropertySlugs()).map((p) => p.slug));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -46,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 async function PropertyPageContent({ params }: Props) {
   const { slug } = await params;
-  const p = slug === PLACEHOLDER ? null : await getPropertyBySlug(slug);
+  const p = slug === PLACEHOLDER_SLUG ? null : await getPropertyBySlug(slug);
   if (!p) notFound();
   const [site, similar] = await Promise.all([getSettings("site"), similarProperties(p)]);
   const price = formatPrice(p.price, p.listingType, p.priceNote);

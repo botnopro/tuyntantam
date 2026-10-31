@@ -9,6 +9,7 @@ import { PageHero } from "@/components/site/page-hero";
 import { RichContent } from "@/components/site/rich-content";
 import { extractLead } from "@/lib/content/html";
 import { servicePath } from "@/lib/content/routes";
+import { slugParams } from "@/lib/content/static-params";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { sanitizeRichText } from "@/lib/security/sanitize";
 import { getService, listServices } from "@/server/pages";
@@ -16,7 +17,7 @@ import { getService, listServices } from "@/server/pages";
 type Props = PageProps<"/dich-vu/[slug]">;
 
 export async function generateStaticParams() {
-  return (await listServices()).map((s) => ({ slug: s.slug }));
+  return slugParams((await listServices()).map((s) => s.slug));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
