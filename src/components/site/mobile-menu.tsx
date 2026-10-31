@@ -73,8 +73,9 @@ export function MobileMenu({ items, phone, phoneDisplay }: { items: NavItem[]; p
         aria-modal="true"
         aria-label="Menu điều hướng"
         className={cn(
-          // Header có backdrop-filter nên là khối chứa của phần tử fixed → đặt chiều cao tường minh thay vì bottom-0
-          "fixed inset-x-0 top-20 z-40 h-[calc(100dvh-5rem)] overflow-y-auto bg-surface-card/95 px-5 py-6 backdrop-blur-xl transition-[opacity,transform] duration-300",
+          // Header có backdrop-filter nên là khối chứa của phần tử fixed → đặt chiều cao tường minh thay vì bottom-0.
+          // Nền đặc: backdrop-blur lồng trong header (cũng có backdrop-filter) không làm mờ được nội dung trang phía sau
+          "fixed inset-x-0 top-20 z-40 h-[calc(100dvh-5rem)] overflow-y-auto bg-surface-card px-5 py-6 transition-[opacity,transform] duration-300",
           open ? "visible translate-y-0 opacity-100" : "invisible -translate-y-2 opacity-0",
         )}
       >

@@ -1,9 +1,10 @@
-import { ArrowRight, BadgeCheck, Mail, MapPin, Phone, Star } from "lucide-react";
+import { ArrowRight, Mail, MapPin, Phone, Star } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "@/components/ui/link";
 import { PostCard } from "@/components/blog/post-card";
 import { LeadForm } from "@/components/forms/lead-form";
+import { SOCIAL_BUTTON, SocialIcon } from "@/components/icons/social";
 import { Breadcrumbs } from "@/components/site/breadcrumbs";
 import { JsonLd, personJsonLd } from "@/components/site/json-ld";
 import { RichContent } from "@/components/site/rich-content";
@@ -11,6 +12,7 @@ import { SectionHeader } from "@/components/site/section-header";
 import { ServiceGrid } from "@/components/site/service-grid";
 import { Testimonials } from "@/components/site/testimonials";
 import { buildMetadata } from "@/lib/seo/metadata";
+import { cn } from "@/lib/utils/cn";
 import { telHref } from "@/lib/utils/format";
 import { getPage, listServices } from "@/server/pages";
 import { latestPosts } from "@/server/posts";
@@ -40,29 +42,69 @@ export default async function AboutPage() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="overflow-hidden bg-surface-warm">
-        <div className="container-page grid items-center gap-12 pt-10 pb-16 lg:grid-cols-12 lg:pt-14 lg:pb-24">
-          <div className="lg:col-span-7">
+      {/* Hero kiểu trang cá nhân môi giới (Houzez): chữ bên trái, chân dung tách nền bên phải, đáy cong */}
+      <section className="relative isolate overflow-hidden bg-surface-container-low">
+        <div className="container-page grid gap-10 pt-8 lg:min-h-[620px] lg:grid-cols-12 lg:gap-6 lg:pt-10">
+          <div className="pb-4 lg:col-span-7 lg:self-center lg:pb-28">
             <Breadcrumbs items={[{ name: "Giới thiệu", href: "/gioi-thieu" }]} />
-            <h1 className="text-headline-xl-mobile lg:text-headline-xl">{agent.pageIntro.heading}</h1>
-            <p className="mt-5 max-w-xl text-body-lg text-on-surface-variant">{agent.pageIntro.text}</p>
-            <ul className="mt-7 flex flex-wrap gap-2.5">
-              <li className="inline-flex items-center gap-2 rounded-xs bg-surface-card px-4 py-2.5 text-body-sm shadow-xs">
-                <BadgeCheck className="size-4 text-primary" aria-hidden />
-                {agent.title}
-              </li>
+            <h1>
+              <span className="block font-display text-[48px] leading-[1.1] font-light tracking-tight text-slate-dark sm:text-[64px] lg:text-[80px]">
+                {agent.alias}
+              </span>
+              <span className="mt-4 block font-sans text-subheading tracking-[0.25em] text-primary uppercase">{agent.title}</span>
+            </h1>
+            <p className="mt-6 max-w-xl text-body-lg text-on-surface-variant">{agent.pageIntro.text}</p>
+
+            <ul className="mt-8 space-y-3 text-body-md text-on-surface">
               {c.area ? (
-                <li className="inline-flex items-center gap-2 rounded-xs bg-surface-card px-4 py-2.5 text-body-sm shadow-xs">
-                  <MapPin className="size-4 text-primary" aria-hidden />
+                <li className="flex items-center gap-3">
+                  <MapPin className="size-5 shrink-0 text-primary" aria-hidden />
                   {c.area}
                 </li>
               ) : null}
+              <li>
+                <a href={telHref(c.phone)} className="inline-flex items-center gap-3 hover:text-primary">
+                  <Phone className="size-5 shrink-0 text-primary" aria-hidden />
+                  {c.phoneDisplay}
+                </a>
+              </li>
+              {c.emails[0] ? (
+                <li>
+                  <a href={`mailto:${c.emails[0]}`} className="inline-flex items-center gap-3 break-all hover:text-primary">
+                    <Mail className="size-5 shrink-0 text-primary" aria-hidden />
+                    {c.emails[0]}
+                  </a>
+                </li>
+              ) : null}
             </ul>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a href={telHref(c.phone)} className="btn-primary px-6 py-4">
-                <Phone className="size-4" aria-hidden />
-                {c.phoneDisplay}
+
+            {site.socials.length ? (
+              <div className="mt-8">
+                <p className="text-label-caps tracking-[0.25em] text-on-surface-variant uppercase">{home.hero.socialsLabel}</p>
+                <ul className="mt-4 flex flex-wrap gap-2.5">
+                  {site.socials.map((s) => (
+                    <li key={s.url}>
+                      <a
+                        href={s.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={s.label}
+                        className={cn(
+                          "grid size-11 place-items-center rounded-full border border-border-subtle bg-surface-card transition-colors",
+                          SOCIAL_BUTTON[s.platform] ?? "text-on-surface-variant hover:text-primary",
+                        )}
+                      >
+                        <SocialIcon platform={s.platform} className="size-[18px]" />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+
+            <div className="mt-9 flex flex-wrap gap-3">
+              <a href="#about-contact" className="btn-primary px-6 py-4">
+                {home.contact.submitLabel}
               </a>
               <Link href="/dich-vu" className="btn-ghost px-6 py-4">
                 Dịch vụ của Tuyn
@@ -70,22 +112,23 @@ export default async function AboutPage() {
               </Link>
             </div>
           </div>
+
           {agent.portrait ? (
-            <div className="relative mx-auto w-full max-w-sm lg:col-span-5">
-              <div aria-hidden className="absolute -inset-3 top-[10%] rotate-2 rounded-lg bg-brand-subtle sm:-inset-5 sm:top-[10%]" />
+            <div className="relative mx-auto w-full max-w-xs self-end sm:max-w-sm lg:col-span-5 lg:max-w-none">
+              <div aria-hidden className="absolute inset-x-[8%] top-[18%] bottom-0 -z-10 rounded-t-full bg-brand-subtle" />
               <Image
                 src={agent.portrait.src}
                 alt={`${agent.alias} — ${agent.title}`}
                 width={400}
                 height={650}
                 priority
-                sizes="(min-width: 1024px) 380px, 80vw"
-                className="relative mx-auto h-auto w-[85%]"
+                sizes="(min-width: 1024px) 400px, 320px"
+                className="mx-auto h-auto w-full max-w-[400px]"
               />
               {experience ? (
-                <div className="absolute bottom-4 left-0 flex items-center gap-3 rounded-sm bg-surface-card p-5 shadow-xl sm:-left-6">
-                  <span className="grid size-12 place-items-center rounded-sm bg-brand-subtle text-primary">
-                    <Star className="size-6 fill-current" aria-hidden />
+                <div className="absolute bottom-24 -left-4 hidden items-center gap-3 rounded-sm bg-surface-card p-4 shadow-xl lg:flex">
+                  <span className="grid size-11 place-items-center rounded-sm bg-brand-subtle text-primary">
+                    <Star className="size-5 fill-current" aria-hidden />
                   </span>
                   <span>
                     <span className="block font-sans text-[22px] leading-none font-bold text-slate-dark">{experience.display}</span>
@@ -96,6 +139,15 @@ export default async function AboutPage() {
             </div>
           ) : null}
         </div>
+        {/* Đường cong đáy, cùng màu nền section kế tiếp */}
+        <svg
+          aria-hidden
+          viewBox="0 0 1440 60"
+          preserveAspectRatio="none"
+          className="absolute inset-x-0 bottom-0 h-8 w-full fill-surface-card lg:h-14"
+        >
+          <path d="M0 60V28C240 4 480 -4 720 14s480 36 720 10v36z" />
+        </svg>
       </section>
 
       {/* Số liệu */}
