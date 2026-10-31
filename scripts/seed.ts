@@ -15,6 +15,7 @@ import { categories, pages, postCategories, posts, services, siteSettings, users
 import { hashPassword, PASSWORD_MIN } from "@/lib/auth/password";
 import { sanitizeRichText } from "@/lib/security/sanitize";
 import { mapLegacyHref } from "@/lib/content/routes";
+import { plainText } from "@/lib/utils/format";
 import type { AgentSettings, DonateSettings, HomeSettings, ImageRef, SettingsMap, SiteSettings, SocialLink } from "@/lib/content/types";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -43,12 +44,7 @@ function cleanHtml(html: string | null | undefined): string {
   return sanitizeRichText(rewritten);
 }
 
-const text = (html: string) =>
-  html
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
+const text = (html: string) => plainText(html);
 
 function excerptOf(s: string | null | undefined, max = 180): string | null {
   if (!s) return null;

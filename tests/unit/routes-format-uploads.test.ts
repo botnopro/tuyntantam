@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { mapLegacyHref } from "@/lib/content/routes";
-import { formatPrice, formatVnd, slugify } from "@/lib/utils/format";
+import { formatPrice, formatVnd, plainText, slugify } from "@/lib/utils/format";
 import { sniffImage } from "@/server/admin/uploads";
 
 describe("mapLegacyHref", () => {
@@ -80,6 +80,15 @@ describe("slugify", () => {
 
   it("giới hạn 120 ký tự", () => {
     expect(slugify("a".repeat(300)).length).toBe(120);
+  });
+});
+
+describe("plainText", () => {
+  it("bỏ thẻ và giải mã thực thể đúng một lần", () => {
+    expect(plainText("<p>Liên Hệ &amp; Hợp Tác</p><p>A&nbsp;&#8211;&#x20;B</p>")).toBe("Liên Hệ & Hợp Tác A – B");
+  });
+  it("giữ nguyên thực thể lạ", () => {
+    expect(plainText("x &foo; &#0; y")).toBe("x &foo; &#0; y");
   });
 });
 

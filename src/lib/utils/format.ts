@@ -64,10 +64,19 @@ export function readingMinutes(html: string): number {
   return Math.max(1, Math.round(words / 200));
 }
 
+const NAMED_ENTITIES: Record<string, string> = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " " };
+
+/** Giải mã thực thể HTML (&amp;, &#8211;…) — kết quả là chữ thuần, chỉ render dạng text (React tự escape). */
+export function decodeEntities(s: string): string {
+  return s.replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (m, e: string) => {
+    if (e[0] !== "#") return NAMED_ENTITIES[e.toLowerCase()] ?? m;
+    const code = e[1].toLowerCase() === "x" ? parseInt(e.slice(2), 16) : Number(e.slice(1));
+    return code > 0 && code <= 0x10ffff ? String.fromCodePoint(code) : m;
+  });
+}
+
 export function plainText(html: string, max?: number): string {
-  const t = html
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&nbsp;/g, " ")
+  const t = decodeEntities(html.replace(/<[^>]+>/g, " "))
     .replace(/\s+/g, " ")
     .trim();
   if (!max || t.length <= max) return t;
