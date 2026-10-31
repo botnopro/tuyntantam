@@ -1,8 +1,7 @@
 import "server-only";
 import { revalidateTag } from "next/cache";
 
-// Hàm đọc chạy lúc request (phụ thuộc searchParams/slug mới, API) dùng "use cache: remote": cache dùng chung
-// giữa mọi instance serverless; "use cache" thường chỉ nằm trong RAM từng instance nên instance mới lại gọi DB.
+// Không dùng "use cache: remote": đo trên Vercel (31/10/2026) lần trúng cache remote ~0,8 s, chậm hơn truy vấn DB trực tiếp.
 export const TAGS = {
   settings: "settings",
   posts: "posts",

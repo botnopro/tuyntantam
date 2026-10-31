@@ -1,4 +1,4 @@
-import { RotateCcw, SlidersHorizontal } from "lucide-react";
+import { ChevronDown, RotateCcw, SlidersHorizontal } from "lucide-react";
 import Link from "@/components/ui/link";
 import { LISTING_TYPES, propertyTypeLabel } from "@/lib/content/property-options";
 import type { PropertyFilters } from "@/lib/validation/property";
@@ -9,25 +9,35 @@ type Options = { districts: string[]; types: string[]; amenities: string[] };
 
 /**
  * Bộ lọc BĐS — GET form tự áp dụng khi đổi giá trị (không có nút "Lọc").
- * Mobile: thu gọn trong <details>. Giá nhập theo triệu đồng cho dễ dùng.
+ * Mobile: thu gọn sau nút "Bộ lọc (n)" (checkbox + CSS, không cần JS, không nhảy layout); mở sẵn khi đang lọc.
+ * Giá nhập theo triệu đồng cho dễ dùng.
  */
 export function FilterForm({ filters, options, view }: { filters: PropertyFilters; options: Options; view: string }) {
   const million = (v?: number) => (v != null ? String(v / 1e6) : "");
   const cell = "flex flex-col rounded-xs bg-surface-neutral px-3 py-1.5";
   const label = "text-label-caps tracking-wider text-on-surface-variant uppercase";
   const input = "w-full bg-transparent py-1 text-[15px] text-on-surface focus:outline-none";
+  const active = [filters.q, filters.listingType, filters.type, filters.district, filters.bedrooms, filters.minPrice, filters.maxPrice].filter(
+    (v) => v != null && v !== "",
+  ).length;
 
   return (
     <AutoSubmitForm action="/kho-nguon" className="relative z-30 bg-surface-card shadow-float" role="search" aria-label="Lọc bất động sản">
       {view !== "grid" ? <input type="hidden" name="view" value={view} /> : null}
-      <details className="group container-page py-4 lg:py-5" open>
-        <summary className="flex cursor-pointer list-none items-center justify-between font-sans text-subheading tracking-wider uppercase lg:hidden">
+      <div className="container-page py-4 lg:py-5">
+        {/* Không có name → không gửi đi, AutoSubmitForm bỏ qua */}
+        <input id="f-toggle" type="checkbox" defaultChecked={active > 0} aria-controls="f-fields" className="peer sr-only" />
+        <label
+          htmlFor="f-toggle"
+          className="flex min-h-11 cursor-pointer items-center justify-between font-sans text-subheading tracking-wider uppercase peer-checked:[&>svg]:rotate-180 peer-focus-visible:outline-2 peer-focus-visible:outline-primary lg:hidden"
+        >
           <span className="inline-flex items-center gap-2">
             <SlidersHorizontal className="size-4 text-primary" aria-hidden /> Bộ lọc
+            {active > 0 ? <span className="rounded-full bg-brand-strong px-2 text-[12px] text-white">{active}</span> : null}
           </span>
-          <span className="text-body-sm text-on-surface-variant normal-case group-open:hidden">Mở</span>
-        </summary>
-        <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:mt-0 lg:grid-cols-12 lg:items-stretch">
+          <ChevronDown className="size-5 text-on-surface-variant transition-transform" aria-hidden />
+        </label>
+        <div id="f-fields" className="mt-4 hidden gap-3 peer-checked:grid sm:grid-cols-2 lg:mt-0 lg:grid lg:grid-cols-12 lg:items-stretch">
           <div className={cn(cell, "sm:col-span-2 lg:col-span-3")}>
             <label htmlFor="f-q" className={label}>
               Từ khoá
@@ -146,7 +156,7 @@ export function FilterForm({ filters, options, view }: { filters: PropertyFilter
             </Link>
           </div>
         </div>
-      </details>
+      </div>
     </AutoSubmitForm>
   );
 }

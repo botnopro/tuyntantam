@@ -7,7 +7,7 @@ import type { SettingsMap } from "@/lib/content/types";
 import { invalidate, TAGS } from "./cache";
 
 export async function getSettings<K extends keyof SettingsMap>(key: K): Promise<SettingsMap[K]> {
-  "use cache: remote";
+  "use cache";
   cacheLife("days");
   cacheTag(TAGS.settings);
   const [row] = await getDb().select().from(siteSettings).where(eq(siteSettings.key, key)).limit(1);

@@ -1,15 +1,19 @@
 "use client";
 
-import { ArrowUp, Mail, Phone } from "lucide-react";
+import { ArrowUp, Mail, MessageCircle, Phone, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { SocialIcon } from "@/components/icons/social";
 import { cn } from "@/lib/utils/cn";
 
 type Props = { phone: string; phoneDisplay: string; zalo: string | null; email: string };
 
-/** Nút liên hệ nổi (Gọi / Zalo / Email) + nút lên đầu trang. */
+/**
+ * Nút liên hệ nổi (Gọi / Zalo / Email) + nút lên đầu trang.
+ * Mobile: gộp thành một nút "Liên hệ" bấm để bung (3 nút tròn che chữ nội dung); từ sm hiện đủ.
+ */
 export function FloatingContact({ phone, phoneDisplay, zalo, email }: Props) {
   const [showTop, setShowTop] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setShowTop(window.scrollY > 800);
@@ -53,7 +57,7 @@ export function FloatingContact({ phone, phoneDisplay, zalo, email }: Props) {
       >
         <ArrowUp className="size-5" aria-hidden />
       </button>
-      <ul className="flex flex-col gap-2.5" aria-label="Liên hệ nhanh">
+      <ul id="floating-contact-list" className={cn("flex-col gap-2.5 sm:flex", open ? "flex" : "hidden")} aria-label="Liên hệ nhanh">
         {items.map((item) => (
           <li key={item.href}>
             <a
@@ -68,6 +72,16 @@ export function FloatingContact({ phone, phoneDisplay, zalo, email }: Props) {
           </li>
         ))}
       </ul>
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        aria-controls="floating-contact-list"
+        aria-label={open ? "Đóng liên hệ nhanh" : "Liên hệ nhanh"}
+        className="grid size-12 cursor-pointer place-items-center rounded-full bg-brand-strong text-white shadow-lg transition-colors hover:bg-brand-hover sm:hidden"
+      >
+        {open ? <X className="size-5" aria-hidden /> : <MessageCircle className="size-5" aria-hidden />}
+      </button>
     </div>
   );
 }

@@ -49,6 +49,8 @@ export function AutoSubmitForm({ action, children, ...props }: Props) {
         if (isTyped(e.target)) apply(TYPING_DELAY_MS);
       }}
       onChange={(e) => {
+        // Ô không có name (vd. nút thu gọn bộ lọc) không thuộc dữ liệu lọc
+        if (e.target instanceof HTMLInputElement && !e.target.name) return;
         if (!isTyped(e.target)) apply();
       }}
     >
