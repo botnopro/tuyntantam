@@ -10,6 +10,9 @@ const beVietnam = Be_Vietnam_Pro({
   weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin", "vietnamese"],
   display: "swap",
+  // 5 độ đậm × 2 subset = 10 file preload, phần lớn không dùng ở màn hình đầu và tranh băng thông với ảnh hero;
+  // không preload thì trình duyệt chỉ tải file mà trang thực sự cần
+  preload: false,
 });
 
 export const metadata: Metadata = {

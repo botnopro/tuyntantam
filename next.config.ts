@@ -6,6 +6,9 @@ import { siteUrl } from "./src/lib/seo/url";
 const isDev = process.env.NODE_ENV !== "production";
 // HSTS + upgrade-insecure-requests chỉ khi site chạy https (tránh gãy khi chạy bản production trên http://localhost)
 const isHttps = siteUrl().startsWith("https://");
+if (process.env.VERCEL && /localhost|127\.0\.0\.1/.test(process.env.APP_URL ?? "")) {
+  console.warn(`⚠ APP_URL=${process.env.APP_URL} bị bỏ qua trên Vercel — dùng ${siteUrl()}. Hãy xoá hoặc sửa biến APP_URL.`);
+}
 
 // Slug bài viết import từ WordPress — để redirect 301 các URL cũ (/blog/<slug>/.html, /<slug>)
 const legacyPostSlugs: string[] = (() => {

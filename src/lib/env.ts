@@ -11,8 +11,11 @@ const optional = z
 const schema = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
   DATABASE_URL: z.string().min(1, "Thiếu DATABASE_URL"),
-  // Trống → tên miền production của Vercel (xem siteUrl)
-  APP_URL: z.url().default(siteUrl()),
+  // Trống (hoặc localhost trên Vercel) → tên miền production của Vercel (xem siteUrl)
+  APP_URL: z
+    .url()
+    .optional()
+    .transform(() => siteUrl()),
   SESSION_SECRET: z.string().min(32, "SESSION_SECRET phải dài ít nhất 32 ký tự"),
   LEAD_NOTIFY_EMAIL: optional.pipe(z.email().optional()),
   RESEND_API_KEY: optional,

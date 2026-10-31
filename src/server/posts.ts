@@ -45,7 +45,7 @@ function escapeLike(s: string) {
 }
 
 export async function listPosts(filters: PostFilters) {
-  "use cache";
+  "use cache: remote";
   cacheLife("hours");
   cacheTag(TAGS.posts);
   const db = getDb();
@@ -89,7 +89,7 @@ export async function latestPosts(limit = 4) {
 }
 
 export async function featuredPost() {
-  "use cache";
+  "use cache: remote";
   cacheLife("hours");
   cacheTag(TAGS.posts);
   const [row] = await getDb()
@@ -102,7 +102,7 @@ export async function featuredPost() {
 }
 
 export async function getPostBySlug(slug: string) {
-  "use cache";
+  "use cache: remote";
   cacheLife("hours");
   cacheTag(TAGS.posts, TAGS.post(slug));
   const [row] = await getDb()
@@ -154,7 +154,7 @@ export async function getRelatedPosts(postId: string, categorySlugs: string[], l
 }
 
 export async function listCategories() {
-  "use cache";
+  "use cache: remote";
   cacheLife("hours");
   cacheTag(TAGS.posts, TAGS.categories);
   const db = getDb();
@@ -172,7 +172,7 @@ export async function listCategories() {
 }
 
 export async function listTags() {
-  "use cache";
+  "use cache: remote";
   cacheLife("hours");
   cacheTag(TAGS.posts);
   const result = await getDb().execute<{ tag: string; n: number }>(sql`

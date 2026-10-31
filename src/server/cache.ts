@@ -1,6 +1,8 @@
 import "server-only";
 import { revalidateTag } from "next/cache";
 
+// Hàm đọc chạy lúc request (phụ thuộc searchParams/slug mới, API) dùng "use cache: remote": cache dùng chung
+// giữa mọi instance serverless; "use cache" thường chỉ nằm trong RAM từng instance nên instance mới lại gọi DB.
 export const TAGS = {
   settings: "settings",
   posts: "posts",

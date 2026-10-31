@@ -98,7 +98,7 @@ function orderBy(sort: PropertyFilters["sort"]) {
 }
 
 export async function searchProperties(filters: PropertyFilters) {
-  "use cache";
+  "use cache: remote";
   cacheLife("hours");
   cacheTag(TAGS.properties);
   const db = getDb();
@@ -119,7 +119,7 @@ export async function searchProperties(filters: PropertyFilters) {
 
 /** Số tin đang hiển thị — quyết định bật/tắt các khu vực phụ thuộc tin BĐS. */
 export async function publishedPropertyCount(): Promise<number> {
-  "use cache";
+  "use cache: remote";
   cacheLife("hours");
   cacheTag(TAGS.properties);
   const [{ total }] = (await getDb().select({ total: count() }).from(properties).where(isPublished)) as [{ total: number }];
@@ -151,7 +151,7 @@ export async function latestProperties(listingType: "RENT" | "SALE", limit = 8) 
 }
 
 export async function getPropertyBySlug(slug: string) {
-  "use cache";
+  "use cache: remote";
   cacheLife("hours");
   cacheTag(TAGS.properties, TAGS.property(slug));
   const [row] = await getDb()
@@ -194,7 +194,7 @@ export async function propertiesBySlugs(slugs: string[]) {
 
 /** Giá trị lọc lấy từ dữ liệu thật (quận, loại hình, tiện ích đang có). */
 export async function propertyFilterOptions() {
-  "use cache";
+  "use cache: remote";
   cacheLife("hours");
   cacheTag(TAGS.properties);
   const db = getDb();
