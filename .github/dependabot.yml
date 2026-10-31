@@ -1,0 +1,26 @@
+# Tự mở PR cập nhật thư viện mỗi tuần (gom nhóm để ít PR); bản vá bảo mật được mở ngay khi có.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      timezone: Asia/Ho_Chi_Minh
+    open-pull-requests-limit: 5
+    groups:
+      minor-patch:
+        update-types: [minor, patch]
+    ignore:
+      # Next/React đổi major cần kiểm tra thủ công
+      - dependency-name: next
+        update-types: ["version-update:semver-major"]
+      - dependency-name: react
+        update-types: ["version-update:semver-major"]
+      - dependency-name: react-dom
+        update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

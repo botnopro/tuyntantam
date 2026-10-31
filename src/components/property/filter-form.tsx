@@ -17,9 +17,15 @@ export function FilterForm({ filters, options, view }: { filters: PropertyFilter
   const cell = "flex flex-col rounded-xs bg-surface-neutral px-3 py-1.5";
   const label = "text-label-caps tracking-wider text-on-surface-variant uppercase";
   const input = "w-full bg-transparent py-1 text-[15px] text-on-surface focus:outline-none";
-  const active = [filters.q, filters.listingType, filters.type, filters.district, filters.bedrooms, filters.minPrice, filters.maxPrice].filter(
-    (v) => v != null && v !== "",
-  ).length;
+  const active = [
+    filters.q,
+    filters.listingType,
+    filters.type,
+    filters.district,
+    filters.bedrooms,
+    filters.minPrice,
+    filters.maxPrice,
+  ].filter((v) => v != null && v !== "").length;
 
   return (
     <AutoSubmitForm action="/kho-nguon" className="relative z-30 bg-surface-card shadow-float" role="search" aria-label="Lọc bất động sản">
@@ -29,7 +35,7 @@ export function FilterForm({ filters, options, view }: { filters: PropertyFilter
         <input id="f-toggle" type="checkbox" defaultChecked={active > 0} aria-controls="f-fields" className="peer sr-only" />
         <label
           htmlFor="f-toggle"
-          className="flex min-h-11 cursor-pointer items-center justify-between font-sans text-subheading tracking-wider uppercase peer-checked:[&>svg]:rotate-180 peer-focus-visible:outline-2 peer-focus-visible:outline-primary lg:hidden"
+          className="flex min-h-11 cursor-pointer items-center justify-between font-sans text-subheading tracking-wider uppercase peer-focus-visible:outline-2 peer-focus-visible:outline-primary lg:hidden peer-checked:[&>svg]:rotate-180"
         >
           <span className="inline-flex items-center gap-2">
             <SlidersHorizontal className="size-4 text-primary" aria-hidden /> Bộ lọc
