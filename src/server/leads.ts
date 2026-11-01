@@ -105,6 +105,10 @@ const escape = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<":
 async function notifyNewLead(id: string) {
   const { LEAD_NOTIFY_EMAIL: to, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } = env();
   const telegram = Boolean(TELEGRAM_BOT_TOKEN && TELEGRAM_CHAT_ID);
+  if (!telegram) {
+    const missing = [!TELEGRAM_BOT_TOKEN && "TELEGRAM_BOT_TOKEN", !TELEGRAM_CHAT_ID && "TELEGRAM_CHAT_ID"].filter(Boolean).join(", ");
+    console.info(`[leads] bỏ qua Telegram — thiếu ${missing}`);
+  }
   if (!to && !telegram) return;
   const [lead] = await getDb()
     .select({ lead: leads, propertyTitle: properties.title, propertySlug: properties.slug })

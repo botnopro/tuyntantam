@@ -2,6 +2,7 @@ import "server-only";
 import { createHash, randomBytes } from "node:crypto";
 import { and, eq, gt, lt } from "drizzle-orm";
 import { cookies } from "next/headers";
+import { connection } from "next/server";
 import { cache } from "react";
 import { getDb } from "@/lib/db";
 import { sessions, users, type User } from "@/lib/db/schema";
@@ -51,6 +52,8 @@ export const getSessionUser = cache(async (): Promise<SessionUser | null> => {
   const jar = await cookies();
   const token = jar.get(SESSION_COOKIE)?.value;
   if (!token || token.length > 100) return null;
+  // Đánh dấu render tại request trước khi dùng new Date()/Date.now() (Cache Components báo lỗi khi prerender)
+  await connection();
   const id = hashToken(token);
   const db = getDb();
   const [row] = await db
