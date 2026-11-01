@@ -43,7 +43,7 @@ export default async function ContentIndex() {
                 >
                   <span className="font-semibold">{s.title}</span>
                   {s.isPlaceholder ? (
-                    <span className="rounded-xs bg-brand-subtle px-2 py-0.5 text-[11px] font-bold text-on-primary-container">
+                    <span className="rounded-xs bg-brand-subtle px-2 py-0.5 text-[11px] font-bold text-primary">
                       Cần bổ sung nội dung
                     </span>
                   ) : null}

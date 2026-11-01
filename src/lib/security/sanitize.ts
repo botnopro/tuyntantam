@@ -61,6 +61,9 @@ export function sanitizeRichText(dirty: string): string {
     allowedSchemesByTag: { img: ["https", "http"], video: ["https"], source: ["https"] },
     allowProtocolRelative: false,
     transformTags: {
+      // Nội dung dán/soạn từ nơi khác: mỗi <div> là một dòng → giữ thành đoạn thay vì gộp chữ liền nhau
+      div: "p",
+      h1: "h2",
       a: (tagName, attribs) => {
         const href = attribs.href ?? "";
         const external = /^https?:\/\//i.test(href) && !/^https?:\/\/(www\.)?tuyntantam\.com/i.test(href);

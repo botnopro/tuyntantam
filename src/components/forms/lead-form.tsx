@@ -130,7 +130,7 @@ export function LeadForm({
             ].map(([value, label]) => (
               <label
                 key={value}
-                className="flex flex-1 cursor-pointer items-center gap-2 rounded-sm bg-surface-container-low px-3 py-2.5 text-[15px] has-[:checked]:bg-brand-subtle has-[:checked]:text-on-primary-container"
+                className="flex flex-1 cursor-pointer items-center gap-2 rounded-sm bg-surface-container-low px-3 py-2.5 text-[15px] has-[:checked]:bg-brand-subtle has-[:checked]:text-primary"
               >
                 <input
                   type="radio"
@@ -214,7 +214,7 @@ export function LeadForm({
               ].map(([value, label]) => (
                 <label
                   key={value}
-                  className="flex flex-1 cursor-pointer items-center gap-2 rounded-sm bg-surface-container-low px-3 py-2.5 text-[15px] has-[:checked]:bg-brand-subtle has-[:checked]:text-on-primary-container"
+                  className="flex flex-1 cursor-pointer items-center gap-2 rounded-sm bg-surface-container-low px-3 py-2.5 text-[15px] has-[:checked]:bg-brand-subtle has-[:checked]:text-primary"
                 >
                   <input
                     type="radio"

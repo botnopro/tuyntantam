@@ -43,10 +43,10 @@
   /* Nền tối cố định cho ảnh phủ / dải tối (không đổi theo chế độ) */
   --color-ink: #0f172a;
 
-  /* Text / neutral */
-  --color-slate-dark: #0f172a; /* tiêu đề */
-  --color-on-surface: #111c2d;
-  --color-on-surface-variant: #475569;
+  /* Text / neutral — dịu hơn đen tuyền cho đỡ mỏi mắt, vẫn đạt tương phản AA */
+  --color-slate-dark: #253246; /* tiêu đề */
+  --color-on-surface: #3a4658; /* ~9.6:1 trên nền trắng */
+  --color-on-surface-variant: #5d6a7e; /* ~5.3:1 trên nền trắng */
   --color-outline: #8a94a6;
   --color-outline-variant: #cbd5e1;
 
@@ -166,9 +166,9 @@
   --color-secondary-deep: #8fb6e8;
   --color-x: #ffffff;
 
-  --color-slate-dark: #f1f5f9;
-  --color-on-surface: #e2e8f0;
-  --color-on-surface-variant: #a7b2c3;
+  --color-slate-dark: #dfe5ee;
+  --color-on-surface: #c5cdd9;
+  --color-on-surface-variant: #929eb0;
   --color-outline: #6b778a;
   --color-outline-variant: #334155;
 

@@ -13,7 +13,7 @@ export function AdminNavLink({ href, exact, children }: { href: string; exact?: 
       aria-current={active ? "page" : undefined}
       className={cn(
         "flex items-center gap-2 rounded-sm px-3 py-2 text-[14px] font-medium",
-        active ? "bg-brand-subtle text-on-primary-container" : "text-slate-dark hover:bg-surface-neutral",
+        active ? "bg-brand-subtle text-primary" : "text-slate-dark hover:bg-surface-neutral",
       )}
     >
       {children}

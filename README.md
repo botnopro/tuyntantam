@@ -64,7 +64,8 @@ npm run screenshots -- ./shots http://localhost:3000 / /tin-tuc   # chụp ảnh
 | `ADMIN_EMAIL`, `ADMIN_PASSWORD`, `ADMIN_NAME` | khi seed | Tạo admin đầu tiên (mật khẩu ≥ 10 ký tự); xoá khỏi môi trường sau khi tạo |
 | `LEAD_NOTIFY_EMAIL` | | Email nhận thông báo khách liên hệ |
 | `RESEND_API_KEY`, `MAIL_FROM` | | Gửi email qua Resend (`MAIL_FROM` thuộc domain đã xác minh) |
-| `BLOB_READ_WRITE_TOKEN` | trên Vercel nếu cần upload ảnh | Tự có khi gắn Vercel Blob store |
+| `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` | | Báo khách liên hệ/đặt lịch về Telegram (xem `docs/KE-HOACH-THONG-BAO-TELEGRAM.md`). Token là bí mật |
+| `BLOB_READ_WRITE_TOKEN` hoặc `BLOB_STORE_ID` | **bắt buộc trên Vercel để admin tải ảnh** | Tự có khi gắn Vercel Blob store (store kiểu mới chỉ cấp `BLOB_STORE_ID` + OIDC — cũng được nhận). Store *public* → ảnh qua CDN; store *private* → ảnh phục vụ qua `/uploads/...` |
 | `NEXT_PUBLIC_TURNSTILE_SITE_KEY`, `TURNSTILE_SECRET_KEY` | | Bật Cloudflare Turnstile cho form |
 | `CORS_ORIGINS` | | Origin ngoài được gọi API (phân tách dấu phẩy) |
 | `TRUST_PROXY` | | Cách lấy IP khách cho rate limit: tự là `vercel` trên Vercel; mặc định `proxy` (phần tử cuối của `X-Forwarded-For` do nginx/Caddy nối vào). Docker **phải** chạy sau reverse proxy |
@@ -87,7 +88,7 @@ npm run screenshots -- ./shots http://localhost:3000 / /tin-tuc   # chụp ảnh
 2. **GitHub:** đẩy repo lên (private).
 3. **Vercel:** *Add New Project* → chọn repo. Ở **Environment Variables** thêm `DATABASE_URL` (pooled), `DATABASE_URL_UNPOOLED` (direct), `APP_URL`, `SESSION_SECRET` và các biến tuỳ chọn ở trên.
    `vercel.json` đã đặt region `sin1` và lệnh build `node scripts/migrate.mjs && next build`, nên **migration chạy tự động mỗi lần deploy**.
-4. *(Tuỳ chọn)* **Storage → Blob → Connect** để admin upload ảnh.
+4. **Storage → Blob → Create/Connect** (chọn *Public*) rồi **Redeploy** — thiếu bước này admin không tải ảnh BĐS lên được (Vercel không cho ghi đĩa).
 5. **Nạp nội dung lần đầu** (từ máy local, trỏ vào DB production):
    ```bash
    # macOS/Linux

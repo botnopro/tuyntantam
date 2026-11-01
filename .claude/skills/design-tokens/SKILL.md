@@ -27,8 +27,8 @@ Giá trị sáng ở `@theme`, giá trị tối ghi đè trong `.dark` (`globals
 | Tint nền (chip, ô icon, khối nhấn) | `brand-subtle` | #E8F1FF / #12233D |
 | Chữ nhấn trên dải tối `ink` | `primary-fixed-dim` | #9CC3FF |
 | Secondary (badge "Cho thuê", nút Email nổi) | `secondary` / `secondary-deep` | #1E3A5F / #2D5A8C |
-| Tiêu đề | `slate-dark` | #0F172A / #F1F5F9 |
-| Chữ chính / body | `on-surface` / `on-surface-variant` | #111C2D, #475569 / #E2E8F0, #A7B2C3 |
+| Tiêu đề | `slate-dark` | #253246 / #DFE5EE |
+| Chữ chính / body (dịu, không đen tuyền — đỡ mỏi mắt) | `on-surface` / `on-surface-variant` | #3A4658, #5D6A7E / #C5CDD9, #929EB0 |
 | Nền trang / card | `surface` / `surface-card` | #F5F7FA, #FFF / #0D1219, #161E2A |
 | Nền phụ | `surface-warm`, `surface-neutral`, `surface-container-low/…/high` | xem `globals.css` |
 | Nền tối cố định (ảnh phủ, dải tối, badge trên ảnh) | `ink` | #0F172A (không đổi) |

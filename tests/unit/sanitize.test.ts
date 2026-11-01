@@ -49,6 +49,10 @@ describe("sanitizeRichText", () => {
     expect(sanitizeRichText("<p>  </p><p>Có chữ</p>")).toBe("<p>Có chữ</p>");
   });
 
+  it("giữ xuống dòng của nội dung dán: <div> → <p>, <h1> → <h2>", () => {
+    expect(sanitizeRichText("<div>Dòng 1</div><div>Dòng 2</div><h1>Tiêu đề</h1>")).toBe("<p>Dòng 1</p><p>Dòng 2</p><h2>Tiêu đề</h2>");
+  });
+
   it("không cho id ở thẻ không phải heading", () => {
     expect(sanitizeRichText('<p id="x" class="y" style="color:red">A</p>')).toBe("<p>A</p>");
   });

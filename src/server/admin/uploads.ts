@@ -61,6 +61,24 @@ function dimensions(buf: Uint8Array, mime: string): { width: number; height: num
 export type UploadResult =
   { ok: true; url: string; width: number | null; height: number | null } | { ok: false; name: string; message: string };
 
+/**
+ * Có Vercel Blob khi có token đọc-ghi, hoặc store gắn kiểu mới (Vercel chỉ cấp BLOB_STORE_ID + OIDC,
+ * không có BLOB_READ_WRITE_TOKEN) — khi đó SDK tự lấy thông tin xác thực từ biến môi trường.
+ */
+export const blobEnabled = () => Boolean(env().BLOB_READ_WRITE_TOKEN || process.env.BLOB_STORE_ID);
+
+/** Ghi lên Blob: store public → URL CDN; store private → phục vụ qua /uploads/... (route đọc lại bằng `get`). */
+async function putBlob(key: string, buf: Uint8Array, mime: string): Promise<string> {
+  const opts = { contentType: mime, token: env().BLOB_READ_WRITE_TOKEN, addRandomSuffix: false };
+  try {
+    return (await put(key, Buffer.from(buf), { ...opts, access: "public" })).url;
+  } catch (err) {
+    if (!/private/i.test(err instanceof Error ? err.message : "")) throw err;
+    await put(key, Buffer.from(buf), { ...opts, access: "private" });
+    return `/${key}`;
+  }
+}
+
 export async function saveImage(file: File, userId: string): Promise<UploadResult> {
   if (file.size > UPLOAD_MAX_BYTES) return { ok: false, name: file.name, message: "Ảnh vượt quá 5 MB" };
   const buf = new Uint8Array(await file.arrayBuffer());
@@ -71,16 +89,26 @@ export async function saveImage(file: File, userId: string): Promise<UploadResul
   const key = `uploads/${now.getFullYear()}/${String(now.getMonth() + 1).padStart(2, "0")}/${randomUUID()}.${kind.ext}`;
 
   let url: string;
-  const token = env().BLOB_READ_WRITE_TOKEN;
-  if (token) {
-    const blob = await put(key, Buffer.from(buf), { access: "public", contentType: kind.mime, token, addRandomSuffix: false });
-    url = blob.url;
-  } else {
-    if (process.env.VERCEL) return { ok: false, name: file.name, message: "Chưa cấu hình Vercel Blob (BLOB_READ_WRITE_TOKEN) để lưu ảnh" };
-    const rel = key.replace(/^uploads\//, "").split("/");
-    await mkdir(join(/*turbopackIgnore: true*/ uploadDir(), ...rel.slice(0, -1)), { recursive: true });
-    await writeFile(join(/*turbopackIgnore: true*/ uploadDir(), ...rel), buf);
-    url = `/${key}`;
+  try {
+    if (blobEnabled()) {
+      url = await putBlob(key, buf, kind.mime);
+    } else {
+      if (process.env.VERCEL) {
+        return {
+          ok: false,
+          name: file.name,
+          message: "Chưa gắn Vercel Blob cho dự án (Vercel → Storage → Blob → Connect) nên chưa lưu được ảnh",
+        };
+      }
+      const rel = key.replace(/^uploads\//, "").split("/");
+      await mkdir(join(/*turbopackIgnore: true*/ uploadDir(), ...rel.slice(0, -1)), { recursive: true });
+      await writeFile(join(/*turbopackIgnore: true*/ uploadDir(), ...rel), buf);
+      url = `/${key}`;
+    }
+  } catch (err) {
+    // Lỗi lưu trữ (Blob hết hạn mức, sai quyền, đĩa đầy…) → báo rõ cho admin thay vì lỗi 500 chung chung
+    console.error("[upload] lưu ảnh thất bại", err);
+    return { ok: false, name: file.name, message: `Không lưu được ảnh: ${err instanceof Error ? err.message : "lỗi không xác định"}` };
   }
   await getDb()
     .insert(media)

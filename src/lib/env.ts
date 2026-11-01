@@ -20,6 +20,8 @@ const schema = z.object({
   LEAD_NOTIFY_EMAIL: optional.pipe(z.email().optional()),
   RESEND_API_KEY: optional,
   MAIL_FROM: optional,
+  TELEGRAM_BOT_TOKEN: optional,
+  TELEGRAM_CHAT_ID: optional,
   BLOB_READ_WRITE_TOKEN: optional,
   NEXT_PUBLIC_TURNSTILE_SITE_KEY: optional,
   TURNSTILE_SECRET_KEY: optional,

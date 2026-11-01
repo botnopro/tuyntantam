@@ -138,18 +138,9 @@ export default async function HomePage() {
             </div>
           </div>
 
-          {/* Chân dung toàn thân chạm đáy, đặt trên vòng tròn xanh đậm + vòng viền ngoài để nổi khối.
-              Một ảnh duy nhất: mobile nằm dưới chữ, desktop neo bên phải */}
+          {/* Chân dung toàn thân chạm đáy. Một ảnh duy nhất: mobile nằm dưới chữ, desktop neo bên phải */}
           {home.hero.image ? (
             <div className="pointer-events-none relative mx-auto h-[400px] max-w-sm sm:h-[460px] lg:absolute lg:inset-y-0 lg:right-0 lg:mx-0 lg:h-auto lg:w-[42%] lg:max-w-none">
-              <div
-                aria-hidden
-                className="absolute top-[16%] left-1/2 aspect-square w-[min(112%,560px)] -translate-x-1/2 rounded-full border border-primary-container/25"
-              />
-              <div
-                aria-hidden
-                className="absolute top-[22%] left-1/2 aspect-square w-[min(92%,460px)] -translate-x-1/2 rounded-full bg-gradient-to-b from-primary-container to-brand-hover"
-              />
               <Image
                 src={home.hero.image.src}
                 alt={`${agent.alias} — ${agent.title}`}

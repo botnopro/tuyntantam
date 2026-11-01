@@ -11,12 +11,12 @@ export default function GlobalError({ reset }: { error: Error & { digest?: strin
           minHeight: "100vh",
           margin: 0,
           background: "#f5f7fa",
-          color: "#0f172a",
+          color: "#253246",
         }}
       >
         <div style={{ textAlign: "center", padding: 24 }}>
           <h1 style={{ fontSize: 28 }}>Đã có lỗi xảy ra</h1>
-          <p style={{ color: "#475569" }}>Vui lòng tải lại trang sau ít phút.</p>
+          <p style={{ color: "#5d6a7e" }}>Vui lòng tải lại trang sau ít phút.</p>
           <button
             type="button"
             onClick={reset}

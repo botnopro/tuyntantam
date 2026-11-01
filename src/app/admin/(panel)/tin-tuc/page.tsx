@@ -76,7 +76,7 @@ export default async function AdminPosts(props: PageProps<"/admin/tin-tuc">) {
                     {p.title}
                   </Link>
                   {p.featured ? (
-                    <span className="ml-2 rounded-xs bg-brand-subtle px-1.5 text-[11px] font-bold text-on-primary-container">Nổi bật</span>
+                    <span className="ml-2 rounded-xs bg-brand-subtle px-1.5 text-[11px] font-bold text-primary">Nổi bật</span>
                   ) : null}
                   {p.source === "import" ? (
                     <span className="ml-2 text-[12px] text-on-surface-variant">(nhập từ tuyntantam.com)</span>

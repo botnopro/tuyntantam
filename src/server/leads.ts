@@ -10,6 +10,7 @@ import { stripTags } from "@/lib/security/sanitize";
 import { LEAD_INTERESTS, leadInputSchema, type LeadInput } from "@/lib/validation/lead";
 import { formatDateTime } from "@/lib/utils/format";
 import { sendMail } from "./mail";
+import { formatTelegramMessage, sendTelegram } from "./telegram";
 
 export type LeadResult =
   { ok: true; id: string | null } | { ok: false; status: 400 | 429; message: string; fieldErrors?: Record<string, string> };
@@ -58,7 +59,7 @@ export async function submitLead(raw: unknown, headers: Headers): Promise<LeadRe
 
   const id = await saveLead(input, ip, headers.get("user-agent"), suspicious ? "SPAM" : "NEW");
   if (!suspicious) {
-    after(() => notifyNewLead(id).catch((e) => console.error("[leads] gửi email thất bại:", e instanceof Error ? e.message : e)));
+    after(() => notifyNewLead(id).catch((e) => console.error("[leads] gửi thông báo thất bại:", e instanceof Error ? e.message : e)));
   }
   return { ok: true, id };
 }
@@ -100,9 +101,11 @@ async function saveLead(input: LeadInput, ip: string, userAgent: string | null, 
 
 const escape = (s: string) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
 
+/** Báo lead mới qua email và Telegram (kênh nào đã cấu hình); một kênh lỗi không chặn kênh kia. */
 async function notifyNewLead(id: string) {
-  const to = env().LEAD_NOTIFY_EMAIL;
-  if (!to) return;
+  const { LEAD_NOTIFY_EMAIL: to, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } = env();
+  const telegram = Boolean(TELEGRAM_BOT_TOKEN && TELEGRAM_CHAT_ID);
+  if (!to && !telegram) return;
   const [lead] = await getDb()
     .select({ lead: leads, propertyTitle: properties.title, propertySlug: properties.slug })
     .from(leads)
@@ -127,12 +130,29 @@ async function notifyNewLead(id: string) {
     ["Trang gửi", l.sourcePage],
     ["Thời gian", formatDateTime(l.createdAt)],
   ];
-  const html = `<h2>Khách liên hệ mới — ${escape(TYPE_LABEL[l.type])}</h2><table cellpadding="6">${rows
-    .filter(([, v]) => v)
-    .map(([k, v]) => `<tr><td><b>${escape(k)}</b></td><td>${escape(String(v)).replace(/\n/g, "<br>")}</td></tr>`)
-    .join("")}</table><p><a href="${env().APP_URL}/admin/khach-lien-he/${l.id}">Mở trong trang quản trị</a></p>`;
-  await sendMail({ to, subject: `[Tuyn Tận Tâm] ${TYPE_LABEL[l.type]}: ${l.name}`, html, replyTo: l.email ?? undefined });
-  console.info(`[leads] đã gửi thông báo lead ${id} tới ${maskEmail(to)}`);
+  const adminUrl = `${env().APP_URL}/admin/khach-lien-he/${l.id}`;
+  const jobs: Promise<unknown>[] = [];
+  if (to) {
+    const html = `<h2>Khách liên hệ mới — ${escape(TYPE_LABEL[l.type])}</h2><table cellpadding="6">${rows
+      .filter(([, v]) => v)
+      .map(([k, v]) => `<tr><td><b>${escape(k)}</b></td><td>${escape(String(v)).replace(/\n/g, "<br>")}</td></tr>`)
+      .join("")}</table><p><a href="${adminUrl}">Mở trong trang quản trị</a></p>`;
+    jobs.push(
+      sendMail({ to, subject: `[Tuyn Tận Tâm] ${TYPE_LABEL[l.type]}: ${l.name}`, html, replyTo: l.email ?? undefined }).then(() =>
+        console.info(`[leads] đã gửi email lead ${id} tới ${maskEmail(to)}`),
+      ),
+    );
+  }
+  if (telegram) {
+    jobs.push(
+      sendTelegram(formatTelegramMessage(`Khách mới — ${TYPE_LABEL[l.type]}`, rows.slice(1), adminUrl)).then(() =>
+        console.info(`[leads] đã gửi Telegram lead ${id}`),
+      ),
+    );
+  }
+  for (const r of await Promise.allSettled(jobs)) {
+    if (r.status === "rejected") console.error("[leads] gửi thông báo thất bại:", r.reason instanceof Error ? r.reason.message : r.reason);
+  }
 }
 
 /* ---------- Admin ---------- */

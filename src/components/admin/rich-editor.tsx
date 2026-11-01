@@ -4,6 +4,7 @@ import { Bold, Code2, Heading2, Heading3, ImagePlus, Italic, Link2, List, ListOr
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils/cn";
 import { uploadFiles } from "./image-uploader";
+import { pastedToHtml } from "./paste-html";
 
 /**
  * Trình soạn thảo rich text gọn nhẹ (contentEditable + execCommand), không thêm thư viện.
@@ -14,6 +15,11 @@ export function RichEditor({ name, initial, minHeight = 360 }: { name: string; i
   const fileRef = useRef<HTMLInputElement>(null);
   const [html, setHtml] = useState(initial);
   const [source, setSource] = useState(false);
+
+  useEffect(() => {
+    // Enter tạo <p> (mặc định Chrome tạo <div> — thẻ server không giữ)
+    document.execCommand("defaultParagraphSeparator", false, "p");
+  }, []);
 
   useEffect(() => {
     if (ref.current && !source) ref.current.innerHTML = html;
@@ -127,6 +133,13 @@ export function RichEditor({ name, initial, minHeight = 360 }: { name: string; i
           aria-multiline="true"
           aria-label="Nội dung"
           onInput={() => setHtml(ref.current?.innerHTML ?? "")}
+          onPaste={(e) => {
+            // Tự chuẩn hoá thay cho dán mặc định (trình duyệt dán <div>/<span style> → server bỏ → mất xuống dòng)
+            const html = pastedToHtml(e.clipboardData.getData("text/html"), e.clipboardData.getData("text/plain"));
+            if (!html) return;
+            e.preventDefault();
+            exec("insertHTML", html);
+          }}
           style={{ minHeight }}
           className="prose-content max-w-none p-4 focus:outline-none"
         />

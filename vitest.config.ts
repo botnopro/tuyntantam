@@ -26,6 +26,8 @@ export default defineConfig({
       RESEND_API_KEY: "",
       BLOB_READ_WRITE_TOKEN: "",
       LEAD_NOTIFY_EMAIL: "",
+      TELEGRAM_BOT_TOKEN: "",
+      TELEGRAM_CHAT_ID: "",
       CORS_ORIGINS: "",
     },
     setupFiles: ["./tests/setup/next-mocks.ts"],

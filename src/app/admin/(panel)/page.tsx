@@ -52,7 +52,7 @@ export default async function AdminHome() {
         ))}
       </div>
       {publishedProps === 0 ? (
-        <p className="mt-6 rounded-lg border border-border-subtle bg-brand-subtle p-4 text-[14px] text-on-primary-container">
+        <p className="mt-6 rounded-lg border border-border-subtle bg-brand-subtle p-4 text-[14px] text-primary">
           Website chưa có tin BĐS nào đang hiển thị nên các khu vực danh sách, bộ lọc, bản đồ, yêu thích, so sánh đang ẩn.{" "}
           <Link href="/admin/bat-dong-san/moi" className="font-semibold underline">
             Đăng tin đầu tiên
